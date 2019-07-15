@@ -21,6 +21,7 @@
 		4C46FA5622D7B1930081A381 /* ObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA5522D7B1930081A381 /* ObjectExtensions.swift */; };
 		4C46FA5822D7B2980081A381 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA5722D7B2980081A381 /* StringExtensions.swift */; };
 		4C46FA5B22D84DD90081A381 /* DrillBits UI.sketch in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA5A22D84DD90081A381 /* DrillBits UI.sketch */; };
+		4C46FA6322DCE8C30081A381 /* UISnappingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA6222DCE8C30081A381 /* UISnappingSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		4C46FA5522D7B1930081A381 /* ObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectExtensions.swift; sourceTree = "<group>"; };
 		4C46FA5722D7B2980081A381 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		4C46FA5A22D84DD90081A381 /* DrillBits UI.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DrillBits UI.sketch"; sourceTree = "<group>"; };
+		4C46FA6222DCE8C30081A381 /* UISnappingSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISnappingSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		4C46FA4722D6FA690081A381 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4C46FA6222DCE8C30081A381 /* UISnappingSlider.swift */,
 				4C46FA4822D6FA850081A381 /* UISelector.swift */,
 			);
 			path = Views;
@@ -307,6 +310,7 @@
 				4C46FA5622D7B1930081A381 /* ObjectExtensions.swift in Sources */,
 				4C46FA1B22D6F7D30081A381 /* ViewController.swift in Sources */,
 				4C46FA1922D6F7D30081A381 /* AppDelegate.swift in Sources */,
+				4C46FA6322DCE8C30081A381 /* UISnappingSlider.swift in Sources */,
 				4C46FA4922D6FA850081A381 /* UISelector.swift in Sources */,
 				4C46FA5422D7B1440081A381 /* NumberHelper.swift in Sources */,
 				4C46FA5222D7AEF10081A381 /* Event.swift in Sources */,
