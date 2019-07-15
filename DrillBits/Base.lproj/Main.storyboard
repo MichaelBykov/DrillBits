@@ -21,8 +21,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fY-Qt-gvy">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kap-Io-CwR" userLabel="Container">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="500"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kap-Io-CwR" userLabel="Container">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="372"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GjH-3x-gWe" userLabel="Size Picker">
                                                 <rect key="frame" x="8" y="8" width="398" height="84"/>
@@ -142,12 +142,36 @@
                                                     <constraint firstItem="pcf-c9-dR8" firstAttribute="leading" secondItem="GjH-3x-gWe" secondAttribute="leading" id="zHg-m5-W1x"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dz-pX-AGj" customClass="DetailView" customModule="DrillBits" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="100" width="398" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="ZcF-jV-gYK"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Drill Bit"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRr-W9-xzD" customClass="DetailView" customModule="DrillBits" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="236" width="398" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="2S1-FU-LNC"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Material"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="GjH-3x-gWe" secondAttribute="bottom" constant="8" id="9Bk-Se-2D4"/>
+                                            <constraint firstAttribute="trailing" secondItem="6dz-pX-AGj" secondAttribute="trailing" constant="8" id="05e-u1-qeX"/>
                                             <constraint firstItem="GjH-3x-gWe" firstAttribute="leading" secondItem="kap-Io-CwR" secondAttribute="leading" constant="8" id="EGs-hQ-LOc"/>
                                             <constraint firstAttribute="trailing" secondItem="GjH-3x-gWe" secondAttribute="trailing" constant="8" id="GFD-ku-X7u"/>
+                                            <constraint firstItem="yRr-W9-xzD" firstAttribute="top" secondItem="6dz-pX-AGj" secondAttribute="bottom" constant="8" id="HkO-if-upB"/>
                                             <constraint firstItem="GjH-3x-gWe" firstAttribute="top" secondItem="kap-Io-CwR" secondAttribute="top" constant="8" id="UlB-pr-tfq"/>
+                                            <constraint firstAttribute="trailing" secondItem="yRr-W9-xzD" secondAttribute="trailing" constant="8" id="dcA-7W-X9R"/>
+                                            <constraint firstItem="6dz-pX-AGj" firstAttribute="top" secondItem="GjH-3x-gWe" secondAttribute="bottom" constant="8" id="dkD-sO-TFy"/>
+                                            <constraint firstItem="yRr-W9-xzD" firstAttribute="leading" secondItem="kap-Io-CwR" secondAttribute="leading" constant="8" id="ffb-0R-Pv6"/>
+                                            <constraint firstAttribute="bottom" secondItem="yRr-W9-xzD" secondAttribute="bottom" constant="8" id="lXn-HJ-vtn"/>
+                                            <constraint firstItem="6dz-pX-AGj" firstAttribute="leading" secondItem="kap-Io-CwR" secondAttribute="leading" constant="8" id="rmY-2I-eMd"/>
                                         </constraints>
                                     </view>
                                 </subviews>
