@@ -53,8 +53,10 @@ class UISelector: UIView {
 	
 	
 	/// An event for when the selection has changed, either by the user or programmatically
-	/// - Remark: The passed value represents the 'tag' inputed in the second collumn of the `Data` variable associated with the newly selected item
-	public var OnSelectionChanged = Event<Int>();
+	/// - Remark: The passed value represents the index of the item followed by the 'tag' inputed in the second collumn of the `Data` variable associated with the newly selected item
+	public var OnSelectionChanged = Event<(Int, Int)>();
+	/// An event that fires whenever the view's height chnages
+	public var OnHeightChanged = Event<CGFloat>();
 	
 	
 	
@@ -185,6 +187,7 @@ class UISelector: UIView {
 		let Height = (CGFloat(RowNum) * Padding) - 5;
 		self.GetConstraint(.height)?.constant = Height;
 		layoutIfNeeded();
+		OnHeightChanged <- Height;
 	}
 	
 	/// Select the button at the specified index
@@ -224,7 +227,7 @@ class UISelector: UIView {
 		// Event trigger?
 		if (last != SelectedIndex) {
 			// Selection changed! Lets tell everyone.
-			OnSelectionChanged <- Buttons[SelectedIndex].tag;
+			OnSelectionChanged <- (SelectedIndex, Buttons[SelectedIndex].tag);
 		}
 		
 		// If there is a button to select
