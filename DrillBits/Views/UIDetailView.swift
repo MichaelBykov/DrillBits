@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailView: UIView {
+class UIDetailView: UIView {
 	
 	@IBOutlet var Container: UIView!
 	
@@ -89,7 +89,7 @@ class DetailView: UIView {
 	/// Performs common init operations
 	private func Init() {
 		// Load our xib
-		Bundle.main.loadNibNamed("DetailView", owner: self, options: nil);
+		Bundle.main.loadNibNamed("UIDetailView", owner: self, options: nil);
 		addSubview(Container);
 		Container.frame = self.bounds;
 		Container.autoresizingMask = [.flexibleWidth, .flexibleHeight];

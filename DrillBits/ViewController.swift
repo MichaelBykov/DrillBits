@@ -12,9 +12,7 @@ class ViewController: UIViewController {
 	
 	@IBOutlet weak var ScrollView: UIScrollView!
 	
-	//
-	// Size
-	//
+	
 	
 	@IBOutlet weak var SizeWhole: UILabel!
 	@IBOutlet weak var SizeNumerator: UILabel!
@@ -36,12 +34,21 @@ class ViewController: UIViewController {
 	
 	
 	
+	@IBOutlet weak var DrillBitPicker: UIDetailView!
+	@IBOutlet weak var MaterialPicker: UIDetailView!
+	
+	
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
 		
 		// Make sure our scroll view has proper insets
 		ScrollView.contentInsetAdjustmentBehavior = .always;
+		
+		// Add handlers (because swift doesn't allow custom IBActions for views)
+		DrillBitPicker.OnSelectionChanged += DrillBitSelectionChanged;
+		MaterialPicker.OnSelectionChanged += MaterialSelectionChanged;
 	}
 	
 	
@@ -76,7 +83,7 @@ class ViewController: UIViewController {
 		
 		// Update unit text
 		SizeUnit.text = IsImperial ? "in" :
-		"mm";
+									 "mm";
 		
 		// Remove or add back fraction
 		if (IsImperial) {
@@ -92,11 +99,27 @@ class ViewController: UIViewController {
 			SizeUnitToWhole.priority = UILayoutPriority.defaultHigh;
 		}
 		
+		// TODO: Update values
+		
 		updateViewConstraints();
 	}
 	
 	@IBAction func SizeValueChanged(_ sender: UISnappingSlider) {
 		// TODO: Add ability to choose the drill bit's size
+	}
+	
+	
+	
+	//
+	// Other
+	//
+	
+	func DrillBitSelectionChanged(Index: Int, Tag: Int) {
+		// TODO: Implement
+	}
+	
+	func MaterialSelectionChanged(Index: Int, Tag: Int) {
+		// TODO: Implement
 	}
 }
 
