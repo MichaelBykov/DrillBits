@@ -42,6 +42,7 @@
 		4CCA205822EBCF5F00D0468C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205722EBCF5F00D0468C /* Data.swift */; };
 		4CCA205A22EBCF7800D0468C /* DrillBit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205922EBCF7800D0468C /* DrillBit.swift */; };
 		4CCA205C22EBCF8D00D0468C /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205B22EBCF8D00D0468C /* Material.swift */; };
+		4CCA206022EBEF9A00D0468C /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205F22EBEF9A00D0468C /* Unit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		4CCA205722EBCF5F00D0468C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		4CCA205922EBCF7800D0468C /* DrillBit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillBit.swift; sourceTree = "<group>"; };
 		4CCA205B22EBCF8D00D0468C /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		4CCA205F22EBEF9A00D0468C /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 				4CCA205722EBCF5F00D0468C /* Data.swift */,
 				4CCA205922EBCF7800D0468C /* DrillBit.swift */,
 				4CCA205B22EBCF8D00D0468C /* Material.swift */,
+				4CCA205F22EBEF9A00D0468C /* Unit.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				4C46FA5622D7B1930081A381 /* ObjectExtensions.swift in Sources */,
 				4C46FA8322E2BB470081A381 /* UIAlertLabel.swift in Sources */,
 				4C46FA6522DCEA9E0081A381 /* UIDetailView.swift in Sources */,
+				4CCA206022EBEF9A00D0468C /* Unit.swift in Sources */,
 				4C46FA1B22D6F7D30081A381 /* ViewController.swift in Sources */,
 				4C46FA1922D6F7D30081A381 /* AppDelegate.swift in Sources */,
 				4CCA205A22EBCF7800D0468C /* DrillBit.swift in Sources */,
