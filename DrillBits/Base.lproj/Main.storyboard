@@ -24,8 +24,92 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kap-Io-CwR" userLabel="Container">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="498.5"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dz-pX-AGj" customClass="UIDetailView" customModule="DrillBits" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="398" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="ZcF-jV-gYK"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Drill Bit"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRr-W9-xzD" customClass="UIDetailView" customModule="DrillBits" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="144" width="398" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="2S1-FU-LNC"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Material"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEb-Re-tZJ">
+                                                <rect key="frame" x="0.0" y="370.5" width="414" height="128"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chevron" translatesAutoresizingMaskIntoConstraints="NO" id="vY4-0t-Ny1">
+                                                        <rect key="frame" x="157" y="-4" width="100" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="YdF-k6-a2H"/>
+                                                            <constraint firstAttribute="height" constant="30" id="viW-nG-J6c"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Divider" translatesAutoresizingMaskIntoConstraints="NO" id="wWf-i5-UPr">
+                                                        <rect key="frame" x="0.0" y="-4" width="157" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="HBb-ae-Tmo"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Divider" translatesAutoresizingMaskIntoConstraints="NO" id="gTs-RH-0DO">
+                                                        <rect key="frame" x="257" y="-4" width="157" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="mjn-sb-AJD"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kR-PY-qJl">
+                                                        <rect key="frame" x="8" y="12" width="62" height="32"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RPM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rX9-F2-9wW">
+                                                        <rect key="frame" x="72" y="25.5" width="26" height="15"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4e4-cI-RVB" customClass="UIAlertLabel" customModule="DrillBits" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="52" width="398" height="36"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="36" id="k2V-NO-Qqn"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="Text" value="Sample warning message"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="Image" value="Warning"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="8Z6-TQ-91R"/>
+                                                    <constraint firstItem="4e4-cI-RVB" firstAttribute="top" secondItem="1kR-PY-qJl" secondAttribute="bottom" constant="8" id="BeA-8N-5Js"/>
+                                                    <constraint firstItem="gTs-RH-0DO" firstAttribute="leading" secondItem="vY4-0t-Ny1" secondAttribute="trailing" id="Cej-gb-eNk"/>
+                                                    <constraint firstItem="vY4-0t-Ny1" firstAttribute="leading" secondItem="wWf-i5-UPr" secondAttribute="trailing" id="JGb-Og-wOx"/>
+                                                    <constraint firstItem="wWf-i5-UPr" firstAttribute="leading" secondItem="PEb-Re-tZJ" secondAttribute="leading" id="RmW-CJ-Elj"/>
+                                                    <constraint firstItem="1kR-PY-qJl" firstAttribute="top" secondItem="PEb-Re-tZJ" secondAttribute="top" constant="12" id="U2p-tn-QpC"/>
+                                                    <constraint firstItem="gTs-RH-0DO" firstAttribute="top" secondItem="PEb-Re-tZJ" secondAttribute="top" constant="-4" id="ZDe-Sg-R5z"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4e4-cI-RVB" secondAttribute="trailing" constant="8" id="e2g-BQ-b6d"/>
+                                                    <constraint firstItem="wWf-i5-UPr" firstAttribute="top" secondItem="PEb-Re-tZJ" secondAttribute="top" constant="-4" id="eMG-hD-Nxk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gTs-RH-0DO" secondAttribute="trailing" id="h3F-Tr-CPw"/>
+                                                    <constraint firstItem="rX9-F2-9wW" firstAttribute="firstBaseline" secondItem="1kR-PY-qJl" secondAttribute="firstBaseline" id="jag-DQ-UHy"/>
+                                                    <constraint firstItem="4e4-cI-RVB" firstAttribute="leading" secondItem="PEb-Re-tZJ" secondAttribute="leading" constant="8" id="moM-6C-FwJ"/>
+                                                    <constraint firstItem="rX9-F2-9wW" firstAttribute="leading" secondItem="1kR-PY-qJl" secondAttribute="trailing" constant="2" id="qd3-GC-oJV"/>
+                                                    <constraint firstItem="vY4-0t-Ny1" firstAttribute="top" secondItem="PEb-Re-tZJ" secondAttribute="top" constant="-4" id="sAU-gI-AMI"/>
+                                                    <constraint firstItem="1kR-PY-qJl" firstAttribute="leading" secondItem="PEb-Re-tZJ" secondAttribute="leading" constant="8" id="vSp-FF-YXZ"/>
+                                                    <constraint firstItem="vY4-0t-Ny1" firstAttribute="centerX" secondItem="PEb-Re-tZJ" secondAttribute="centerX" id="zvY-98-I7D"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GjH-3x-gWe" userLabel="Size Picker">
-                                                <rect key="frame" x="8" y="8" width="398" height="82.5"/>
+                                                <rect key="frame" x="8" y="280" width="398" height="82.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvm-3g-1Ox">
                                                         <rect key="frame" x="0.0" y="0.0" width="48" height="31.5"/>
@@ -142,90 +226,6 @@
                                                     <constraint firstItem="pcf-c9-dR8" firstAttribute="leading" secondItem="GjH-3x-gWe" secondAttribute="leading" id="zHg-m5-W1x"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dz-pX-AGj" customClass="UIDetailView" customModule="DrillBits" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="98.5" width="398" height="128"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="128" id="ZcF-jV-gYK"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Drill Bit"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRr-W9-xzD" customClass="UIDetailView" customModule="DrillBits" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="234.5" width="398" height="128"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="128" id="2S1-FU-LNC"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Material"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEb-Re-tZJ">
-                                                <rect key="frame" x="0.0" y="370.5" width="414" height="128"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chevron" translatesAutoresizingMaskIntoConstraints="NO" id="vY4-0t-Ny1">
-                                                        <rect key="frame" x="157" y="-4" width="100" height="30"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="YdF-k6-a2H"/>
-                                                            <constraint firstAttribute="height" constant="30" id="viW-nG-J6c"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Divider" translatesAutoresizingMaskIntoConstraints="NO" id="wWf-i5-UPr">
-                                                        <rect key="frame" x="0.0" y="-4" width="157" height="30"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="30" id="HBb-ae-Tmo"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Divider" translatesAutoresizingMaskIntoConstraints="NO" id="gTs-RH-0DO">
-                                                        <rect key="frame" x="257" y="-4" width="157" height="30"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="30" id="mjn-sb-AJD"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kR-PY-qJl">
-                                                        <rect key="frame" x="8" y="12" width="62" height="32"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RPM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rX9-F2-9wW">
-                                                        <rect key="frame" x="72" y="25.5" width="26" height="15"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4e4-cI-RVB" customClass="UIAlertLabel" customModule="DrillBits" customModuleProvider="target">
-                                                        <rect key="frame" x="8" y="52" width="398" height="36"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="36" id="k2V-NO-Qqn"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="Text" value="Sample warning message"/>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="Image" value="Warning"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </view>
-                                                </subviews>
-                                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="128" id="8Z6-TQ-91R"/>
-                                                    <constraint firstItem="4e4-cI-RVB" firstAttribute="top" secondItem="1kR-PY-qJl" secondAttribute="bottom" constant="8" id="BeA-8N-5Js"/>
-                                                    <constraint firstItem="gTs-RH-0DO" firstAttribute="leading" secondItem="vY4-0t-Ny1" secondAttribute="trailing" id="Cej-gb-eNk"/>
-                                                    <constraint firstItem="vY4-0t-Ny1" firstAttribute="leading" secondItem="wWf-i5-UPr" secondAttribute="trailing" id="JGb-Og-wOx"/>
-                                                    <constraint firstItem="wWf-i5-UPr" firstAttribute="leading" secondItem="PEb-Re-tZJ" secondAttribute="leading" id="RmW-CJ-Elj"/>
-                                                    <constraint firstItem="1kR-PY-qJl" firstAttribute="top" secondItem="PEb-Re-tZJ" secondAttribute="top" constant="12" id="U2p-tn-QpC"/>
-                                                    <constraint firstItem="gTs-RH-0DO" firstAttribute="top" secondItem="PEb-Re-tZJ" secondAttribute="top" constant="-4" id="ZDe-Sg-R5z"/>
-                                                    <constraint firstAttribute="trailing" secondItem="4e4-cI-RVB" secondAttribute="trailing" constant="8" id="e2g-BQ-b6d"/>
-                                                    <constraint firstItem="wWf-i5-UPr" firstAttribute="top" secondItem="PEb-Re-tZJ" secondAttribute="top" constant="-4" id="eMG-hD-Nxk"/>
-                                                    <constraint firstAttribute="trailing" secondItem="gTs-RH-0DO" secondAttribute="trailing" id="h3F-Tr-CPw"/>
-                                                    <constraint firstItem="rX9-F2-9wW" firstAttribute="firstBaseline" secondItem="1kR-PY-qJl" secondAttribute="firstBaseline" id="jag-DQ-UHy"/>
-                                                    <constraint firstItem="4e4-cI-RVB" firstAttribute="leading" secondItem="PEb-Re-tZJ" secondAttribute="leading" constant="8" id="moM-6C-FwJ"/>
-                                                    <constraint firstItem="rX9-F2-9wW" firstAttribute="leading" secondItem="1kR-PY-qJl" secondAttribute="trailing" constant="2" id="qd3-GC-oJV"/>
-                                                    <constraint firstItem="vY4-0t-Ny1" firstAttribute="top" secondItem="PEb-Re-tZJ" secondAttribute="top" constant="-4" id="sAU-gI-AMI"/>
-                                                    <constraint firstItem="1kR-PY-qJl" firstAttribute="leading" secondItem="PEb-Re-tZJ" secondAttribute="leading" constant="8" id="vSp-FF-YXZ"/>
-                                                    <constraint firstItem="vY4-0t-Ny1" firstAttribute="centerX" secondItem="PEb-Re-tZJ" secondAttribute="centerX" id="zvY-98-I7D"/>
-                                                </constraints>
-                                            </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="6dz-pX-AGj" secondAttribute="trailing" constant="8" id="05e-u1-qeX"/>
@@ -234,12 +234,12 @@
                                             <constraint firstItem="GjH-3x-gWe" firstAttribute="leading" secondItem="kap-Io-CwR" secondAttribute="leading" constant="8" id="EGs-hQ-LOc"/>
                                             <constraint firstAttribute="trailing" secondItem="GjH-3x-gWe" secondAttribute="trailing" constant="8" id="GFD-ku-X7u"/>
                                             <constraint firstItem="yRr-W9-xzD" firstAttribute="top" secondItem="6dz-pX-AGj" secondAttribute="bottom" constant="8" id="HkO-if-upB"/>
-                                            <constraint firstItem="GjH-3x-gWe" firstAttribute="top" secondItem="kap-Io-CwR" secondAttribute="top" constant="8" id="UlB-pr-tfq"/>
+                                            <constraint firstItem="PEb-Re-tZJ" firstAttribute="top" secondItem="GjH-3x-gWe" secondAttribute="bottom" constant="8" id="T7R-yf-17a"/>
+                                            <constraint firstItem="GjH-3x-gWe" firstAttribute="top" secondItem="yRr-W9-xzD" secondAttribute="bottom" constant="8" id="UlB-pr-tfq"/>
                                             <constraint firstAttribute="trailing" secondItem="yRr-W9-xzD" secondAttribute="trailing" constant="8" id="dcA-7W-X9R"/>
-                                            <constraint firstItem="6dz-pX-AGj" firstAttribute="top" secondItem="GjH-3x-gWe" secondAttribute="bottom" constant="8" id="dkD-sO-TFy"/>
+                                            <constraint firstItem="6dz-pX-AGj" firstAttribute="top" secondItem="kap-Io-CwR" secondAttribute="top" constant="8" id="dkD-sO-TFy"/>
                                             <constraint firstItem="yRr-W9-xzD" firstAttribute="leading" secondItem="kap-Io-CwR" secondAttribute="leading" constant="8" id="ffb-0R-Pv6"/>
                                             <constraint firstAttribute="bottom" secondItem="PEb-Re-tZJ" secondAttribute="bottom" id="hWU-im-Reb"/>
-                                            <constraint firstItem="PEb-Re-tZJ" firstAttribute="top" secondItem="yRr-W9-xzD" secondAttribute="bottom" constant="8" id="mYv-P5-ucK"/>
                                             <constraint firstItem="6dz-pX-AGj" firstAttribute="leading" secondItem="kap-Io-CwR" secondAttribute="leading" constant="8" id="rmY-2I-eMd"/>
                                         </constraints>
                                     </view>

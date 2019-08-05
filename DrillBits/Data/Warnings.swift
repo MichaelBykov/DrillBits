@@ -13,9 +13,7 @@ func WarningsFor(Size: Unit, Bit: DrillBit, Mat: Material) -> [String] {
 	
 	switch Bit {
 	case .Twist:
-		if (Mat == .Steel && Size.Compare(to: Unit(IsImperial: true, Inches: Fraction(w: 0, n: 8), Millimeters: 3), Comparison: .LeftGreaterEqual)) {
-			Warnings.append("Lubricate drill with oil when cutting the steel");
-		}
+		Warnings.append("Lubricate drill with oil when cutting steel \(Size.IsImperial! ? "1/8\"" : "3mm") or thicker");
 		Warnings.append("Use a center punch on all holes to prevent drill from wandering");
 		Warnings.append("Back material to prevent chip out");
 		break;
@@ -23,13 +21,13 @@ func WarningsFor(Size: Unit, Bit: DrillBit, Mat: Material) -> [String] {
 		Warnings.append("Back material to prevent chip out");
 		break;
 	case .BradPoint:
-		if (Size.Compare(to: Unit(IsImperial: true, Inches: Fraction(w: 0, n: 16), Millimeters: 6), Comparison: .LeftGreaterEqual)) {
+		if (Size.Compare(to: Unit(Inches: Fraction(w: 0, n: 1, d: 4), Millimeters: 6), Comparison: .LeftGreaterEqual)) {
 			Warnings.append("Raise bit often to clear shavings and to prevent heat build up");
 		}
 		Warnings.append("Back material to prevent chip out");
 		break;
 	case .Forstner:
-		if (Size.Compare(to: Unit(IsImperial: true, Inches: Fraction(w: 0, n: 24), Millimeters: 10), Comparison: .LeftGreaterEqual)) {
+		if (Size.Compare(to: Unit(Inches: Fraction(w: 0, n: 3, d: 8), Millimeters: 10), Comparison: .LeftGreaterEqual)) {
 			Warnings.append("Raise bit often to clear shavings and to prevent heat build up");
 		} else {
 			Warnings.append("Make several shallow passes with larger bits; allow bit to cool between passes");
@@ -43,7 +41,7 @@ func WarningsFor(Size: Unit, Bit: DrillBit, Mat: Material) -> [String] {
 		Warnings.append("Reduce quill pressure when bit tip emerges from back side");
 		break;
 	case .HoleSaw:
-		Warnings.append("Do not use with brass or aluminum thicker than \(Size.IsImperial ? "1/16\"" : "1.5 mm")");
+		Warnings.append("Do not use with brass or aluminum thicker than \(Size.IsImperial! ? "1/16\"" : "1.5 mm")");
 		Warnings.append("Avoid dense hardwoods such as hard maple");
 		Warnings.append("Back material to prevent chip out");
 		break;
