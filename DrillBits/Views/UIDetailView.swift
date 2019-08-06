@@ -113,6 +113,11 @@ class UIDetailView: UIView {
 		Resize();
 	}
 	
+	/// Select the button at the specified index
+	/// - Parameter Index: The index of the button to select, if greater than the number of buttons, selects 0 until a button with the specified index is drawn, if less than 0, throws.
+	/// - Throws: `IndexOutOfRangeException` if Index is less than 0
+	@inline(__always) public func Select(Index: Int) { self.SelectionView.Select(Index: Index); }
+	
 	/// A function for handling view resizing (vertically)
 	private func Resize() {
 		// Wait for constraint update

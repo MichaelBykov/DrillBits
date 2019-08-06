@@ -9,14 +9,14 @@
 import UIKit
 
 /// An enumerator that represents all the different (supported) materials
-enum Material {
-	case Softwood
-	case Hardwood
-	case Acrylic
-	case Brass
-	case Aluminum
-	case Steel
-	case GlassAndTile
+enum Material: Int {
+	case Softwood		= 0
+	case Hardwood		= 1
+	case Acrylic		= 2
+	case Brass			= 3
+	case Aluminum		= 4
+	case Steel			= 5
+	case GlassAndTile	= 6
 }
 
 func ToString(Mat: Material) -> String {

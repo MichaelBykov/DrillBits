@@ -18,11 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AaU-nP-vgS" userLabel="Bottom Color">
+                                <rect key="frame" x="0.0" y="476" width="414" height="420"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fY-Qt-gvy">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kap-Io-CwR" userLabel="Container">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="498.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="480"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dz-pX-AGj" customClass="UIDetailView" customModule="DrillBits" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="8" width="398" height="128"/>
@@ -43,7 +47,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEb-Re-tZJ">
-                                                <rect key="frame" x="0.0" y="370.5" width="414" height="128"/>
+                                                <rect key="frame" x="0.0" y="370.5" width="414" height="109.5"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chevron" translatesAutoresizingMaskIntoConstraints="NO" id="vY4-0t-Ny1">
                                                         <rect key="frame" x="157" y="-4" width="100" height="30"/>
@@ -76,34 +80,54 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4e4-cI-RVB" customClass="UIAlertLabel" customModule="DrillBits" customModuleProvider="target">
-                                                        <rect key="frame" x="8" y="52" width="398" height="36"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nti-DP-mGH">
+                                                        <rect key="frame" x="8" y="48" width="398" height="36"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHN-ie-9iQ" customClass="UIAlertLabel" customModule="DrillBits" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="36"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="36" id="kIc-En-3AF"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="Text" value="Always wear a face shield for optimum protection"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="36" id="k2V-NO-Qqn"/>
+                                                            <constraint firstAttribute="trailing" secondItem="pHN-ie-9iQ" secondAttribute="trailing" id="C3i-Cg-fdQ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="pHN-ie-9iQ" secondAttribute="bottom" id="EmW-RI-Qx4"/>
+                                                            <constraint firstItem="pHN-ie-9iQ" firstAttribute="leading" secondItem="Nti-DP-mGH" secondAttribute="leading" id="KLp-Wk-Sr1"/>
+                                                            <constraint firstItem="pHN-ie-9iQ" firstAttribute="top" secondItem="Nti-DP-mGH" secondAttribute="top" id="QqN-VO-iC3"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="Text" value="Sample warning message"/>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="Image" value="Warning"/>
-                                                        </userDefinedRuntimeAttributes>
                                                     </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data from Wood® magazine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNf-6j-bc4">
+                                                        <rect key="frame" x="8" y="92" width="398" height="13.5"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="128" id="8Z6-TQ-91R"/>
-                                                    <constraint firstItem="4e4-cI-RVB" firstAttribute="top" secondItem="1kR-PY-qJl" secondAttribute="bottom" constant="8" id="BeA-8N-5Js"/>
+                                                    <constraint firstItem="Nti-DP-mGH" firstAttribute="top" secondItem="1kR-PY-qJl" secondAttribute="bottom" constant="4" id="6cp-XL-qzA"/>
                                                     <constraint firstItem="gTs-RH-0DO" firstAttribute="leading" secondItem="vY4-0t-Ny1" secondAttribute="trailing" id="Cej-gb-eNk"/>
                                                     <constraint firstItem="vY4-0t-Ny1" firstAttribute="leading" secondItem="wWf-i5-UPr" secondAttribute="trailing" id="JGb-Og-wOx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Nti-DP-mGH" secondAttribute="trailing" constant="8" id="Ov0-Tm-TAD"/>
                                                     <constraint firstItem="wWf-i5-UPr" firstAttribute="leading" secondItem="PEb-Re-tZJ" secondAttribute="leading" id="RmW-CJ-Elj"/>
+                                                    <constraint firstItem="Nti-DP-mGH" firstAttribute="leading" secondItem="PEb-Re-tZJ" secondAttribute="leading" constant="8" id="TeC-b4-hKm"/>
+                                                    <constraint firstItem="cNf-6j-bc4" firstAttribute="leading" secondItem="PEb-Re-tZJ" secondAttribute="leading" constant="8" id="Tlg-uf-OBs"/>
                                                     <constraint firstItem="1kR-PY-qJl" firstAttribute="top" secondItem="PEb-Re-tZJ" secondAttribute="top" constant="12" id="U2p-tn-QpC"/>
+                                                    <constraint firstItem="cNf-6j-bc4" firstAttribute="top" secondItem="Nti-DP-mGH" secondAttribute="bottom" constant="8" id="XxQ-MT-In0"/>
                                                     <constraint firstItem="gTs-RH-0DO" firstAttribute="top" secondItem="PEb-Re-tZJ" secondAttribute="top" constant="-4" id="ZDe-Sg-R5z"/>
-                                                    <constraint firstAttribute="trailing" secondItem="4e4-cI-RVB" secondAttribute="trailing" constant="8" id="e2g-BQ-b6d"/>
                                                     <constraint firstItem="wWf-i5-UPr" firstAttribute="top" secondItem="PEb-Re-tZJ" secondAttribute="top" constant="-4" id="eMG-hD-Nxk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cNf-6j-bc4" secondAttribute="trailing" constant="8" id="fVU-rs-oFx"/>
                                                     <constraint firstAttribute="trailing" secondItem="gTs-RH-0DO" secondAttribute="trailing" id="h3F-Tr-CPw"/>
                                                     <constraint firstItem="rX9-F2-9wW" firstAttribute="firstBaseline" secondItem="1kR-PY-qJl" secondAttribute="firstBaseline" id="jag-DQ-UHy"/>
-                                                    <constraint firstItem="4e4-cI-RVB" firstAttribute="leading" secondItem="PEb-Re-tZJ" secondAttribute="leading" constant="8" id="moM-6C-FwJ"/>
                                                     <constraint firstItem="rX9-F2-9wW" firstAttribute="leading" secondItem="1kR-PY-qJl" secondAttribute="trailing" constant="2" id="qd3-GC-oJV"/>
                                                     <constraint firstItem="vY4-0t-Ny1" firstAttribute="top" secondItem="PEb-Re-tZJ" secondAttribute="top" constant="-4" id="sAU-gI-AMI"/>
+                                                    <constraint firstAttribute="bottom" secondItem="cNf-6j-bc4" secondAttribute="bottom" constant="4" id="vLi-rs-WC2"/>
                                                     <constraint firstItem="1kR-PY-qJl" firstAttribute="leading" secondItem="PEb-Re-tZJ" secondAttribute="leading" constant="8" id="vSp-FF-YXZ"/>
                                                     <constraint firstItem="vY4-0t-Ny1" firstAttribute="centerX" secondItem="PEb-Re-tZJ" secondAttribute="centerX" id="zvY-98-I7D"/>
                                                 </constraints>
@@ -252,10 +276,6 @@
                                     <constraint firstItem="kap-Io-CwR" firstAttribute="top" secondItem="5fY-Qt-gvy" secondAttribute="top" id="qSe-nt-t3y"/>
                                 </constraints>
                             </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AaU-nP-vgS" userLabel="Bottom Color">
-                                <rect key="frame" x="0.0" y="494.5" width="414" height="401.5"/>
-                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwB-tt-pFA" userLabel="Status Bar Blur">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CP9-5C-qAO">
@@ -283,14 +303,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="AlertContainer" destination="Nti-DP-mGH" id="AsI-dy-KkJ"/>
+                        <outlet property="DefaultAlertLabel" destination="pHN-ie-9iQ" id="bZu-GW-mNM"/>
                         <outlet property="DrillBitPicker" destination="6dz-pX-AGj" id="WVG-4V-R3R"/>
                         <outlet property="MaterialPicker" destination="yRr-W9-xzD" id="YFl-fB-ECq"/>
+                        <outlet property="Result" destination="1kR-PY-qJl" id="qb0-k2-gSW"/>
                         <outlet property="ScrollView" destination="5fY-Qt-gvy" id="ATQ-4c-YBp"/>
                         <outlet property="SizeDenominator" destination="LXY-51-iIa" id="kHA-WE-Jjv"/>
                         <outlet property="SizeFractionLeading" destination="ljE-rY-B2e" id="KVz-lW-bqD"/>
                         <outlet property="SizeFractionTrailing" destination="DnO-wN-mKp" id="9XQ-2C-fZE"/>
                         <outlet property="SizeFractionWrapper" destination="wrN-VA-NCg" id="LaO-w7-doR"/>
                         <outlet property="SizeNumerator" destination="4La-FV-ejQ" id="C5M-IL-f5Q"/>
+                        <outlet property="SizeSlider" destination="lu4-xg-AEe" id="hm0-oI-VCl"/>
                         <outlet property="SizeUnit" destination="lE4-cq-gKV" id="M5g-8y-n2E"/>
                         <outlet property="SizeUnitSelector" destination="7qk-o5-S30" id="bNS-sC-tzg"/>
                         <outlet property="SizeUnitToWhole" destination="qPQ-3g-3Hi" id="spg-yb-Mjs"/>
@@ -305,6 +329,5 @@
     <resources>
         <image name="Chevron" width="1000" height="300"/>
         <image name="Divider" width="1000" height="300"/>
-        <image name="Warning" width="220" height="220"/>
     </resources>
 </document>

@@ -9,29 +9,29 @@
 import UIKit
 
 /// An enumerator for all the possible (supported) drill bits
-enum DrillBit {
+enum DrillBit: Int {
 	/// Twist drill bit
-	case Twist
+	case Twist				= 0
 	/// Bullet pilot-point drill bit
-	case BulletPilotPoint
+	case BulletPilotPoint	= 1
 	/// Brad-point bit
-	case BradPoint
+	case BradPoint			= 2
 	/// Forstner bit
-	case Forstner
+	case Forstner			= 3
 	/// Glass-and-tile drill bit
-	case GlassAndTile
+	case GlassAndTile		= 4
 	/// Hole saw
-	case HoleSaw
+	case HoleSaw			= 5
 	/// Multi spur drill bit
-	case MultiSpur
+	case MultiSpur			= 6
 	/// Spade bit
-	case Spade
+	case Spade				= 7
 	/// Spade bit with spurs
-	case SpadeWithSpurs
+	case SpadeWithSpurs 	= 8
 	/// Power bore drill bit
-	case PowerBore
+	case PowerBore			= 9
 	/// Circle cutter bit
-	case CircleCutter
+	case CircleCutter		= 10
 }
 
 func ToString(Bit: DrillBit) -> String {
