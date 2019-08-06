@@ -64,11 +64,15 @@ struct Fraction {
 	var Numerator: Int;
 	var Denominator: Int;
 	
+	enum FractionErrors: Error {
+		case DenominatorZero
+	}
+	
 	/// Initialize a new fraction
 	init(w: Int) {
 		Whole = w;
 		Numerator = 0;
-		Denominator = 2;
+		Denominator = 1;
 	}
 	
 	/// Initialize a new fraction

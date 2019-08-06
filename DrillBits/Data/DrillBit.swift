@@ -64,3 +64,31 @@ func ToString(Bit: DrillBit) -> String {
 func GetImageFor(Bit: DrillBit) -> UIImage {
 	return UIImage(named: ToString(Bit: Bit))!;
 }
+
+/// Get all the "supported" materials for a drillbit
+func Materials(For: DrillBit) -> [Material] {
+	switch For {
+	case .Twist:
+		return [ .Softwood, .Hardwood, .Acrylic, .Brass, .Aluminum, .Steel ];
+	case .BulletPilotPoint:
+		return [ .Softwood, .Hardwood, .Acrylic, .Brass, .Aluminum, .Steel ];
+	case .BradPoint:
+		return [ .Softwood, .Hardwood, .Acrylic ];
+	case .Forstner:
+		return [ .Softwood, .Hardwood, .Acrylic ];
+	case .GlassAndTile:
+		return [ .GlassAndTile ];
+	case .HoleSaw:
+		return [ .Softwood, .Hardwood, .Brass, .Aluminum ];
+	case .MultiSpur:
+		return [ .Softwood, .Hardwood ];
+	case .Spade:
+		return [ .Softwood, .Hardwood ];
+	case .SpadeWithSpurs:
+		return [ .Softwood, .Hardwood, .Acrylic ];
+	case .PowerBore:
+		return [ .Softwood, .Hardwood ];
+	case .CircleCutter:
+		return [ .Softwood, .Hardwood, .Acrylic ];
+	}
+}
