@@ -39,6 +39,13 @@
 		4C68361322E2D83C00AFF50E /* Warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68361022E2D83C00AFF50E /* Warning@2x.png */; };
 		4C68361422E2D83C00AFF50E /* Warning@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68361122E2D83C00AFF50E /* Warning@3x.png */; };
 		4C68361522E2D83C00AFF50E /* Warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68361222E2D83C00AFF50E /* Warning.png */; };
+		4CC790C022F7DF7200BF87ED /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790BF22F7DF7200BF87ED /* Data.swift */; };
+		4CC790C222F7E15400BF87ED /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790C122F7E15400BF87ED /* Sizes.swift */; };
+		4CC790C422FB1D1C00BF87ED /* UICancelableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */; };
+		4CCA205822EBCF5F00D0468C /* Warnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205722EBCF5F00D0468C /* Warnings.swift */; };
+		4CCA205A22EBCF7800D0468C /* DrillBit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205922EBCF7800D0468C /* DrillBit.swift */; };
+		4CCA205C22EBCF8D00D0468C /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205B22EBCF8D00D0468C /* Material.swift */; };
+		4CCA206022EBEF9A00D0468C /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205F22EBEF9A00D0468C /* Unit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +104,13 @@
 		4C68361022E2D83C00AFF50E /* Warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Warning@2x.png"; sourceTree = "<group>"; };
 		4C68361122E2D83C00AFF50E /* Warning@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Warning@3x.png"; sourceTree = "<group>"; };
 		4C68361222E2D83C00AFF50E /* Warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Warning.png; sourceTree = "<group>"; };
+		4CC790BF22F7DF7200BF87ED /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		4CC790C122F7E15400BF87ED /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICancelableScrollView.swift; sourceTree = "<group>"; };
+		4CCA205722EBCF5F00D0468C /* Warnings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warnings.swift; sourceTree = "<group>"; };
+		4CCA205922EBCF7800D0468C /* DrillBit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillBit.swift; sourceTree = "<group>"; };
+		4CCA205B22EBCF8D00D0468C /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		4CCA205F22EBEF9A00D0468C /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +162,7 @@
 		4C46FA1722D6F7D30081A381 /* DrillBits */ = {
 			isa = PBXGroup;
 			children = (
+				4CCA205622EBCF4C00D0468C /* Data */,
 				4C46FA4A22D7AA2B0081A381 /* Helpers */,
 				4C46FA4722D6FA690081A381 /* Views */,
 				4C46FA1822D6F7D30081A381 /* AppDelegate.swift */,
@@ -188,6 +203,7 @@
 				4C46FA8222E2BB470081A381 /* UIAlertLabel.swift */,
 				4C46FA8422E2BB550081A381 /* UIAlertLabel.xib */,
 				4C46FA8622E2D3390081A381 /* UIViewWatcher.swift */,
+				4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +246,19 @@
 				4C46FA7022DCED210081A381 /* Image@3x.png */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		4CCA205622EBCF4C00D0468C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4CCA205722EBCF5F00D0468C /* Warnings.swift */,
+				4CCA205922EBCF7800D0468C /* DrillBit.swift */,
+				4CCA205B22EBCF8D00D0468C /* Material.swift */,
+				4CCA205F22EBEF9A00D0468C /* Unit.swift */,
+				4CC790BF22F7DF7200BF87ED /* Data.swift */,
+				4CC790C122F7E15400BF87ED /* Sizes.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,10 +412,17 @@
 				4C46FA5622D7B1930081A381 /* ObjectExtensions.swift in Sources */,
 				4C46FA8322E2BB470081A381 /* UIAlertLabel.swift in Sources */,
 				4C46FA6522DCEA9E0081A381 /* UIDetailView.swift in Sources */,
+				4CCA206022EBEF9A00D0468C /* Unit.swift in Sources */,
 				4C46FA1B22D6F7D30081A381 /* ViewController.swift in Sources */,
 				4C46FA1922D6F7D30081A381 /* AppDelegate.swift in Sources */,
+				4CCA205A22EBCF7800D0468C /* DrillBit.swift in Sources */,
+				4CC790C222F7E15400BF87ED /* Sizes.swift in Sources */,
 				4C46FA6322DCE8C30081A381 /* UISnappingSlider.swift in Sources */,
+				4CC790C422FB1D1C00BF87ED /* UICancelableScrollView.swift in Sources */,
+				4CCA205822EBCF5F00D0468C /* Warnings.swift in Sources */,
+				4CCA205C22EBCF8D00D0468C /* Material.swift in Sources */,
 				4C46FA4922D6FA850081A381 /* UISelector.swift in Sources */,
+				4CC790C022F7DF7200BF87ED /* Data.swift in Sources */,
 				4C46FA8722E2D3390081A381 /* UIViewWatcher.swift in Sources */,
 				4C46FA5422D7B1440081A381 /* NumberHelper.swift in Sources */,
 				4C46FA5222D7AEF10081A381 /* Event.swift in Sources */,
