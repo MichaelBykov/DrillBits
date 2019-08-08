@@ -13,7 +13,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIAlertLabel" customModule="DrillBits" customModuleProvider="target">
             <connections>
                 <outlet property="Container" destination="iN0-l3-epB" id="wdE-an-GmJ"/>
-                <outlet property="ImageView" destination="gcN-qu-B65" id="OVU-Ub-PKS"/>
                 <outlet property="Label" destination="Zhg-Cj-YCC" id="kzk-VX-lwI"/>
                 <outlet property="ViewWatcher" destination="fhg-QW-Mf1" id="mLQ-Te-Ex6"/>
             </connections>
@@ -26,39 +25,18 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhg-QW-Mf1" customClass="UIViewWatcher" customModule="DrillBits" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="158" height="36.5"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EV7-gJ-mXs">
-                            <rect key="frame" x="0.0" y="0.0" width="35" height="36.5"/>
-                            <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gcN-qu-B65">
-                                    <rect key="frame" x="8.5" y="9.5" width="18" height="18"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="18" id="VZy-nS-nGh"/>
-                                        <constraint firstAttribute="height" constant="18" id="vR2-1b-vvH"/>
-                                    </constraints>
-                                </imageView>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstItem="gcN-qu-B65" firstAttribute="centerY" secondItem="EV7-gJ-mXs" secondAttribute="centerY" id="27W-K1-CYF"/>
-                                <constraint firstItem="gcN-qu-B65" firstAttribute="centerX" secondItem="EV7-gJ-mXs" secondAttribute="centerX" id="Wma-3E-k1H"/>
-                                <constraint firstAttribute="width" constant="35" id="fOF-Sl-cr3"/>
-                            </constraints>
-                        </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-Cj-YCC">
-                            <rect key="frame" x="43" y="8" width="107" height="20.5"/>
+                            <rect key="frame" x="8" y="8" width="142" height="20.5"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" red="0.95294117649999999" green="0.81960784310000001" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.81960784310000001" blue="0.36862745099999999" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="Zhg-Cj-YCC" secondAttribute="bottom" constant="8" id="6tA-7O-WYc"/>
-                        <constraint firstAttribute="bottom" secondItem="EV7-gJ-mXs" secondAttribute="bottom" id="8Rd-Wg-RGH"/>
+                        <constraint firstItem="Zhg-Cj-YCC" firstAttribute="leading" secondItem="fhg-QW-Mf1" secondAttribute="leading" constant="8" id="TF3-eW-Eg8"/>
                         <constraint firstItem="Zhg-Cj-YCC" firstAttribute="top" secondItem="fhg-QW-Mf1" secondAttribute="top" constant="8" id="XJf-zu-e1I"/>
-                        <constraint firstItem="EV7-gJ-mXs" firstAttribute="leading" secondItem="fhg-QW-Mf1" secondAttribute="leading" id="b3r-EC-n1o"/>
-                        <constraint firstItem="EV7-gJ-mXs" firstAttribute="top" secondItem="fhg-QW-Mf1" secondAttribute="top" id="gTb-eY-Y5b"/>
-                        <constraint firstItem="Zhg-Cj-YCC" firstAttribute="leading" secondItem="EV7-gJ-mXs" secondAttribute="trailing" constant="8" id="lEH-7p-VVQ"/>
                         <constraint firstAttribute="trailing" secondItem="Zhg-Cj-YCC" secondAttribute="trailing" constant="8" id="yZC-gN-z1s"/>
                     </constraints>
                 </view>

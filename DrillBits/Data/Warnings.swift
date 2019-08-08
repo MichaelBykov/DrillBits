@@ -13,7 +13,9 @@ func WarningsFor(Size: Unit, Bit: DrillBit, Mat: Material) -> [String] {
 	
 	switch Bit {
 	case .Twist:
-		Warnings.append("Lubricate drill with oil when cutting steel \(Size.IsImperial! ? "1/8\"" : "3mm") or thicker");
+		if (Mat == .Steel) {
+			Warnings.append("Lubricate drill with oil when cutting steel \(Size.IsImperial! ? "1/8\"" : "3mm") or thicker");
+		}
 		Warnings.append("Use a center punch on all holes to prevent drill from wandering");
 		Warnings.append("Back material to prevent chip out");
 		break;
@@ -41,8 +43,11 @@ func WarningsFor(Size: Unit, Bit: DrillBit, Mat: Material) -> [String] {
 		Warnings.append("Reduce quill pressure when bit tip emerges from back side");
 		break;
 	case .HoleSaw:
-		Warnings.append("Do not use with brass or aluminum thicker than \(Size.IsImperial! ? "1/16\"" : "1.5 mm")");
-		Warnings.append("Avoid dense hardwoods such as hard maple");
+		if (Mat == .Brass || Mat == .Aluminum) {
+			Warnings.append("Do not use with \(Mat == .Brass ? "brass" : "aluminum") thicker than \(Size.IsImperial! ? "1/16\"" : "1.5 mm")");
+		} else if (Mat == .Hardwood) {
+			Warnings.append("Avoid dense hardwoods such as hard maple");
+		}
 		Warnings.append("Back material to prevent chip out");
 		break;
 	case .MultiSpur:
@@ -53,11 +58,9 @@ func WarningsFor(Size: Unit, Bit: DrillBit, Mat: Material) -> [String] {
 		Warnings.append("Back material to prevent chip out");
 		break;
 	case .SpadeWithSpurs:
-		Warnings.append("Best bit for acrylic");
 		Warnings.append("Clamp work securely");
 		break;
 	case .PowerBore:
-		Warnings.append("Ideal for deep holes and end-grain drilling");
 		Warnings.append("Back material to prevent chip out");
 		break;
 	case .CircleCutter:

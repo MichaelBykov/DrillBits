@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 	
-	@IBOutlet weak var ScrollView: UIScrollView!
+	@IBOutlet weak var ScrollView: UICancelableScrollView!
 	
 	
 	
@@ -58,12 +58,13 @@ class ViewController: UIViewController {
 		
 		// Make sure our scroll view has proper insets
 		ScrollView.contentInsetAdjustmentBehavior = .always;
+		ScrollView.RootCancels = [ DrillBitPicker.SelectionView, MaterialPicker.SelectionView, SizeSlider ];
 		
 		// Add data for pickers
 		var BitData: [(UIImage, Int, String, String)] = [ ];
 		for i in 0...10 {
 			let Bit = DrillBit(rawValue: i)!;
-			BitData.append((GetImageFor(Bit: Bit), i, ToString(Bit: Bit), ""));
+			BitData.append((GetImageFor(Bit: Bit), i, ToString(Bit: Bit), GetDescFor(Bit: Bit)));
 		}
 		
 		DrillBitPicker.Data = BitData;
@@ -124,9 +125,11 @@ class ViewController: UIViewController {
 			SizeUnitToWhole.priority = UILayoutPriority.defaultHigh;
 		}
 		
+		let val: CGFloat = CGFloat(SizeSlider.value) / CGFloat(SizeSlider.maximumValue - SizeSlider.minimumValue);
+		MaterialSelectionChanged(0, Tag: SelectedMat.rawValue);
+		SizeSlider.value = Float(CGFloat(SizeSlider.maximumValue - SizeSlider.minimumValue) * val);
 		SizeValueChanged(SizeSlider);
 		
-		// TODO: Update values
 		
 		updateViewConstraints();
 	}
@@ -232,11 +235,9 @@ class ViewController: UIViewController {
 		// Set materials
 		let Bit = DrillBit(rawValue: Tag)!;
 		self.SelectedBit = Bit;
-		let NewData = Materials(For: Bit).map({ m in return (GetImageFor(Mat: m), m.rawValue, ToString(Mat: m), ""); });
-		let MatIndex = NewData.firstIndex(where: { item in return item.1 == Bit.rawValue; });
-		if (MatIndex == nil) {
-			SetLastMaterial = false;
-		}
+		let NewData = Materials(For: Bit).map({ m in return (GetImageFor(Mat: m), m.rawValue, ToString(Mat: m), GetDescFor(Mat: m)); });
+		let MatIndex = NewData.firstIndex(where: { item in return item.1 == LastMaterial.rawValue; });
+		SetLastMaterial = false;
 		
 		self.MaterialPicker.Data = NewData;
 		
@@ -246,7 +247,7 @@ class ViewController: UIViewController {
 		SetLastMaterial = true;
 	}
 	
-	func MaterialSelectionChanged(Index: Int, Tag: Int) {
+	func MaterialSelectionChanged(_: Int, Tag: Int) {
 		// Set upper and lower size boundry
 		let Mat = Material.init(rawValue: Tag)!;
 		self.SelectedMat = Mat;

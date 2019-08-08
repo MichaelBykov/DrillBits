@@ -93,7 +93,7 @@ struct Fraction {
 		if (Whole < to.Whole)
 		{ return Comparison == .RightGreater || Comparison == .RightGreaterEqual; }
 		
-		let Size = Numerator / Denominator, toSize = to.Numerator / to.Denominator;
+		let Size: CGFloat = CGFloat(Numerator) / CGFloat(Denominator), toSize = CGFloat(to.Numerator) / CGFloat(to.Denominator);
 		
 		if (Size > toSize)
 		{ return Comparison == .LeftGreater || Comparison == .LeftGreaterEqual; }

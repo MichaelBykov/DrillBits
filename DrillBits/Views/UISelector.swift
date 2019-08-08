@@ -258,13 +258,13 @@ class UISelector: UIView {
 	private func UpdateTouches(_ touches: Set<UITouch>, feedback: Bool) {
 		if (IsDragging && !Buttons.isEmpty) {
 			let touch: UITouch = touches.first!;
+			var Index = 0;
 			// Loop through all our buttons (items)
 			for b in Buttons {
 				// Check if the touch is within the bounds of the button
 				let pos = touch.location(in: b);
 				if (pos.x >= 0 && pos.x <= b.frame.width && pos.y >= 0 && pos.y <= b.frame.height) {
 					// We are selecting this button
-					let Index = b.tag;
 					// New selection?
 					if (SelectedIndex != Index) {
 						Select(Index: Index);
@@ -278,6 +278,8 @@ class UISelector: UIView {
 					
 					return;
 				}
+				
+				let _ = Index++;
 			}
 		}
 	}

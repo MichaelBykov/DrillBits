@@ -41,6 +41,7 @@
 		4C68361522E2D83C00AFF50E /* Warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68361222E2D83C00AFF50E /* Warning.png */; };
 		4CC790C022F7DF7200BF87ED /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790BF22F7DF7200BF87ED /* Data.swift */; };
 		4CC790C222F7E15400BF87ED /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790C122F7E15400BF87ED /* Sizes.swift */; };
+		4CC790C422FB1D1C00BF87ED /* UICancelableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */; };
 		4CCA205822EBCF5F00D0468C /* Warnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205722EBCF5F00D0468C /* Warnings.swift */; };
 		4CCA205A22EBCF7800D0468C /* DrillBit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205922EBCF7800D0468C /* DrillBit.swift */; };
 		4CCA205C22EBCF8D00D0468C /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205B22EBCF8D00D0468C /* Material.swift */; };
@@ -105,6 +106,7 @@
 		4C68361222E2D83C00AFF50E /* Warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Warning.png; sourceTree = "<group>"; };
 		4CC790BF22F7DF7200BF87ED /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		4CC790C122F7E15400BF87ED /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICancelableScrollView.swift; sourceTree = "<group>"; };
 		4CCA205722EBCF5F00D0468C /* Warnings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warnings.swift; sourceTree = "<group>"; };
 		4CCA205922EBCF7800D0468C /* DrillBit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillBit.swift; sourceTree = "<group>"; };
 		4CCA205B22EBCF8D00D0468C /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				4C46FA8222E2BB470081A381 /* UIAlertLabel.swift */,
 				4C46FA8422E2BB550081A381 /* UIAlertLabel.xib */,
 				4C46FA8622E2D3390081A381 /* UIViewWatcher.swift */,
+				4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				4CCA205A22EBCF7800D0468C /* DrillBit.swift in Sources */,
 				4CC790C222F7E15400BF87ED /* Sizes.swift in Sources */,
 				4C46FA6322DCE8C30081A381 /* UISnappingSlider.swift in Sources */,
+				4CC790C422FB1D1C00BF87ED /* UICancelableScrollView.swift in Sources */,
 				4CCA205822EBCF5F00D0468C /* Warnings.swift in Sources */,
 				4CCA205C22EBCF8D00D0468C /* Material.swift in Sources */,
 				4C46FA4922D6FA850081A381 /* UISelector.swift in Sources */,

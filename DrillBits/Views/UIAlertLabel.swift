@@ -19,12 +19,6 @@ class UIAlertLabel: UIView {
 		set { Label.text = newValue; Resize(); }
 	}
 	
-	@IBOutlet weak var ImageView: UIImageView!
-	@IBInspectable var Image: UIImage? {
-		get { return ImageView.image; }
-		set { ImageView.image = newValue; }
-	}
-	
 	
 	
 	override init(frame: CGRect) {

@@ -61,6 +61,33 @@ func ToString(Bit: DrillBit) -> String {
 	}
 }
 
+func GetDescFor(Bit: DrillBit) -> String {
+	switch Bit {
+	case .Twist:
+		return "Good bit for metal";
+	case .BulletPilotPoint:
+		return "Drills a pilot hole infront of the bit, preventing wandering";
+	case .BradPoint:
+		return "Accurate and precise";
+	case .Forstner:
+		return "Can cut angled, overlapped, and edge holes";
+	case .GlassAndTile:
+		return "";
+	case .HoleSaw:
+		return "Creates holes without cutting up the core material";
+	case .MultiSpur:
+		return "Similar to a forstner bit";
+	case .Spade:
+		return "Used to bore quick, rough holes; these holes probably shouldn't be visible";
+	case .SpadeWithSpurs:
+		return "Best bit for acrylic";
+	case .PowerBore:
+		return "Ideal for deep holes and end-grain drilling";
+	case .CircleCutter:
+		return "Highly adjustable";
+	}
+}
+
 func GetImageFor(Bit: DrillBit) -> UIImage {
 	return UIImage(named: ToString(Bit: Bit))!;
 }

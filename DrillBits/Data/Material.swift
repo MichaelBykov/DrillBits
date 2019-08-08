@@ -38,6 +38,25 @@ func ToString(Mat: Material) -> String {
 	}
 }
 
+func GetDescFor(Mat: Material) -> String {
+	switch Mat {
+	case .Softwood:
+		return "";
+	case .Hardwood:
+		return "";
+	case .Acrylic:
+		return "";
+	case .Brass:
+		return "";
+	case .Aluminum:
+		return "";
+	case .Steel:
+		return "";
+	case .GlassAndTile:
+		return "";
+	}
+}
+
 func GetImageFor(Mat: Material) -> UIImage {
 	return UIImage(named: ToString(Mat: Mat))!;
 }

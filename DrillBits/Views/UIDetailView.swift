@@ -116,10 +116,11 @@ class UIDetailView: UIView {
 	/// Select the button at the specified index
 	/// - Parameter Index: The index of the button to select, if greater than the number of buttons, selects 0 until a button with the specified index is drawn, if less than 0, throws.
 	/// - Throws: `IndexOutOfRangeException` if Index is less than 0
-	@inline(__always) public func Select(Index: Int) { self.SelectionView.Select(Index: Index); }
+	@inline(__always) public func Select(Index: Int) { self.SelectionView.Select(Index: Index); Resize(); }
 	
 	/// A function for handling view resizing (vertically)
 	private func Resize() {
+		updateConstraintsIfNeeded();
 		// Wait for constraint update
 		DispatchQueue.main.async {
 			var Height: CGFloat = 0;
@@ -143,7 +144,6 @@ class UIDetailView: UIView {
 	
 	override var bounds: CGRect {
 		didSet {
-			updateConstraintsIfNeeded();
 			Resize();
 		}
 	}
