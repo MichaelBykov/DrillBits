@@ -72,6 +72,8 @@ class UIDetailView: UIView {
 	/// An event for when the selection has changed, either by the user or programmatically
 	/// - Remark: The passed value represents the index of the item followed by the 'tag' inputed in the second collumn of the `Data` variable associated with the newly selected item
 	public var OnSelectionChanged = Event<(Int, Int)>();
+	/// An event that is triggered when selecting has ended
+	public var OnSelectionEnded = Event<()>();
 	/// An event that fires whenever the view's height chnages
 	public var OnHeightChanged = Event<CGFloat>();
 	
@@ -96,6 +98,7 @@ class UIDetailView: UIView {
 		
 		// Size updating
 		SelectionView.OnHeightChanged += { _ in self.Resize(); };
+		SelectionView.OnSelectionEnded += { self.OnSelectionEnded <- (); }
 		SelectionView.OnSelectionChanged += { Index, Tag in
 			// Change values
 			self.SelectedTitle.text = self.data[Index].2;

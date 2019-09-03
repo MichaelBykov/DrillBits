@@ -259,7 +259,7 @@ func GetSpeed(Bit: DrillBit, Mat: Material, Size: Unit) -> Int {
 		default:
 			return -1;
 		}
-	case .PowerBore:
+	case .Powerbore:
 		switch Mat {
 		case .Softwood:
 			return 1800;

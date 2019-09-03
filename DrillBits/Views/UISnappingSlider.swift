@@ -12,6 +12,9 @@ import UIKit
 class UISnappingSlider: UISlider {
 	
 	private var snap: Bool = false;
+	
+	public var OnSelectionEnded: (() -> Void)? = nil;
+	
 	/// Should the slider snap?
 	@IBInspectable public var Snap: Bool {
 		get { return snap; }
@@ -23,9 +26,9 @@ class UISnappingSlider: UISlider {
 	override var value: Float {
 		didSet {
 			if (value != LastValue) {
-				let Selector = UISelectionFeedbackGenerator();
-				Selector.prepare();
-				Selector.selectionChanged();
+//				let Selector = UISelectionFeedbackGenerator();
+//				Selector.prepare();
+//				Selector.selectionChanged();
 				
 				LastValue = value;
 			}
@@ -42,6 +45,13 @@ class UISnappingSlider: UISlider {
 			self.value = round(value);
 		} else if (value != LastValue) {
 			super.setValue(value, animated: animated);
+		}
+	}
+	
+	override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+		super.touchesEnded(touches, with: event);
+		if (self.OnSelectionEnded != nil) {
+			self.OnSelectionEnded!();
 		}
 	}
 }

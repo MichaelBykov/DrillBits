@@ -60,7 +60,7 @@ func WarningsFor(Size: Unit, Bit: DrillBit, Mat: Material) -> [String] {
 	case .SpadeWithSpurs:
 		Warnings.append("Clamp work securely");
 		break;
-	case .PowerBore:
+	case .Powerbore:
 		Warnings.append("Back material to prevent chip out");
 		break;
 	case .CircleCutter:

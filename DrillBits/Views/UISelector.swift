@@ -55,6 +55,8 @@ class UISelector: UIView {
 	/// An event for when the selection has changed, either by the user or programmatically
 	/// - Remark: The passed value represents the index of the item followed by the 'tag' inputed in the second collumn of the `Data` variable associated with the newly selected item
 	public var OnSelectionChanged = Event<(Int, Int)>();
+	/// An event that is triggered when selecting has ended
+	public var OnSelectionEnded = Event<()>();
 	/// An event that fires whenever the view's height chnages
 	public var OnHeightChanged = Event<CGFloat>();
 	
@@ -130,7 +132,7 @@ class UISelector: UIView {
 				button.tag = d.1;
 				
 				// Add an image to our button
-				let image = UIImageView(frame: CGRect(x: 5, y: 5, width: Size - 10, height: Size - 10));
+				let image = UIImageView(frame: CGRect(x: 2, y: 2, width: Size - 4, height: Size - 4));
 				image.image = d.0;
 				button.addSubview(image);
 				
@@ -286,10 +288,12 @@ class UISelector: UIView {
 	
 	override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
 		IsDragging = false;
+		OnSelectionEnded <- ();
 	}
 	
 	override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
 		IsDragging = false;
+		OnSelectionEnded <- ();
 	}
 	
 	override var bounds: CGRect {

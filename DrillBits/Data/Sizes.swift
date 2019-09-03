@@ -58,7 +58,7 @@ func GetSize(Bit: DrillBit, Mat: Material) -> (Unit, Unit) {
 			.Hardwood: (Unit(Inches: Fraction(w: 0, n: 3, d: 8), Millimeters: 9), Unit(Inches: Fraction(w: 1), Millimeters: 25)),
 			.Acrylic: (Unit(Inches: Fraction(w: 0, n: 3, d: 8), Millimeters: 9), Unit(Inches: Fraction(w: 1), Millimeters: 25))
 		],
-		.PowerBore: [
+		.Powerbore: [
 			.Softwood: (Unit(Inches: Fraction(w: 0, n: 3, d: 8), Millimeters: 9), Unit(Inches: Fraction(w: 1), Millimeters: 25)),
 			.Hardwood: (Unit(Inches: Fraction(w: 0, n: 3, d: 8), Millimeters: 9), Unit(Inches: Fraction(w: 1), Millimeters: 25))
 		],

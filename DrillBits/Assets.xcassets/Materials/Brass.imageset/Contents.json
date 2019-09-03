@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Image.png",
+      "filename" : "Brass.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Brass @2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Brass @3x.png",
       "scale" : "3x"
     }
   ],

@@ -29,7 +29,7 @@ enum DrillBit: Int {
 	/// Spade bit with spurs
 	case SpadeWithSpurs 	= 8
 	/// Power bore drill bit
-	case PowerBore			= 9
+	case Powerbore			= 9
 	/// Circle cutter bit
 	case CircleCutter		= 10
 }
@@ -54,8 +54,8 @@ func ToString(Bit: DrillBit) -> String {
 		return "Spade Bit";
 	case .SpadeWithSpurs:
 		return "Spade Bit with Spurs";
-	case .PowerBore:
-		return "Power Bore Bit";
+	case .Powerbore:
+		return "Powerbore Drill Bit";
 	case .CircleCutter:
 		return "Circle Cutter";
 	}
@@ -72,7 +72,7 @@ func GetDescFor(Bit: DrillBit) -> String {
 	case .Forstner:
 		return "Can cut angled, overlapped, and edge holes";
 	case .GlassAndTile:
-		return "";
+		return "Used to cut glass / tile pieces";
 	case .HoleSaw:
 		return "Creates holes without cutting up the core material";
 	case .MultiSpur:
@@ -81,7 +81,7 @@ func GetDescFor(Bit: DrillBit) -> String {
 		return "Used to bore quick, rough holes; these holes probably shouldn't be visible";
 	case .SpadeWithSpurs:
 		return "Best bit for acrylic";
-	case .PowerBore:
+	case .Powerbore:
 		return "Ideal for deep holes and end-grain drilling";
 	case .CircleCutter:
 		return "Highly adjustable";
@@ -113,7 +113,7 @@ func Materials(For: DrillBit) -> [Material] {
 		return [ .Softwood, .Hardwood ];
 	case .SpadeWithSpurs:
 		return [ .Softwood, .Hardwood, .Acrylic ];
-	case .PowerBore:
+	case .Powerbore:
 		return [ .Softwood, .Hardwood ];
 	case .CircleCutter:
 		return [ .Softwood, .Hardwood, .Acrylic ];

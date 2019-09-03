@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,17 +15,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrillBits" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fY-Qt-gvy" customClass="UICancelableScrollView" customModule="DrillBits" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kap-Io-CwR" userLabel="Container">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="480"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="479.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dz-pX-AGj" customClass="UIDetailView" customModule="DrillBits" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="8" width="398" height="128"/>
+                                                <rect key="frame" x="8" y="8" width="304" height="128"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="128" id="ZcF-jV-gYK"/>
                                                 </constraints>
@@ -34,7 +34,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRr-W9-xzD" customClass="UIDetailView" customModule="DrillBits" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="144" width="398" height="128"/>
+                                                <rect key="frame" x="8" y="144" width="304" height="128"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="128" id="2S1-FU-LNC"/>
                                                 </constraints>
@@ -43,23 +43,23 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEb-Re-tZJ">
-                                                <rect key="frame" x="0.0" y="370.5" width="414" height="109.5"/>
+                                                <rect key="frame" x="0.0" y="370" width="320" height="109.5"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chevron" translatesAutoresizingMaskIntoConstraints="NO" id="vY4-0t-Ny1">
-                                                        <rect key="frame" x="157" y="-4" width="100" height="30"/>
+                                                        <rect key="frame" x="110" y="-4" width="100" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="YdF-k6-a2H"/>
                                                             <constraint firstAttribute="height" constant="30" id="viW-nG-J6c"/>
                                                         </constraints>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Divider" translatesAutoresizingMaskIntoConstraints="NO" id="wWf-i5-UPr">
-                                                        <rect key="frame" x="0.0" y="-4" width="157" height="30"/>
+                                                        <rect key="frame" x="0.0" y="-4" width="110" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="HBb-ae-Tmo"/>
                                                         </constraints>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Divider" translatesAutoresizingMaskIntoConstraints="NO" id="gTs-RH-0DO">
-                                                        <rect key="frame" x="257" y="-4" width="157" height="30"/>
+                                                        <rect key="frame" x="210" y="-4" width="110" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="mjn-sb-AJD"/>
                                                         </constraints>
@@ -77,10 +77,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nti-DP-mGH">
-                                                        <rect key="frame" x="8" y="48" width="398" height="36"/>
+                                                        <rect key="frame" x="8" y="48" width="304" height="36"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHN-ie-9iQ" customClass="UIAlertLabel" customModule="DrillBits" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="36"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="304" height="36"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="36" id="kIc-En-3AF"/>
@@ -99,7 +99,7 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data from Wood magazine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNf-6j-bc4">
-                                                        <rect key="frame" x="8" y="92" width="398" height="13.5"/>
+                                                        <rect key="frame" x="8" y="92" width="304" height="13.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -129,19 +129,19 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GjH-3x-gWe" userLabel="Size Picker">
-                                                <rect key="frame" x="8" y="280" width="398" height="82.5"/>
+                                                <rect key="frame" x="8" y="280" width="304" height="82"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvm-3g-1Ox">
-                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="31.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drill Bit Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvm-3g-1Ox">
+                                                        <rect key="frame" x="0.0" y="0.0" width="132" height="31.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcf-c9-dR8">
-                                                        <rect key="frame" x="0.0" y="39.5" width="398" height="43"/>
+                                                        <rect key="frame" x="0.0" y="39.5" width="304" height="42.5"/>
                                                         <subviews>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="lu4-xg-AEe" customClass="UISnappingSlider" customModule="DrillBits" customModuleProvider="target">
-                                                                <rect key="frame" x="106" y="6.5" width="294" height="31"/>
+                                                                <rect key="frame" x="106" y="6.5" width="200" height="31"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Snap" value="YES"/>
                                                                 </userDefinedRuntimeAttributes>
@@ -150,7 +150,7 @@
                                                                 </connections>
                                                             </slider>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKd-UT-mlB">
-                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="43"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="42.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="os1-v5-BoC">
                                                                         <rect key="frame" x="0.0" y="11" width="16.5" height="21"/>
@@ -159,7 +159,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrN-VA-NCg">
-                                                                        <rect key="frame" x="20.5" y="0.0" width="20.5" height="43"/>
+                                                                        <rect key="frame" x="20.5" y="0.0" width="20.5" height="42.5"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4La-FV-ejQ">
                                                                                 <rect key="frame" x="4" y="0.0" width="12.5" height="20.5"/>
@@ -168,14 +168,14 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSs-dr-Gqo">
-                                                                                <rect key="frame" x="0.0" y="20.5" width="20.5" height="2"/>
+                                                                                <rect key="frame" x="0.0" y="20.5" width="20.5" height="1.5"/>
                                                                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                                 <constraints>
-                                                                                    <constraint firstAttribute="height" constant="2" id="CBL-F7-8eo"/>
+                                                                                    <constraint firstAttribute="height" constant="1.5" id="CBL-F7-8eo"/>
                                                                                 </constraints>
                                                                             </view>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXY-51-iIa">
-                                                                                <rect key="frame" x="4" y="22.5" width="12.5" height="20.5"/>
+                                                                                <rect key="frame" x="4" y="22" width="12.5" height="20.5"/>
                                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
@@ -225,7 +225,7 @@
                                                         </constraints>
                                                     </view>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7qk-o5-S30">
-                                                        <rect key="frame" x="237" y="0.0" width="161" height="29"/>
+                                                        <rect key="frame" x="143" y="0.0" width="161" height="29"/>
                                                         <segments>
                                                             <segment title="Inches"/>
                                                             <segment title="Millimeters"/>
@@ -273,13 +273,13 @@
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AaU-nP-vgS" userLabel="Bottom Color">
-                                <rect key="frame" x="0.0" y="476" width="414" height="420"/>
+                                <rect key="frame" x="0.0" y="475.5" width="320" height="4.5"/>
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwB-tt-pFA" userLabel="Status Bar Blur">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CP9-5C-qAO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="light"/>
