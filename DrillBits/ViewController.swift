@@ -45,10 +45,6 @@ class ViewController: UIViewController {
 	
 	@IBOutlet weak var Result: UILabel!
 	
-	@IBOutlet weak var AlertContainer: UIView!
-	@IBOutlet weak var DefaultAlertLabel: UIAlertLabel!
-	var PreviousAlertViews: [UIAlertLabel] = [ ];
-	
 	
 	
 	
@@ -75,9 +71,6 @@ class ViewController: UIViewController {
 		MaterialPicker.OnSelectionChanged += MaterialSelectionChanged;
 		MaterialPicker.OnSelectionEnded += { UserDefaults.standard.set(self.SelectedMat.rawValue as Int, forKey: "Mat"); UserDefaults.standard.set(self.SizeSlider.value, forKey: "Size"); };
 		SizeSlider.OnSelectionEnded = { UserDefaults.standard.set(self.SizeSlider.value, forKey: "Size"); };
-		
-		// Update stuff
-		PreviousAlertViews.append(DefaultAlertLabel);
 		
 		// Load user prefrences for units, size, material, bit
 		if (UserDefaults.standard.object(forKey: "Start") != nil) {
@@ -210,54 +203,6 @@ class ViewController: UIViewController {
 		}
 		
 		self.Result.text = "\(GetSpeed(Bit: SelectedBit, Mat: SelectedMat, Size: Size))"
-		
-		let Warnings = WarningsFor(Size: Size, Bit: SelectedBit, Mat: SelectedMat);
-		// TODO: Show warnings
-		
-		var AlertViews: [UIAlertLabel] = PreviousAlertViews;
-		if (PreviousAlertViews.count < Warnings.count) {
-			AlertContainer.RemoveConstraints(.bottom);
-			
-			for _ in PreviousAlertViews.count..<Warnings.count {
-				let label = UIAlertLabel(frame: CGRect.zero);
-				label.translatesAutoresizingMaskIntoConstraints = false;
-				AlertContainer.addSubview(label);
-				
-				NSLayoutConstraint.activate([
-					NSLayoutConstraint(item: label, attribute: .top, relatedBy: .equal, toItem: AlertViews.last, attribute: .bottom, multiplier: 1, constant: 8),
-					NSLayoutConstraint(item: label, attribute: .leading, relatedBy: .equal, toItem: AlertContainer, attribute: .leading, multiplier: 1, constant: 0),
-					NSLayoutConstraint(item: label, attribute: .trailing, relatedBy: .equal, toItem: AlertContainer, attribute: .trailing, multiplier: 1, constant: 0),
-					NSLayoutConstraint(item: label, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 36)
-				]);
-				
-				AlertViews.append(label);
-			}
-			
-			NSLayoutConstraint.activate([ NSLayoutConstraint(item: AlertViews.last!, attribute: .bottom, relatedBy: .equal, toItem: AlertContainer, attribute: .bottom, multiplier: 1, constant: 0) ]);
-		} else if (PreviousAlertViews.count > Warnings.count) {
-			AlertContainer.RemoveConstraints(.bottom);
-			
-			for _ in Warnings.count..<PreviousAlertViews.count {
-				let warning = AlertViews.popLast();
-				warning?.RemoveConstraints(.top);
-				warning?.RemoveConstraints(.leading);
-				warning?.RemoveConstraints(.trailing);
-				warning?.RemoveConstraints(.height);
-				warning?.removeFromSuperview();
-			}
-			
-			NSLayoutConstraint.activate([
-				NSLayoutConstraint(item: AlertViews.last!, attribute: .bottom, relatedBy: .equal, toItem: AlertContainer, attribute: .bottom, multiplier: 1, constant: 0)
-			]);
-		}
-		
-		for i in 0..<Warnings.count {
-			AlertViews[i].Text = Warnings[i];
-		}
-		
-		PreviousAlertViews = AlertViews;
-		
-		AlertContainer.updateFocusIfNeeded();
 	}
 	
 	

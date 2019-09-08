@@ -42,21 +42,13 @@
 		4C46FA6322DCE8C30081A381 /* UISnappingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA6222DCE8C30081A381 /* UISnappingSlider.swift */; };
 		4C46FA6522DCEA9E0081A381 /* UIDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA6422DCEA9E0081A381 /* UIDetailView.swift */; };
 		4C46FA6722DCEAAE0081A381 /* UIDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA6622DCEAAE0081A381 /* UIDetailView.xib */; };
-		4C46FA7322DCED210081A381 /* Image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7022DCED210081A381 /* Image@3x.png */; };
-		4C46FA7422DCED210081A381 /* Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7122DCED210081A381 /* Image.png */; };
-		4C46FA7522DCED210081A381 /* Image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7222DCED210081A381 /* Image@2x.png */; };
 		4C46FA7C22E23C550081A381 /* Divider@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7622E23C550081A381 /* Divider@3x.png */; };
 		4C46FA7D22E23C550081A381 /* Chevron@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7722E23C550081A381 /* Chevron@3x.png */; };
 		4C46FA7E22E23C550081A381 /* Chevron@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7822E23C550081A381 /* Chevron@2x.png */; };
 		4C46FA7F22E23C550081A381 /* Divider.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7922E23C550081A381 /* Divider.png */; };
 		4C46FA8022E23C550081A381 /* Chevron.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7A22E23C550081A381 /* Chevron.png */; };
 		4C46FA8122E23C550081A381 /* Divider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7B22E23C550081A381 /* Divider@2x.png */; };
-		4C46FA8322E2BB470081A381 /* UIAlertLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA8222E2BB470081A381 /* UIAlertLabel.swift */; };
-		4C46FA8522E2BB550081A381 /* UIAlertLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA8422E2BB550081A381 /* UIAlertLabel.xib */; };
 		4C46FA8722E2D3390081A381 /* UIViewWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA8622E2D3390081A381 /* UIViewWatcher.swift */; };
-		4C68361322E2D83C00AFF50E /* Warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68361022E2D83C00AFF50E /* Warning@2x.png */; };
-		4C68361422E2D83C00AFF50E /* Warning@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68361122E2D83C00AFF50E /* Warning@3x.png */; };
-		4C68361522E2D83C00AFF50E /* Warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68361222E2D83C00AFF50E /* Warning.png */; };
 		4C90555F22FE001E006A6B59 /* Twist Bit.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90555E22FE001E006A6B59 /* Twist Bit.png */; };
 		4C90556422FE1862006A6B59 /* Twist Bit @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90556022FE1862006A6B59 /* Twist Bit @3x.png */; };
 		4C90556522FE1862006A6B59 /* Twist Bit Zoomed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90556122FE1862006A6B59 /* Twist Bit Zoomed.png */; };
@@ -163,7 +155,6 @@
 		4CC790C022F7DF7200BF87ED /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790BF22F7DF7200BF87ED /* Data.swift */; };
 		4CC790C222F7E15400BF87ED /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790C122F7E15400BF87ED /* Sizes.swift */; };
 		4CC790C422FB1D1C00BF87ED /* UICancelableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */; };
-		4CCA205822EBCF5F00D0468C /* Warnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205722EBCF5F00D0468C /* Warnings.swift */; };
 		4CCA205A22EBCF7800D0468C /* DrillBit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205922EBCF7800D0468C /* DrillBit.swift */; };
 		4CCA205C22EBCF8D00D0468C /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205B22EBCF8D00D0468C /* Material.swift */; };
 		4CCA206022EBEF9A00D0468C /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205F22EBEF9A00D0468C /* Unit.swift */; };
@@ -228,21 +219,13 @@
 		4C46FA6222DCE8C30081A381 /* UISnappingSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISnappingSlider.swift; sourceTree = "<group>"; };
 		4C46FA6422DCEA9E0081A381 /* UIDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDetailView.swift; sourceTree = "<group>"; };
 		4C46FA6622DCEAAE0081A381 /* UIDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIDetailView.xib; sourceTree = "<group>"; };
-		4C46FA7022DCED210081A381 /* Image@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Image@3x.png"; sourceTree = "<group>"; };
-		4C46FA7122DCED210081A381 /* Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image.png; sourceTree = "<group>"; };
-		4C46FA7222DCED210081A381 /* Image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Image@2x.png"; sourceTree = "<group>"; };
 		4C46FA7622E23C550081A381 /* Divider@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Divider@3x.png"; sourceTree = "<group>"; };
 		4C46FA7722E23C550081A381 /* Chevron@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chevron@3x.png"; sourceTree = "<group>"; };
 		4C46FA7822E23C550081A381 /* Chevron@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chevron@2x.png"; sourceTree = "<group>"; };
 		4C46FA7922E23C550081A381 /* Divider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Divider.png; sourceTree = "<group>"; };
 		4C46FA7A22E23C550081A381 /* Chevron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chevron.png; sourceTree = "<group>"; };
 		4C46FA7B22E23C550081A381 /* Divider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Divider@2x.png"; sourceTree = "<group>"; };
-		4C46FA8222E2BB470081A381 /* UIAlertLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertLabel.swift; sourceTree = "<group>"; };
-		4C46FA8422E2BB550081A381 /* UIAlertLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIAlertLabel.xib; sourceTree = "<group>"; };
 		4C46FA8622E2D3390081A381 /* UIViewWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewWatcher.swift; sourceTree = "<group>"; };
-		4C68361022E2D83C00AFF50E /* Warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Warning@2x.png"; sourceTree = "<group>"; };
-		4C68361122E2D83C00AFF50E /* Warning@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Warning@3x.png"; sourceTree = "<group>"; };
-		4C68361222E2D83C00AFF50E /* Warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Warning.png; sourceTree = "<group>"; };
 		4C90555E22FE001E006A6B59 /* Twist Bit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twist Bit.png"; sourceTree = "<group>"; };
 		4C90556022FE1862006A6B59 /* Twist Bit @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twist Bit @3x.png"; sourceTree = "<group>"; };
 		4C90556122FE1862006A6B59 /* Twist Bit Zoomed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twist Bit Zoomed.png"; sourceTree = "<group>"; };
@@ -349,7 +332,6 @@
 		4CC790BF22F7DF7200BF87ED /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		4CC790C122F7E15400BF87ED /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
 		4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICancelableScrollView.swift; sourceTree = "<group>"; };
-		4CCA205722EBCF5F00D0468C /* Warnings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warnings.swift; sourceTree = "<group>"; };
 		4CCA205922EBCF7800D0468C /* DrillBit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillBit.swift; sourceTree = "<group>"; };
 		4CCA205B22EBCF8D00D0468C /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		4CCA205F22EBEF9A00D0468C /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
@@ -450,8 +432,6 @@
 				4C46FA4822D6FA850081A381 /* UISelector.swift */,
 				4C46FA6422DCEA9E0081A381 /* UIDetailView.swift */,
 				4C46FA6622DCEAAE0081A381 /* UIDetailView.xib */,
-				4C46FA8222E2BB470081A381 /* UIAlertLabel.swift */,
-				4C46FA8422E2BB550081A381 /* UIAlertLabel.xib */,
 				4C46FA8622E2D3390081A381 /* UIViewWatcher.swift */,
 				4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */,
 			);
@@ -486,18 +466,12 @@
 		4C46FA6822DCEC730081A381 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				4C68361222E2D83C00AFF50E /* Warning.png */,
-				4C68361022E2D83C00AFF50E /* Warning@2x.png */,
-				4C68361122E2D83C00AFF50E /* Warning@3x.png */,
 				4C46FA7A22E23C550081A381 /* Chevron.png */,
 				4C46FA7822E23C550081A381 /* Chevron@2x.png */,
 				4C46FA7722E23C550081A381 /* Chevron@3x.png */,
 				4C46FA7922E23C550081A381 /* Divider.png */,
 				4C46FA7B22E23C550081A381 /* Divider@2x.png */,
 				4C46FA7622E23C550081A381 /* Divider@3x.png */,
-				4C46FA7122DCED210081A381 /* Image.png */,
-				4C46FA7222DCED210081A381 /* Image@2x.png */,
-				4C46FA7022DCED210081A381 /* Image@3x.png */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -798,7 +772,6 @@
 		4CCA205622EBCF4C00D0468C /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				4CCA205722EBCF5F00D0468C /* Warnings.swift */,
 				4CCA205922EBCF7800D0468C /* DrillBit.swift */,
 				4CCA205B22EBCF8D00D0468C /* Material.swift */,
 				4CCA205F22EBEF9A00D0468C /* Unit.swift */,
@@ -923,7 +896,6 @@
 				4CA7D5F923173469008D6993 /* App Icon 29pt.png in Resources */,
 				4C08CD8C23189FFC004D8C9B /* Twist Bit.blend in Resources */,
 				4C9055AD231078A3006A6B59 /* Brass @3x.png in Resources */,
-				4C68361322E2D83C00AFF50E /* Warning@2x.png in Resources */,
 				4C90556622FE1862006A6B59 /* Twist Bit Zoomed @3x.png in Resources */,
 				4CA7D5EF23173469008D6993 /* App Icon 76pt @2x.png in Resources */,
 				4C9055A023107893006A6B59 /* Steel @2x.png in Resources */,
@@ -944,7 +916,6 @@
 				4C9055F323146F52006A6B59 /* Spade BIt Zoomed.png in Resources */,
 				4C9055CF2310D7C6006A6B59 /* Forstner Bit @3x.png in Resources */,
 				4C90555F22FE001E006A6B59 /* Twist Bit.png in Resources */,
-				4C46FA7422DCED210081A381 /* Image.png in Resources */,
 				4C905592230F6D34006A6B59 /* Hardwood.png in Resources */,
 				4C46FA7F22E23C550081A381 /* Divider.png in Resources */,
 				4C90560C23146F6D006A6B59 /* Powerbore Drill Bit @2x.png in Resources */,
@@ -954,7 +925,6 @@
 				4C9055B42310791F006A6B59 /* Softwood.png in Resources */,
 				4C9055FD23146F5F006A6B59 /* Spade BIt with Spurs Zoomed @3x.png in Resources */,
 				4CA7D60823176F9E008D6993 /* Glass and Tile Bit @3x.png in Resources */,
-				4C68361422E2D83C00AFF50E /* Warning@3x.png in Resources */,
 				4C905598230F6D3B006A6B59 /* Acrylic.png in Resources */,
 				4C9055CD2310D7C6006A6B59 /* Forstner Bit @2x.png in Resources */,
 				4CA7D612231783C7008D6993 /* Circle Cutter Zoomed.png in Resources */,
@@ -973,7 +943,6 @@
 				4C90558022FE2D4A006A6B59 /* Brad Point @2x.png in Resources */,
 				4CA7D5FB23173469008D6993 /* App Icon 1024pt.png in Resources */,
 				4C90556722FE1862006A6B59 /* Twist Bit @2x.png in Resources */,
-				4C68361522E2D83C00AFF50E /* Warning.png in Resources */,
 				4C9055CB2310D7C6006A6B59 /* Forstner Bit Zoomed @2x.png in Resources */,
 				4C9055D02310D7C6006A6B59 /* Forstner Bit Zoomed @3x.png in Resources */,
 				4C9055E723146F41006A6B59 /* Hole Saw Zoomed.png in Resources */,
@@ -990,7 +959,6 @@
 				4C9055A82310789C006A6B59 /* Aluminum @3x.png in Resources */,
 				4C9055F023146F52006A6B59 /* Spade BIt Zoomed @2x.png in Resources */,
 				4C905593230F6D34006A6B59 /* Hardwood @2x.png in Resources */,
-				4C46FA7522DCED210081A381 /* Image@2x.png in Resources */,
 				4CA7D616231783C7008D6993 /* Circle Cutter Zoomed @3x.png in Resources */,
 				4C9055E823146F41006A6B59 /* Hole Saw.png in Resources */,
 				4C9055FC23146F5F006A6B59 /* Spade BIt with Spurs Zoomed.png in Resources */,
@@ -1021,7 +989,6 @@
 				4C90557422FE22B9006A6B59 /* Bullet Pilot Point Zoomed @2x.png in Resources */,
 				4CA7D5F423173469008D6993 /* App Icon 60pt @3x.png in Resources */,
 				4C90560823146F6D006A6B59 /* Powerbore Drill Bit Zoomed @3x.png in Resources */,
-				4C46FA8522E2BB550081A381 /* UIAlertLabel.xib in Resources */,
 				4C9055BB2310A680006A6B59 /* Glass and Tile @2x.png in Resources */,
 				4CA7D5FC23173469008D6993 /* App Icon 29pt @2x.png in Resources */,
 				4CA7D5F123173469008D6993 /* Twist Bit App Icon.png in Resources */,
@@ -1031,7 +998,6 @@
 				4CA7D60623176F9E008D6993 /* Glass and Tile Bit.png in Resources */,
 				4CA7D5FA23173469008D6993 /* App Icon 76pt.png in Resources */,
 				4C90557E22FE2D4A006A6B59 /* Brad Point Zoomed.png in Resources */,
-				4C46FA7322DCED210081A381 /* Image@3x.png in Resources */,
 				4C9055E523146F41006A6B59 /* Hole Saw Zoomed @2x.png in Resources */,
 				4C9055F423146F52006A6B59 /* Spade BIt.png in Resources */,
 				4C08CD8E2318A00A004D8C9B /* Bullet Pilot Point.blend in Resources */,
@@ -1078,7 +1044,6 @@
 				4C46FA5822D7B2980081A381 /* StringExtensions.swift in Sources */,
 				4C46FA4E22D7AA520081A381 /* ConstraintHelper.swift in Sources */,
 				4C46FA5622D7B1930081A381 /* ObjectExtensions.swift in Sources */,
-				4C46FA8322E2BB470081A381 /* UIAlertLabel.swift in Sources */,
 				4C46FA6522DCEA9E0081A381 /* UIDetailView.swift in Sources */,
 				4CCA206022EBEF9A00D0468C /* Unit.swift in Sources */,
 				4C46FA1B22D6F7D30081A381 /* ViewController.swift in Sources */,
@@ -1087,7 +1052,6 @@
 				4CC790C222F7E15400BF87ED /* Sizes.swift in Sources */,
 				4C46FA6322DCE8C30081A381 /* UISnappingSlider.swift in Sources */,
 				4CC790C422FB1D1C00BF87ED /* UICancelableScrollView.swift in Sources */,
-				4CCA205822EBCF5F00D0468C /* Warnings.swift in Sources */,
 				4CCA205C22EBCF8D00D0468C /* Material.swift in Sources */,
 				4C46FA4922D6FA850081A381 /* UISelector.swift in Sources */,
 				4CC790C022F7DF7200BF87ED /* Data.swift in Sources */,
