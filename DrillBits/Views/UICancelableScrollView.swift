@@ -9,7 +9,7 @@
 import UIKit
 
 /// A wrapper around scroll view that allows touch canceling in certain regions
-class UICancelableScrollView: UIScrollView {
+class UICancelableScrollView: UIScrollView, UIScrollViewDelegate {
 	/// A list of views that will cancel scrolling
 	public var Cancels: [UIView] = [ ];
 	/// A likst of views whose children cancel scrolling, but it itself doesn't
@@ -32,6 +32,8 @@ class UICancelableScrollView: UIScrollView {
 		return false;
 	}
 	
+	public var OnScroll: Event<()> = Event<()>();
+	
 	override init(frame: CGRect) {
 		super.init(frame: frame);
 		
@@ -42,5 +44,9 @@ class UICancelableScrollView: UIScrollView {
 		super.init(coder: aDecoder);
 		
 		canCancelContentTouches = true;
+	}
+	
+	func scrollViewDidScroll(_ scrollView: UIScrollView) {
+		OnScroll.Trigger(WithValue: ());
 	}
 }

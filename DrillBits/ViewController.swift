@@ -44,6 +44,7 @@ class ViewController: UIViewController {
 	
 	
 	@IBOutlet weak var Result: UILabel!
+	@IBOutlet weak var ResultContainer: UIView!
 	
 	
 	
@@ -104,6 +105,17 @@ class ViewController: UIViewController {
 			DrillBitPicker.Select(Index: 0);
 			DrillBitSelectionChanged(0, Tag: 0);
 		}
+		
+		// For result view
+		ScrollView.delegate = ScrollView;
+		ScrollView.OnScroll += {
+			var h: CGFloat = self.ResultContainer.frame.height - 44;
+			h = h < 40 ? 40 : h > 60 ? 60 : h;
+			
+			self.Result.font = UIFont(descriptor: self.Result.font.fontDescriptor, size: h);
+			
+			print(h);
+		};
 	}
 	
 	
@@ -204,6 +216,14 @@ class ViewController: UIViewController {
 		
 		self.Result.text = "\(GetSpeed(Bit: SelectedBit, Mat: SelectedMat, Size: Size))"
 	}
+	
+	
+	
+	//
+	// Result View
+	//
+	
+	
 	
 	
 	
