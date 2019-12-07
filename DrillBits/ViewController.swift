@@ -44,10 +44,7 @@ class ViewController: UIViewController {
 	
 	
 	@IBOutlet weak var Result: UILabel!
-	
-	@IBOutlet weak var AlertContainer: UIView!
-	@IBOutlet weak var DefaultAlertLabel: UIAlertLabel!
-	var PreviousAlertViews: [UIAlertLabel] = [ ];
+	@IBOutlet weak var ResultContainer: UIView!
 	
 	
 	
@@ -71,11 +68,54 @@ class ViewController: UIViewController {
 		
 		// Add handlers (because swift doesn't allow custom IBActions for views)
 		DrillBitPicker.OnSelectionChanged += DrillBitSelectionChanged;
+		DrillBitPicker.OnSelectionEnded += { UserDefaults.standard.set(self.SelectedBit.rawValue as Int, forKey: "Bit"); UserDefaults.standard.set(self.SelectedMat.rawValue as Int, forKey: "Mat"); UserDefaults.standard.set(self.SizeSlider.value, forKey: "Size"); };
 		MaterialPicker.OnSelectionChanged += MaterialSelectionChanged;
+		MaterialPicker.OnSelectionEnded += { UserDefaults.standard.set(self.SelectedMat.rawValue as Int, forKey: "Mat"); UserDefaults.standard.set(self.SizeSlider.value, forKey: "Size"); };
+		SizeSlider.OnSelectionEnded = { UserDefaults.standard.set(self.SizeSlider.value, forKey: "Size"); };
 		
-		// Update stuff
-		PreviousAlertViews.append(DefaultAlertLabel);
-		DrillBitSelectionChanged(Index: 0, Tag: 0);
+		// Load user prefrences for units, size, material, bit
+		if (UserDefaults.standard.object(forKey: "Start") != nil) {
+			let NewSize = UserDefaults.standard.float(forKey: "Size");
+			let Mat = Material(rawValue: UserDefaults.standard.integer(forKey: "Mat"))!;
+			
+			IsImperial = !UserDefaults.standard.bool(forKey: "Imperial");
+			SizeUnitSelector.selectedSegmentIndex = IsImperial ? 1 : 0;
+			SizeUnitSelectorValueChanged(SizeUnitSelector);
+			
+			SelectedBit = DrillBit(rawValue: UserDefaults.standard.integer(forKey: "Bit"))!;
+			
+			DrillBitPicker.Select(Index: SelectedBit.rawValue);
+			DrillBitSelectionChanged(SelectedBit.rawValue, Tag: SelectedBit.rawValue);
+			
+			MaterialPicker.Select(Index: MaterialPicker.Data.lastIndex(where: { m in return m.1 == Mat.rawValue; })!);
+			
+			SizeSlider.value = NewSize;
+			SizeValueChanged(SizeSlider);
+		} else {
+			// Setup user prefrences
+			UserDefaults.standard.set(true, forKey: "Start");
+			
+			UserDefaults.standard.set(IsImperial, forKey: "Imperial");
+			
+			UserDefaults.standard.set(Float(0), forKey: "Size");
+			
+			UserDefaults.standard.set(SelectedBit.rawValue as Int, forKey: "Bit");
+			UserDefaults.standard.set(SelectedMat.rawValue as Int, forKey: "Mat");
+			
+			DrillBitPicker.Select(Index: 0);
+			DrillBitSelectionChanged(0, Tag: 0);
+		}
+		
+		// For result view
+		ScrollView.delegate = ScrollView;
+		ScrollView.OnScroll += {
+			var h: CGFloat = self.ResultContainer.frame.height - 44;
+			h = h < 40 ? 40 : h > 60 ? 60 : h;
+			
+			self.Result.font = UIFont(descriptor: self.Result.font.fontDescriptor, size: h);
+			
+			print(h);
+		};
 	}
 	
 	
@@ -132,6 +172,8 @@ class ViewController: UIViewController {
 		
 		
 		updateViewConstraints();
+		
+		UserDefaults.standard.set(IsImperial, forKey: "Imperial");
 	}
 	
 	@IBAction func SizeValueChanged(_ sender: UISnappingSlider) {
@@ -163,65 +205,25 @@ class ViewController: UIViewController {
 			}
 			
 			Size.Inches = min;
-			SizeWhole.text = "\(min.Whole)";
+			SizeWhole.text = "\(min.Whole == 0 ? "" : "\(min.Whole)")";
 			SizeNumerator.text = "\(min.Numerator)";
 			SizeDenominator.text = "\(min.Denominator)";
 		} else {
-			let s = LowerSize.Millimeters + (CGFloat(SizeSlider.value) / 10);
+			let s = LowerSize.Millimeters + (CGFloat(SizeSlider.value) / 2);
 			Size.Millimeters = s;
 			SizeWhole.text = "\(s)";
 		}
 		
 		self.Result.text = "\(GetSpeed(Bit: SelectedBit, Mat: SelectedMat, Size: Size))"
-		
-		let Warnings = WarningsFor(Size: Size, Bit: SelectedBit, Mat: SelectedMat);
-		// TODO: Show warnings
-		
-		var AlertViews: [UIAlertLabel] = PreviousAlertViews;
-		if (PreviousAlertViews.count < Warnings.count) {
-			AlertContainer.RemoveConstraints(.bottom);
-			
-			for _ in PreviousAlertViews.count..<Warnings.count {
-				let label = UIAlertLabel(frame: CGRect.zero);
-				label.translatesAutoresizingMaskIntoConstraints = false;
-				AlertContainer.addSubview(label);
-				
-				NSLayoutConstraint.activate([
-					NSLayoutConstraint(item: label, attribute: .top, relatedBy: .equal, toItem: AlertViews.last, attribute: .bottom, multiplier: 1, constant: 8),
-					NSLayoutConstraint(item: label, attribute: .leading, relatedBy: .equal, toItem: AlertContainer, attribute: .leading, multiplier: 1, constant: 0),
-					NSLayoutConstraint(item: label, attribute: .trailing, relatedBy: .equal, toItem: AlertContainer, attribute: .trailing, multiplier: 1, constant: 0),
-					NSLayoutConstraint(item: label, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 36)
-				]);
-				
-				AlertViews.append(label);
-			}
-			
-			NSLayoutConstraint.activate([ NSLayoutConstraint(item: AlertViews.last!, attribute: .bottom, relatedBy: .equal, toItem: AlertContainer, attribute: .bottom, multiplier: 1, constant: 0) ]);
-		} else if (PreviousAlertViews.count > Warnings.count) {
-			AlertContainer.RemoveConstraints(.bottom);
-			
-			for _ in Warnings.count..<PreviousAlertViews.count {
-				let warning = AlertViews.popLast();
-				warning?.RemoveConstraints(.top);
-				warning?.RemoveConstraints(.leading);
-				warning?.RemoveConstraints(.trailing);
-				warning?.RemoveConstraints(.height);
-				warning?.removeFromSuperview();
-			}
-			
-			NSLayoutConstraint.activate([
-				NSLayoutConstraint(item: AlertViews.last!, attribute: .bottom, relatedBy: .equal, toItem: AlertContainer, attribute: .bottom, multiplier: 1, constant: 0)
-			]);
-		}
-		
-		for i in 0..<Warnings.count {
-			AlertViews[i].Text = Warnings[i];
-		}
-		
-		PreviousAlertViews = AlertViews;
-		
-		AlertContainer.updateFocusIfNeeded();
 	}
+	
+	
+	
+	//
+	// Result View
+	//
+	
+	
 	
 	
 	
@@ -231,10 +233,11 @@ class ViewController: UIViewController {
 	
 	var LastMaterial: Material = .Softwood;
 	var SetLastMaterial: Bool = true;
-	func DrillBitSelectionChanged(Index: Int, Tag: Int) {
+	func DrillBitSelectionChanged(_: Int, Tag: Int) {
 		// Set materials
 		let Bit = DrillBit(rawValue: Tag)!;
 		self.SelectedBit = Bit;
+		self.DrillBitPicker.SelectedImage.image = UIImage(named: "\(ToString(Bit: Bit)) Detail");
 		let NewData = Materials(For: Bit).map({ m in return (GetImageFor(Mat: m), m.rawValue, ToString(Mat: m), GetDescFor(Mat: m)); });
 		let MatIndex = NewData.firstIndex(where: { item in return item.1 == LastMaterial.rawValue; });
 		SetLastMaterial = false;
@@ -251,9 +254,10 @@ class ViewController: UIViewController {
 		// Set upper and lower size boundry
 		let Mat = Material.init(rawValue: Tag)!;
 		self.SelectedMat = Mat;
+		self.MaterialPicker.SelectedImage.image = GetImageFor(Mat: Mat);
 		
 		(self.LowerSize, self.UpperSize) = GetSize(Bit: self.SelectedBit, Mat: self.SelectedMat);
-		self.SizeDistance.1 = Int(floor((self.UpperSize.Millimeters - self.LowerSize.Millimeters) * 10));
+		self.SizeDistance.1 = Int(floor((self.UpperSize.Millimeters - self.LowerSize.Millimeters) * 2));
 		// Inches
 		let sMin = self.LowerSize.Inches, sMax = self.UpperSize.Inches;
 		let Min = Fraction(w: sMin.Whole, n: sMin.Numerator * sMax.Denominator, d: sMin.Denominator * sMax.Denominator), Max = Fraction(w: sMax.Whole, n: sMax.Numerator * sMin.Denominator, d: sMax.Denominator * sMin.Denominator);
@@ -263,8 +267,8 @@ class ViewController: UIViewController {
 			let _ = Distance.Whole--;
 		}
 		
-		let div = InchesStep / Distance.Denominator;
-		self.SizeDistance.0 = Distance.Whole * InchesStep + Distance.Numerator * div;
+		let div = CGFloat(InchesStep) / CGFloat(Distance.Denominator);
+		self.SizeDistance.0 = Distance.Whole * InchesStep + Int(CGFloat(Distance.Numerator) * div);
 		
 		self.SizeSlider.maximumValue = Float(self.IsImperial ? self.SizeDistance.0 : self.SizeDistance.1);
 		self.SizeSlider.value = self.SizeSlider.maximumValue * 0.2;

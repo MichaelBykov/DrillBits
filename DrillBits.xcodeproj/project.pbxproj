@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C08CD7C23189DEC004D8C9B /* Softwood.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD7B23189DEC004D8C9B /* Softwood.blend */; };
+		4C08CD7E23189E06004D8C9B /* Hardwood.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD7D23189E06004D8C9B /* Hardwood.blend */; };
+		4C08CD8023189E2A004D8C9B /* Acrylic.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD7F23189E2A004D8C9B /* Acrylic.blend */; };
+		4C08CD8223189F57004D8C9B /* Brass.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD8123189F57004D8C9B /* Brass.blend */; };
+		4C08CD8423189F6C004D8C9B /* Aluminum.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD8323189F6C004D8C9B /* Aluminum.blend */; };
+		4C08CD8623189F80004D8C9B /* Steel.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD8523189F80004D8C9B /* Steel.blend */; };
+		4C08CD8823189F90004D8C9B /* Glass and Tile.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD8723189F90004D8C9B /* Glass and Tile.blend */; };
+		4C08CD8C23189FFC004D8C9B /* Twist Bit.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD8A23189FFC004D8C9B /* Twist Bit.blend */; };
+		4C08CD8E2318A00A004D8C9B /* Bullet Pilot Point.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD8D2318A00A004D8C9B /* Bullet Pilot Point.blend */; };
+		4C08CD902318A01A004D8C9B /* Brad Point.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD8F2318A01A004D8C9B /* Brad Point.blend */; };
+		4C08CD922318A02A004D8C9B /* Forstner Bit.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD912318A02A004D8C9B /* Forstner Bit.blend */; };
+		4C08CD942318A03E004D8C9B /* Glass and Tile Bit.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD932318A03E004D8C9B /* Glass and Tile Bit.blend */; };
+		4C08CD962318A054004D8C9B /* Hole Saw.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD952318A054004D8C9B /* Hole Saw.blend */; };
+		4C08CD982318A064004D8C9B /* Multi Spur Bit.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD972318A064004D8C9B /* Multi Spur Bit.blend */; };
+		4C08CD9A2318A071004D8C9B /* Spade Bit.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD992318A071004D8C9B /* Spade Bit.blend */; };
+		4C08CD9C2318A080004D8C9B /* Spade Bit with Spurs.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD9B2318A080004D8C9B /* Spade Bit with Spurs.blend */; };
+		4C08CD9E2318A08E004D8C9B /* Powerbore Drill Bit.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD9D2318A08E004D8C9B /* Powerbore Drill Bit.blend */; };
+		4C08CDA02318A09D004D8C9B /* Circle Cutter.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD9F2318A09C004D8C9B /* Circle Cutter.blend */; };
 		4C46FA1922D6F7D30081A381 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA1822D6F7D30081A381 /* AppDelegate.swift */; };
 		4C46FA1B22D6F7D30081A381 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA1A22D6F7D30081A381 /* ViewController.swift */; };
 		4C46FA1E22D6F7D30081A381 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA1C22D6F7D30081A381 /* Main.storyboard */; };
@@ -24,25 +42,119 @@
 		4C46FA6322DCE8C30081A381 /* UISnappingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA6222DCE8C30081A381 /* UISnappingSlider.swift */; };
 		4C46FA6522DCEA9E0081A381 /* UIDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA6422DCEA9E0081A381 /* UIDetailView.swift */; };
 		4C46FA6722DCEAAE0081A381 /* UIDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA6622DCEAAE0081A381 /* UIDetailView.xib */; };
-		4C46FA7322DCED210081A381 /* Image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7022DCED210081A381 /* Image@3x.png */; };
-		4C46FA7422DCED210081A381 /* Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7122DCED210081A381 /* Image.png */; };
-		4C46FA7522DCED210081A381 /* Image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7222DCED210081A381 /* Image@2x.png */; };
 		4C46FA7C22E23C550081A381 /* Divider@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7622E23C550081A381 /* Divider@3x.png */; };
 		4C46FA7D22E23C550081A381 /* Chevron@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7722E23C550081A381 /* Chevron@3x.png */; };
 		4C46FA7E22E23C550081A381 /* Chevron@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7822E23C550081A381 /* Chevron@2x.png */; };
 		4C46FA7F22E23C550081A381 /* Divider.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7922E23C550081A381 /* Divider.png */; };
 		4C46FA8022E23C550081A381 /* Chevron.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7A22E23C550081A381 /* Chevron.png */; };
 		4C46FA8122E23C550081A381 /* Divider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7B22E23C550081A381 /* Divider@2x.png */; };
-		4C46FA8322E2BB470081A381 /* UIAlertLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA8222E2BB470081A381 /* UIAlertLabel.swift */; };
-		4C46FA8522E2BB550081A381 /* UIAlertLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA8422E2BB550081A381 /* UIAlertLabel.xib */; };
 		4C46FA8722E2D3390081A381 /* UIViewWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA8622E2D3390081A381 /* UIViewWatcher.swift */; };
-		4C68361322E2D83C00AFF50E /* Warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68361022E2D83C00AFF50E /* Warning@2x.png */; };
-		4C68361422E2D83C00AFF50E /* Warning@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68361122E2D83C00AFF50E /* Warning@3x.png */; };
-		4C68361522E2D83C00AFF50E /* Warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68361222E2D83C00AFF50E /* Warning.png */; };
+		4C90555F22FE001E006A6B59 /* Twist Bit.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90555E22FE001E006A6B59 /* Twist Bit.png */; };
+		4C90556422FE1862006A6B59 /* Twist Bit @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90556022FE1862006A6B59 /* Twist Bit @3x.png */; };
+		4C90556522FE1862006A6B59 /* Twist Bit Zoomed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90556122FE1862006A6B59 /* Twist Bit Zoomed.png */; };
+		4C90556622FE1862006A6B59 /* Twist Bit Zoomed @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90556222FE1862006A6B59 /* Twist Bit Zoomed @3x.png */; };
+		4C90556722FE1862006A6B59 /* Twist Bit @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90556322FE1862006A6B59 /* Twist Bit @2x.png */; };
+		4C90556922FE1E98006A6B59 /* Twist Bit Zoomed @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90556822FE1E98006A6B59 /* Twist Bit Zoomed @2x.png */; };
+		4C90557122FE22B9006A6B59 /* Bullet Pilot Point @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90556B22FE22B9006A6B59 /* Bullet Pilot Point @3x.png */; };
+		4C90557222FE22B9006A6B59 /* Bullet Pilot Point @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90556C22FE22B9006A6B59 /* Bullet Pilot Point @2x.png */; };
+		4C90557322FE22B9006A6B59 /* Bullet Pilot Point Zoomed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90556D22FE22B9006A6B59 /* Bullet Pilot Point Zoomed.png */; };
+		4C90557422FE22B9006A6B59 /* Bullet Pilot Point Zoomed @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90556E22FE22B9006A6B59 /* Bullet Pilot Point Zoomed @2x.png */; };
+		4C90557522FE22B9006A6B59 /* Bullet Pilot Point.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90556F22FE22B9006A6B59 /* Bullet Pilot Point.png */; };
+		4C90557622FE22B9006A6B59 /* Bullet Pilot Point Zoomed @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90557022FE22B9006A6B59 /* Bullet Pilot Point Zoomed @3x.png */; };
+		4C90557E22FE2D4A006A6B59 /* Brad Point Zoomed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90557822FE2D4A006A6B59 /* Brad Point Zoomed.png */; };
+		4C90557F22FE2D4A006A6B59 /* Brad Point.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90557922FE2D4A006A6B59 /* Brad Point.png */; };
+		4C90558022FE2D4A006A6B59 /* Brad Point @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90557A22FE2D4A006A6B59 /* Brad Point @2x.png */; };
+		4C90558122FE2D4A006A6B59 /* Brad Point Zoomed @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90557B22FE2D4A006A6B59 /* Brad Point Zoomed @2x.png */; };
+		4C90558222FE2D4A006A6B59 /* Brad Point @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90557C22FE2D4A006A6B59 /* Brad Point @3x.png */; };
+		4C90558322FE2D4A006A6B59 /* Brad Point Zoomed @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90557D22FE2D4A006A6B59 /* Brad Point Zoomed @3x.png */; };
+		4C905591230F6D34006A6B59 /* Hardwood @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90558E230F6D34006A6B59 /* Hardwood @3x.png */; };
+		4C905592230F6D34006A6B59 /* Hardwood.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90558F230F6D34006A6B59 /* Hardwood.png */; };
+		4C905593230F6D34006A6B59 /* Hardwood @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C905590230F6D34006A6B59 /* Hardwood @2x.png */; };
+		4C905597230F6D3B006A6B59 /* Acrylic @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C905594230F6D3B006A6B59 /* Acrylic @3x.png */; };
+		4C905598230F6D3B006A6B59 /* Acrylic.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C905595230F6D3B006A6B59 /* Acrylic.png */; };
+		4C905599230F6D3B006A6B59 /* Acrylic @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C905596230F6D3B006A6B59 /* Acrylic @2x.png */; };
+		4C9055A023107893006A6B59 /* Steel @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90559D23107893006A6B59 /* Steel @2x.png */; };
+		4C9055A123107893006A6B59 /* Steel @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90559E23107893006A6B59 /* Steel @3x.png */; };
+		4C9055A223107893006A6B59 /* Steel.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90559F23107893006A6B59 /* Steel.png */; };
+		4C9055A62310789C006A6B59 /* Aluminum.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055A32310789C006A6B59 /* Aluminum.png */; };
+		4C9055A72310789C006A6B59 /* Aluminum @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055A42310789C006A6B59 /* Aluminum @2x.png */; };
+		4C9055A82310789C006A6B59 /* Aluminum @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055A52310789C006A6B59 /* Aluminum @3x.png */; };
+		4C9055AC231078A3006A6B59 /* Brass.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055A9231078A3006A6B59 /* Brass.png */; };
+		4C9055AD231078A3006A6B59 /* Brass @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055AA231078A3006A6B59 /* Brass @3x.png */; };
+		4C9055AE231078A3006A6B59 /* Brass @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055AB231078A3006A6B59 /* Brass @2x.png */; };
+		4C9055B32310791F006A6B59 /* Softwood @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055B02310791F006A6B59 /* Softwood @3x.png */; };
+		4C9055B42310791F006A6B59 /* Softwood.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055B12310791F006A6B59 /* Softwood.png */; };
+		4C9055B52310791F006A6B59 /* Softwood @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055B22310791F006A6B59 /* Softwood @2x.png */; };
+		4C9055BA2310A680006A6B59 /* Glass and Tile @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055B72310A680006A6B59 /* Glass and Tile @3x.png */; };
+		4C9055BB2310A680006A6B59 /* Glass and Tile @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055B82310A680006A6B59 /* Glass and Tile @2x.png */; };
+		4C9055BC2310A680006A6B59 /* Glass and Tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055B92310A680006A6B59 /* Glass and Tile.png */; };
+		4C9055CB2310D7C6006A6B59 /* Forstner Bit Zoomed @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055C52310D7C6006A6B59 /* Forstner Bit Zoomed @2x.png */; };
+		4C9055CC2310D7C6006A6B59 /* Forstner Bit Zoomed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055C62310D7C6006A6B59 /* Forstner Bit Zoomed.png */; };
+		4C9055CD2310D7C6006A6B59 /* Forstner Bit @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055C72310D7C6006A6B59 /* Forstner Bit @2x.png */; };
+		4C9055CE2310D7C6006A6B59 /* Forstner Bit.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055C82310D7C6006A6B59 /* Forstner Bit.png */; };
+		4C9055CF2310D7C6006A6B59 /* Forstner Bit @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055C92310D7C6006A6B59 /* Forstner Bit @3x.png */; };
+		4C9055D02310D7C6006A6B59 /* Forstner Bit Zoomed @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055CA2310D7C6006A6B59 /* Forstner Bit Zoomed @3x.png */; };
+		4C9055D72311FC91006A6B59 /* Multi Spur Bit Zoomed @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055D12311FC91006A6B59 /* Multi Spur Bit Zoomed @3x.png */; };
+		4C9055D82311FC91006A6B59 /* Multi Spur Bit Zoomed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055D22311FC91006A6B59 /* Multi Spur Bit Zoomed.png */; };
+		4C9055D92311FC91006A6B59 /* Multi Spur Bit @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055D32311FC91006A6B59 /* Multi Spur Bit @3x.png */; };
+		4C9055DA2311FC91006A6B59 /* Multi Spur Bit.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055D42311FC91006A6B59 /* Multi Spur Bit.png */; };
+		4C9055DB2311FC92006A6B59 /* Multi Spur Bit @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055D52311FC91006A6B59 /* Multi Spur Bit @2x.png */; };
+		4C9055DC2311FC92006A6B59 /* Multi Spur Bit Zoomed @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055D62311FC91006A6B59 /* Multi Spur Bit Zoomed @2x.png */; };
+		4C9055E323146F41006A6B59 /* Hole Saw @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055DD23146F41006A6B59 /* Hole Saw @2x.png */; };
+		4C9055E423146F41006A6B59 /* Hole Saw @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055DE23146F41006A6B59 /* Hole Saw @3x.png */; };
+		4C9055E523146F41006A6B59 /* Hole Saw Zoomed @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055DF23146F41006A6B59 /* Hole Saw Zoomed @2x.png */; };
+		4C9055E623146F41006A6B59 /* Hole Saw Zoomed @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055E023146F41006A6B59 /* Hole Saw Zoomed @3x.png */; };
+		4C9055E723146F41006A6B59 /* Hole Saw Zoomed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055E123146F41006A6B59 /* Hole Saw Zoomed.png */; };
+		4C9055E823146F41006A6B59 /* Hole Saw.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055E223146F41006A6B59 /* Hole Saw.png */; };
+		4C9055EF23146F52006A6B59 /* Spade BIt @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055E923146F52006A6B59 /* Spade BIt @3x.png */; };
+		4C9055F023146F52006A6B59 /* Spade BIt Zoomed @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055EA23146F52006A6B59 /* Spade BIt Zoomed @2x.png */; };
+		4C9055F123146F52006A6B59 /* Spade BIt Zoomed @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055EB23146F52006A6B59 /* Spade BIt Zoomed @3x.png */; };
+		4C9055F223146F52006A6B59 /* Spade BIt @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055EC23146F52006A6B59 /* Spade BIt @2x.png */; };
+		4C9055F323146F52006A6B59 /* Spade BIt Zoomed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055ED23146F52006A6B59 /* Spade BIt Zoomed.png */; };
+		4C9055F423146F52006A6B59 /* Spade BIt.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055EE23146F52006A6B59 /* Spade BIt.png */; };
+		4C9055FB23146F5F006A6B59 /* Spade BIt with Spurs Zoomed @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055F523146F5F006A6B59 /* Spade BIt with Spurs Zoomed @2x.png */; };
+		4C9055FC23146F5F006A6B59 /* Spade BIt with Spurs Zoomed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055F623146F5F006A6B59 /* Spade BIt with Spurs Zoomed.png */; };
+		4C9055FD23146F5F006A6B59 /* Spade BIt with Spurs Zoomed @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055F723146F5F006A6B59 /* Spade BIt with Spurs Zoomed @3x.png */; };
+		4C9055FE23146F5F006A6B59 /* Spade BIt with Spurs.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055F823146F5F006A6B59 /* Spade BIt with Spurs.png */; };
+		4C9055FF23146F5F006A6B59 /* Spade BIt with Spurs @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055F923146F5F006A6B59 /* Spade BIt with Spurs @3x.png */; };
+		4C90560023146F5F006A6B59 /* Spade BIt with Spurs @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9055FA23146F5F006A6B59 /* Spade BIt with Spurs @2x.png */; };
+		4C90560723146F6D006A6B59 /* Powerbore Drill Bit @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90560123146F6D006A6B59 /* Powerbore Drill Bit @3x.png */; };
+		4C90560823146F6D006A6B59 /* Powerbore Drill Bit Zoomed @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90560223146F6D006A6B59 /* Powerbore Drill Bit Zoomed @3x.png */; };
+		4C90560923146F6D006A6B59 /* Powerbore Drill Bit Zoomed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90560323146F6D006A6B59 /* Powerbore Drill Bit Zoomed.png */; };
+		4C90560A23146F6D006A6B59 /* Powerbore Drill Bit Zoomed @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90560423146F6D006A6B59 /* Powerbore Drill Bit Zoomed @2x.png */; };
+		4C90560B23146F6D006A6B59 /* Powerbore Drill Bit.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90560523146F6D006A6B59 /* Powerbore Drill Bit.png */; };
+		4C90560C23146F6D006A6B59 /* Powerbore Drill Bit @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90560623146F6D006A6B59 /* Powerbore Drill Bit @2x.png */; };
+		4CA7D5EF23173469008D6993 /* App Icon 76pt @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5DF23173468008D6993 /* App Icon 76pt @2x.png */; };
+		4CA7D5F023173469008D6993 /* App Icon 40pt @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5E023173468008D6993 /* App Icon 40pt @3x.png */; };
+		4CA7D5F123173469008D6993 /* Twist Bit App Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5E123173468008D6993 /* Twist Bit App Icon.png */; };
+		4CA7D5F223173469008D6993 /* App Icon 60pt @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5E223173468008D6993 /* App Icon 60pt @2x.png */; };
+		4CA7D5F323173469008D6993 /* App Icon 40pt @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5E323173469008D6993 /* App Icon 40pt @2x.png */; };
+		4CA7D5F423173469008D6993 /* App Icon 60pt @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5E423173469008D6993 /* App Icon 60pt @3x.png */; };
+		4CA7D5F523173469008D6993 /* App Icon 83.5pt @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5E523173469008D6993 /* App Icon 83.5pt @2x.png */; };
+		4CA7D5F623173469008D6993 /* App Icon 20pt @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5E623173469008D6993 /* App Icon 20pt @2x.png */; };
+		4CA7D5F723173469008D6993 /* App Icon 20pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5E723173469008D6993 /* App Icon 20pt.png */; };
+		4CA7D5F823173469008D6993 /* App Icon 40pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5E823173469008D6993 /* App Icon 40pt.png */; };
+		4CA7D5F923173469008D6993 /* App Icon 29pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5E923173469008D6993 /* App Icon 29pt.png */; };
+		4CA7D5FA23173469008D6993 /* App Icon 76pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5EA23173469008D6993 /* App Icon 76pt.png */; };
+		4CA7D5FB23173469008D6993 /* App Icon 1024pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5EB23173469008D6993 /* App Icon 1024pt.png */; };
+		4CA7D5FC23173469008D6993 /* App Icon 29pt @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5EC23173469008D6993 /* App Icon 29pt @2x.png */; };
+		4CA7D5FD23173469008D6993 /* App Icon 20pt @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5ED23173469008D6993 /* App Icon 20pt @3x.png */; };
+		4CA7D5FE23173469008D6993 /* App Icon 29pt @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5EE23173469008D6993 /* App Icon 29pt @3x.png */; };
+		4CA7D60523176F9E008D6993 /* Glass and Tile Bit @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5FF23176F9E008D6993 /* Glass and Tile Bit @2x.png */; };
+		4CA7D60623176F9E008D6993 /* Glass and Tile Bit.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D60023176F9E008D6993 /* Glass and Tile Bit.png */; };
+		4CA7D60723176F9E008D6993 /* Glass and Tile Bit Zoomed @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D60123176F9E008D6993 /* Glass and Tile Bit Zoomed @2x.png */; };
+		4CA7D60823176F9E008D6993 /* Glass and Tile Bit @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D60223176F9E008D6993 /* Glass and Tile Bit @3x.png */; };
+		4CA7D60923176F9E008D6993 /* Glass and Tile Bit Zoomed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D60323176F9E008D6993 /* Glass and Tile Bit Zoomed.png */; };
+		4CA7D60A23176F9E008D6993 /* Glass and Tile Bit Zoomed @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D60423176F9E008D6993 /* Glass and Tile Bit Zoomed @3x.png */; };
+		4CA7D611231783C7008D6993 /* Circle Cutter.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D60B231783C7008D6993 /* Circle Cutter.png */; };
+		4CA7D612231783C7008D6993 /* Circle Cutter Zoomed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D60C231783C7008D6993 /* Circle Cutter Zoomed.png */; };
+		4CA7D613231783C7008D6993 /* Circle Cutter Zoomed @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D60D231783C7008D6993 /* Circle Cutter Zoomed @2x.png */; };
+		4CA7D614231783C7008D6993 /* Circle Cutter @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D60E231783C7008D6993 /* Circle Cutter @2x.png */; };
+		4CA7D615231783C7008D6993 /* Circle Cutter @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D60F231783C7008D6993 /* Circle Cutter @3x.png */; };
+		4CA7D616231783C7008D6993 /* Circle Cutter Zoomed @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D610231783C7008D6993 /* Circle Cutter Zoomed @3x.png */; };
 		4CC790C022F7DF7200BF87ED /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790BF22F7DF7200BF87ED /* Data.swift */; };
 		4CC790C222F7E15400BF87ED /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790C122F7E15400BF87ED /* Sizes.swift */; };
 		4CC790C422FB1D1C00BF87ED /* UICancelableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */; };
-		4CCA205822EBCF5F00D0468C /* Warnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205722EBCF5F00D0468C /* Warnings.swift */; };
 		4CCA205A22EBCF7800D0468C /* DrillBit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205922EBCF7800D0468C /* DrillBit.swift */; };
 		4CCA205C22EBCF8D00D0468C /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205B22EBCF8D00D0468C /* Material.swift */; };
 		4CCA206022EBEF9A00D0468C /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205F22EBEF9A00D0468C /* Unit.swift */; };
@@ -66,6 +178,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C08CD7B23189DEC004D8C9B /* Softwood.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = Softwood.blend; sourceTree = "<group>"; };
+		4C08CD7D23189E06004D8C9B /* Hardwood.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hardwood.blend; sourceTree = "<group>"; };
+		4C08CD7F23189E2A004D8C9B /* Acrylic.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = Acrylic.blend; sourceTree = "<group>"; };
+		4C08CD8123189F57004D8C9B /* Brass.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brass.blend; sourceTree = "<group>"; };
+		4C08CD8323189F6C004D8C9B /* Aluminum.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aluminum.blend; sourceTree = "<group>"; };
+		4C08CD8523189F80004D8C9B /* Steel.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = Steel.blend; sourceTree = "<group>"; };
+		4C08CD8723189F90004D8C9B /* Glass and Tile.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glass and Tile.blend"; sourceTree = "<group>"; };
+		4C08CD8A23189FFC004D8C9B /* Twist Bit.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Twist Bit.blend"; sourceTree = "<group>"; };
+		4C08CD8D2318A00A004D8C9B /* Bullet Pilot Point.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bullet Pilot Point.blend"; sourceTree = "<group>"; };
+		4C08CD8F2318A01A004D8C9B /* Brad Point.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Brad Point.blend"; sourceTree = "<group>"; };
+		4C08CD912318A02A004D8C9B /* Forstner Bit.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forstner Bit.blend"; sourceTree = "<group>"; };
+		4C08CD932318A03E004D8C9B /* Glass and Tile Bit.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glass and Tile Bit.blend"; sourceTree = "<group>"; };
+		4C08CD952318A054004D8C9B /* Hole Saw.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hole Saw.blend"; sourceTree = "<group>"; };
+		4C08CD972318A064004D8C9B /* Multi Spur Bit.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Multi Spur Bit.blend"; sourceTree = "<group>"; };
+		4C08CD992318A071004D8C9B /* Spade Bit.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spade Bit.blend"; sourceTree = "<group>"; };
+		4C08CD9B2318A080004D8C9B /* Spade Bit with Spurs.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spade Bit with Spurs.blend"; sourceTree = "<group>"; };
+		4C08CD9D2318A08E004D8C9B /* Powerbore Drill Bit.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Powerbore Drill Bit.blend"; sourceTree = "<group>"; };
+		4C08CD9F2318A09C004D8C9B /* Circle Cutter.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Circle Cutter.blend"; sourceTree = "<group>"; };
 		4C46FA1522D6F7D30081A381 /* DrillBits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrillBits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C46FA1822D6F7D30081A381 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C46FA1A22D6F7D30081A381 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,25 +219,119 @@
 		4C46FA6222DCE8C30081A381 /* UISnappingSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISnappingSlider.swift; sourceTree = "<group>"; };
 		4C46FA6422DCEA9E0081A381 /* UIDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDetailView.swift; sourceTree = "<group>"; };
 		4C46FA6622DCEAAE0081A381 /* UIDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIDetailView.xib; sourceTree = "<group>"; };
-		4C46FA7022DCED210081A381 /* Image@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Image@3x.png"; sourceTree = "<group>"; };
-		4C46FA7122DCED210081A381 /* Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image.png; sourceTree = "<group>"; };
-		4C46FA7222DCED210081A381 /* Image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Image@2x.png"; sourceTree = "<group>"; };
 		4C46FA7622E23C550081A381 /* Divider@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Divider@3x.png"; sourceTree = "<group>"; };
 		4C46FA7722E23C550081A381 /* Chevron@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chevron@3x.png"; sourceTree = "<group>"; };
 		4C46FA7822E23C550081A381 /* Chevron@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chevron@2x.png"; sourceTree = "<group>"; };
 		4C46FA7922E23C550081A381 /* Divider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Divider.png; sourceTree = "<group>"; };
 		4C46FA7A22E23C550081A381 /* Chevron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chevron.png; sourceTree = "<group>"; };
 		4C46FA7B22E23C550081A381 /* Divider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Divider@2x.png"; sourceTree = "<group>"; };
-		4C46FA8222E2BB470081A381 /* UIAlertLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertLabel.swift; sourceTree = "<group>"; };
-		4C46FA8422E2BB550081A381 /* UIAlertLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIAlertLabel.xib; sourceTree = "<group>"; };
 		4C46FA8622E2D3390081A381 /* UIViewWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewWatcher.swift; sourceTree = "<group>"; };
-		4C68361022E2D83C00AFF50E /* Warning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Warning@2x.png"; sourceTree = "<group>"; };
-		4C68361122E2D83C00AFF50E /* Warning@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Warning@3x.png"; sourceTree = "<group>"; };
-		4C68361222E2D83C00AFF50E /* Warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Warning.png; sourceTree = "<group>"; };
+		4C90555E22FE001E006A6B59 /* Twist Bit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twist Bit.png"; sourceTree = "<group>"; };
+		4C90556022FE1862006A6B59 /* Twist Bit @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twist Bit @3x.png"; sourceTree = "<group>"; };
+		4C90556122FE1862006A6B59 /* Twist Bit Zoomed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twist Bit Zoomed.png"; sourceTree = "<group>"; };
+		4C90556222FE1862006A6B59 /* Twist Bit Zoomed @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twist Bit Zoomed @3x.png"; sourceTree = "<group>"; };
+		4C90556322FE1862006A6B59 /* Twist Bit @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twist Bit @2x.png"; sourceTree = "<group>"; };
+		4C90556822FE1E98006A6B59 /* Twist Bit Zoomed @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twist Bit Zoomed @2x.png"; sourceTree = "<group>"; };
+		4C90556B22FE22B9006A6B59 /* Bullet Pilot Point @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bullet Pilot Point @3x.png"; sourceTree = "<group>"; };
+		4C90556C22FE22B9006A6B59 /* Bullet Pilot Point @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bullet Pilot Point @2x.png"; sourceTree = "<group>"; };
+		4C90556D22FE22B9006A6B59 /* Bullet Pilot Point Zoomed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bullet Pilot Point Zoomed.png"; sourceTree = "<group>"; };
+		4C90556E22FE22B9006A6B59 /* Bullet Pilot Point Zoomed @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bullet Pilot Point Zoomed @2x.png"; sourceTree = "<group>"; };
+		4C90556F22FE22B9006A6B59 /* Bullet Pilot Point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bullet Pilot Point.png"; sourceTree = "<group>"; };
+		4C90557022FE22B9006A6B59 /* Bullet Pilot Point Zoomed @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bullet Pilot Point Zoomed @3x.png"; sourceTree = "<group>"; };
+		4C90557822FE2D4A006A6B59 /* Brad Point Zoomed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brad Point Zoomed.png"; sourceTree = "<group>"; };
+		4C90557922FE2D4A006A6B59 /* Brad Point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brad Point.png"; sourceTree = "<group>"; };
+		4C90557A22FE2D4A006A6B59 /* Brad Point @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brad Point @2x.png"; sourceTree = "<group>"; };
+		4C90557B22FE2D4A006A6B59 /* Brad Point Zoomed @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brad Point Zoomed @2x.png"; sourceTree = "<group>"; };
+		4C90557C22FE2D4A006A6B59 /* Brad Point @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brad Point @3x.png"; sourceTree = "<group>"; };
+		4C90557D22FE2D4A006A6B59 /* Brad Point Zoomed @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brad Point Zoomed @3x.png"; sourceTree = "<group>"; };
+		4C90558E230F6D34006A6B59 /* Hardwood @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hardwood @3x.png"; sourceTree = "<group>"; };
+		4C90558F230F6D34006A6B59 /* Hardwood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hardwood.png; sourceTree = "<group>"; };
+		4C905590230F6D34006A6B59 /* Hardwood @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hardwood @2x.png"; sourceTree = "<group>"; };
+		4C905594230F6D3B006A6B59 /* Acrylic @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Acrylic @3x.png"; sourceTree = "<group>"; };
+		4C905595230F6D3B006A6B59 /* Acrylic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Acrylic.png; sourceTree = "<group>"; };
+		4C905596230F6D3B006A6B59 /* Acrylic @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Acrylic @2x.png"; sourceTree = "<group>"; };
+		4C90559D23107893006A6B59 /* Steel @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Steel @2x.png"; sourceTree = "<group>"; };
+		4C90559E23107893006A6B59 /* Steel @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Steel @3x.png"; sourceTree = "<group>"; };
+		4C90559F23107893006A6B59 /* Steel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Steel.png; sourceTree = "<group>"; };
+		4C9055A32310789C006A6B59 /* Aluminum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aluminum.png; sourceTree = "<group>"; };
+		4C9055A42310789C006A6B59 /* Aluminum @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Aluminum @2x.png"; sourceTree = "<group>"; };
+		4C9055A52310789C006A6B59 /* Aluminum @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Aluminum @3x.png"; sourceTree = "<group>"; };
+		4C9055A9231078A3006A6B59 /* Brass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brass.png; sourceTree = "<group>"; };
+		4C9055AA231078A3006A6B59 /* Brass @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brass @3x.png"; sourceTree = "<group>"; };
+		4C9055AB231078A3006A6B59 /* Brass @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brass @2x.png"; sourceTree = "<group>"; };
+		4C9055B02310791F006A6B59 /* Softwood @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Softwood @3x.png"; sourceTree = "<group>"; };
+		4C9055B12310791F006A6B59 /* Softwood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Softwood.png; sourceTree = "<group>"; };
+		4C9055B22310791F006A6B59 /* Softwood @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Softwood @2x.png"; sourceTree = "<group>"; };
+		4C9055B72310A680006A6B59 /* Glass and Tile @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Glass and Tile @3x.png"; sourceTree = "<group>"; };
+		4C9055B82310A680006A6B59 /* Glass and Tile @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Glass and Tile @2x.png"; sourceTree = "<group>"; };
+		4C9055B92310A680006A6B59 /* Glass and Tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Glass and Tile.png"; sourceTree = "<group>"; };
+		4C9055C52310D7C6006A6B59 /* Forstner Bit Zoomed @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forstner Bit Zoomed @2x.png"; sourceTree = "<group>"; };
+		4C9055C62310D7C6006A6B59 /* Forstner Bit Zoomed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forstner Bit Zoomed.png"; sourceTree = "<group>"; };
+		4C9055C72310D7C6006A6B59 /* Forstner Bit @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forstner Bit @2x.png"; sourceTree = "<group>"; };
+		4C9055C82310D7C6006A6B59 /* Forstner Bit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forstner Bit.png"; sourceTree = "<group>"; };
+		4C9055C92310D7C6006A6B59 /* Forstner Bit @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forstner Bit @3x.png"; sourceTree = "<group>"; };
+		4C9055CA2310D7C6006A6B59 /* Forstner Bit Zoomed @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forstner Bit Zoomed @3x.png"; sourceTree = "<group>"; };
+		4C9055D12311FC91006A6B59 /* Multi Spur Bit Zoomed @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multi Spur Bit Zoomed @3x.png"; sourceTree = "<group>"; };
+		4C9055D22311FC91006A6B59 /* Multi Spur Bit Zoomed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multi Spur Bit Zoomed.png"; sourceTree = "<group>"; };
+		4C9055D32311FC91006A6B59 /* Multi Spur Bit @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multi Spur Bit @3x.png"; sourceTree = "<group>"; };
+		4C9055D42311FC91006A6B59 /* Multi Spur Bit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multi Spur Bit.png"; sourceTree = "<group>"; };
+		4C9055D52311FC91006A6B59 /* Multi Spur Bit @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multi Spur Bit @2x.png"; sourceTree = "<group>"; };
+		4C9055D62311FC91006A6B59 /* Multi Spur Bit Zoomed @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multi Spur Bit Zoomed @2x.png"; sourceTree = "<group>"; };
+		4C9055DD23146F41006A6B59 /* Hole Saw @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hole Saw @2x.png"; sourceTree = "<group>"; };
+		4C9055DE23146F41006A6B59 /* Hole Saw @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hole Saw @3x.png"; sourceTree = "<group>"; };
+		4C9055DF23146F41006A6B59 /* Hole Saw Zoomed @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hole Saw Zoomed @2x.png"; sourceTree = "<group>"; };
+		4C9055E023146F41006A6B59 /* Hole Saw Zoomed @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hole Saw Zoomed @3x.png"; sourceTree = "<group>"; };
+		4C9055E123146F41006A6B59 /* Hole Saw Zoomed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hole Saw Zoomed.png"; sourceTree = "<group>"; };
+		4C9055E223146F41006A6B59 /* Hole Saw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hole Saw.png"; sourceTree = "<group>"; };
+		4C9055E923146F52006A6B59 /* Spade BIt @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spade BIt @3x.png"; sourceTree = "<group>"; };
+		4C9055EA23146F52006A6B59 /* Spade BIt Zoomed @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spade BIt Zoomed @2x.png"; sourceTree = "<group>"; };
+		4C9055EB23146F52006A6B59 /* Spade BIt Zoomed @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spade BIt Zoomed @3x.png"; sourceTree = "<group>"; };
+		4C9055EC23146F52006A6B59 /* Spade BIt @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spade BIt @2x.png"; sourceTree = "<group>"; };
+		4C9055ED23146F52006A6B59 /* Spade BIt Zoomed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spade BIt Zoomed.png"; sourceTree = "<group>"; };
+		4C9055EE23146F52006A6B59 /* Spade BIt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spade BIt.png"; sourceTree = "<group>"; };
+		4C9055F523146F5F006A6B59 /* Spade BIt with Spurs Zoomed @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spade BIt with Spurs Zoomed @2x.png"; sourceTree = "<group>"; };
+		4C9055F623146F5F006A6B59 /* Spade BIt with Spurs Zoomed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spade BIt with Spurs Zoomed.png"; sourceTree = "<group>"; };
+		4C9055F723146F5F006A6B59 /* Spade BIt with Spurs Zoomed @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spade BIt with Spurs Zoomed @3x.png"; sourceTree = "<group>"; };
+		4C9055F823146F5F006A6B59 /* Spade BIt with Spurs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spade BIt with Spurs.png"; sourceTree = "<group>"; };
+		4C9055F923146F5F006A6B59 /* Spade BIt with Spurs @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spade BIt with Spurs @3x.png"; sourceTree = "<group>"; };
+		4C9055FA23146F5F006A6B59 /* Spade BIt with Spurs @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spade BIt with Spurs @2x.png"; sourceTree = "<group>"; };
+		4C90560123146F6D006A6B59 /* Powerbore Drill Bit @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Powerbore Drill Bit @3x.png"; sourceTree = "<group>"; };
+		4C90560223146F6D006A6B59 /* Powerbore Drill Bit Zoomed @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Powerbore Drill Bit Zoomed @3x.png"; sourceTree = "<group>"; };
+		4C90560323146F6D006A6B59 /* Powerbore Drill Bit Zoomed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Powerbore Drill Bit Zoomed.png"; sourceTree = "<group>"; };
+		4C90560423146F6D006A6B59 /* Powerbore Drill Bit Zoomed @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Powerbore Drill Bit Zoomed @2x.png"; sourceTree = "<group>"; };
+		4C90560523146F6D006A6B59 /* Powerbore Drill Bit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Powerbore Drill Bit.png"; sourceTree = "<group>"; };
+		4C90560623146F6D006A6B59 /* Powerbore Drill Bit @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Powerbore Drill Bit @2x.png"; sourceTree = "<group>"; };
+		4CA7D5DF23173468008D6993 /* App Icon 76pt @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 76pt @2x.png"; sourceTree = "<group>"; };
+		4CA7D5E023173468008D6993 /* App Icon 40pt @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 40pt @3x.png"; sourceTree = "<group>"; };
+		4CA7D5E123173468008D6993 /* Twist Bit App Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twist Bit App Icon.png"; sourceTree = "<group>"; };
+		4CA7D5E223173468008D6993 /* App Icon 60pt @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 60pt @2x.png"; sourceTree = "<group>"; };
+		4CA7D5E323173469008D6993 /* App Icon 40pt @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 40pt @2x.png"; sourceTree = "<group>"; };
+		4CA7D5E423173469008D6993 /* App Icon 60pt @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 60pt @3x.png"; sourceTree = "<group>"; };
+		4CA7D5E523173469008D6993 /* App Icon 83.5pt @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 83.5pt @2x.png"; sourceTree = "<group>"; };
+		4CA7D5E623173469008D6993 /* App Icon 20pt @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 20pt @2x.png"; sourceTree = "<group>"; };
+		4CA7D5E723173469008D6993 /* App Icon 20pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 20pt.png"; sourceTree = "<group>"; };
+		4CA7D5E823173469008D6993 /* App Icon 40pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 40pt.png"; sourceTree = "<group>"; };
+		4CA7D5E923173469008D6993 /* App Icon 29pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 29pt.png"; sourceTree = "<group>"; };
+		4CA7D5EA23173469008D6993 /* App Icon 76pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 76pt.png"; sourceTree = "<group>"; };
+		4CA7D5EB23173469008D6993 /* App Icon 1024pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 1024pt.png"; sourceTree = "<group>"; };
+		4CA7D5EC23173469008D6993 /* App Icon 29pt @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 29pt @2x.png"; sourceTree = "<group>"; };
+		4CA7D5ED23173469008D6993 /* App Icon 20pt @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 20pt @3x.png"; sourceTree = "<group>"; };
+		4CA7D5EE23173469008D6993 /* App Icon 29pt @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 29pt @3x.png"; sourceTree = "<group>"; };
+		4CA7D5FF23176F9E008D6993 /* Glass and Tile Bit @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Glass and Tile Bit @2x.png"; sourceTree = "<group>"; };
+		4CA7D60023176F9E008D6993 /* Glass and Tile Bit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Glass and Tile Bit.png"; sourceTree = "<group>"; };
+		4CA7D60123176F9E008D6993 /* Glass and Tile Bit Zoomed @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Glass and Tile Bit Zoomed @2x.png"; sourceTree = "<group>"; };
+		4CA7D60223176F9E008D6993 /* Glass and Tile Bit @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Glass and Tile Bit @3x.png"; sourceTree = "<group>"; };
+		4CA7D60323176F9E008D6993 /* Glass and Tile Bit Zoomed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Glass and Tile Bit Zoomed.png"; sourceTree = "<group>"; };
+		4CA7D60423176F9E008D6993 /* Glass and Tile Bit Zoomed @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Glass and Tile Bit Zoomed @3x.png"; sourceTree = "<group>"; };
+		4CA7D60B231783C7008D6993 /* Circle Cutter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle Cutter.png"; sourceTree = "<group>"; };
+		4CA7D60C231783C7008D6993 /* Circle Cutter Zoomed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle Cutter Zoomed.png"; sourceTree = "<group>"; };
+		4CA7D60D231783C7008D6993 /* Circle Cutter Zoomed @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle Cutter Zoomed @2x.png"; sourceTree = "<group>"; };
+		4CA7D60E231783C7008D6993 /* Circle Cutter @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle Cutter @2x.png"; sourceTree = "<group>"; };
+		4CA7D60F231783C7008D6993 /* Circle Cutter @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle Cutter @3x.png"; sourceTree = "<group>"; };
+		4CA7D610231783C7008D6993 /* Circle Cutter Zoomed @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle Cutter Zoomed @3x.png"; sourceTree = "<group>"; };
 		4CC790BF22F7DF7200BF87ED /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		4CC790C122F7E15400BF87ED /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
 		4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICancelableScrollView.swift; sourceTree = "<group>"; };
-		4CCA205722EBCF5F00D0468C /* Warnings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warnings.swift; sourceTree = "<group>"; };
 		4CCA205922EBCF7800D0468C /* DrillBit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillBit.swift; sourceTree = "<group>"; };
 		4CCA205B22EBCF8D00D0468C /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		4CCA205F22EBEF9A00D0468C /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
@@ -138,6 +362,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C08CDA12318BCCF004D8C9B /* App Store */ = {
+			isa = PBXGroup;
+			children = (
+				4C4C5B2E231E2204008273D7 /* Screen Shots */,
+			);
+			path = "App Store";
+			sourceTree = "<group>";
+		};
 		4C46FA0C22D6F7D30081A381 = {
 			isa = PBXGroup;
 			children = (
@@ -200,8 +432,6 @@
 				4C46FA4822D6FA850081A381 /* UISelector.swift */,
 				4C46FA6422DCEA9E0081A381 /* UIDetailView.swift */,
 				4C46FA6622DCEAAE0081A381 /* UIDetailView.xib */,
-				4C46FA8222E2BB470081A381 /* UIAlertLabel.swift */,
-				4C46FA8422E2BB550081A381 /* UIAlertLabel.xib */,
 				4C46FA8622E2D3390081A381 /* UIViewWatcher.swift */,
 				4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */,
 			);
@@ -223,6 +453,10 @@
 		4C46FA5922D84D190081A381 /* Image Source */ = {
 			isa = PBXGroup;
 			children = (
+				4C90560F23171C1B006A6B59 /* App Icon */,
+				4C08CDA12318BCCF004D8C9B /* App Store */,
+				4C905584230F2D6C006A6B59 /* Materials */,
+				4C90555C22FDFFCA006A6B59 /* Drill Bits */,
 				4C46FA6822DCEC730081A381 /* Misc */,
 				4C46FA5A22D84DD90081A381 /* DrillBits UI.sketch */,
 			);
@@ -232,26 +466,312 @@
 		4C46FA6822DCEC730081A381 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				4C68361222E2D83C00AFF50E /* Warning.png */,
-				4C68361022E2D83C00AFF50E /* Warning@2x.png */,
-				4C68361122E2D83C00AFF50E /* Warning@3x.png */,
 				4C46FA7A22E23C550081A381 /* Chevron.png */,
 				4C46FA7822E23C550081A381 /* Chevron@2x.png */,
 				4C46FA7722E23C550081A381 /* Chevron@3x.png */,
 				4C46FA7922E23C550081A381 /* Divider.png */,
 				4C46FA7B22E23C550081A381 /* Divider@2x.png */,
 				4C46FA7622E23C550081A381 /* Divider@3x.png */,
-				4C46FA7122DCED210081A381 /* Image.png */,
-				4C46FA7222DCED210081A381 /* Image@2x.png */,
-				4C46FA7022DCED210081A381 /* Image@3x.png */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		4C4C5B2E231E2204008273D7 /* Screen Shots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Screen Shots";
+			sourceTree = "<group>";
+		};
+		4C90555C22FDFFCA006A6B59 /* Drill Bits */ = {
+			isa = PBXGroup;
+			children = (
+				4C90555D22FE0011006A6B59 /* Twist Bit */,
+				4C90556A22FE2290006A6B59 /* Bullet Pilot Point */,
+				4C90557722FE2CFB006A6B59 /* Brad Point */,
+				4C9055BD2310A880006A6B59 /* Forstner Bit */,
+				4C9055BE2310A88F006A6B59 /* Glass and Tile Bit */,
+				4C9055BF2310A8AF006A6B59 /* Hole Saw */,
+				4C9055C02310A8B5006A6B59 /* Multi Spur Bit */,
+				4C9055C12310A8C0006A6B59 /* Spade Bit */,
+				4C9055C22310A8C5006A6B59 /* Spade Bit with Spurs */,
+				4C9055C32310A8D3006A6B59 /* Powerbore Drill Bit */,
+				4C9055C42310A8DE006A6B59 /* Circle Cutter */,
+			);
+			path = "Drill Bits";
+			sourceTree = "<group>";
+		};
+		4C90555D22FE0011006A6B59 /* Twist Bit */ = {
+			isa = PBXGroup;
+			children = (
+				4C90555E22FE001E006A6B59 /* Twist Bit.png */,
+				4C90556322FE1862006A6B59 /* Twist Bit @2x.png */,
+				4C90556022FE1862006A6B59 /* Twist Bit @3x.png */,
+				4C90556122FE1862006A6B59 /* Twist Bit Zoomed.png */,
+				4C90556822FE1E98006A6B59 /* Twist Bit Zoomed @2x.png */,
+				4C90556222FE1862006A6B59 /* Twist Bit Zoomed @3x.png */,
+				4C08CD8A23189FFC004D8C9B /* Twist Bit.blend */,
+			);
+			path = "Twist Bit";
+			sourceTree = "<group>";
+		};
+		4C90556A22FE2290006A6B59 /* Bullet Pilot Point */ = {
+			isa = PBXGroup;
+			children = (
+				4C90556F22FE22B9006A6B59 /* Bullet Pilot Point.png */,
+				4C90556C22FE22B9006A6B59 /* Bullet Pilot Point @2x.png */,
+				4C90556B22FE22B9006A6B59 /* Bullet Pilot Point @3x.png */,
+				4C90556D22FE22B9006A6B59 /* Bullet Pilot Point Zoomed.png */,
+				4C90556E22FE22B9006A6B59 /* Bullet Pilot Point Zoomed @2x.png */,
+				4C90557022FE22B9006A6B59 /* Bullet Pilot Point Zoomed @3x.png */,
+				4C08CD8D2318A00A004D8C9B /* Bullet Pilot Point.blend */,
+			);
+			path = "Bullet Pilot Point";
+			sourceTree = "<group>";
+		};
+		4C90557722FE2CFB006A6B59 /* Brad Point */ = {
+			isa = PBXGroup;
+			children = (
+				4C90557922FE2D4A006A6B59 /* Brad Point.png */,
+				4C90557A22FE2D4A006A6B59 /* Brad Point @2x.png */,
+				4C90557C22FE2D4A006A6B59 /* Brad Point @3x.png */,
+				4C90557822FE2D4A006A6B59 /* Brad Point Zoomed.png */,
+				4C90557B22FE2D4A006A6B59 /* Brad Point Zoomed @2x.png */,
+				4C90557D22FE2D4A006A6B59 /* Brad Point Zoomed @3x.png */,
+				4C08CD8F2318A01A004D8C9B /* Brad Point.blend */,
+			);
+			path = "Brad Point";
+			sourceTree = "<group>";
+		};
+		4C905584230F2D6C006A6B59 /* Materials */ = {
+			isa = PBXGroup;
+			children = (
+				4C9055AF23107908006A6B59 /* Softwood */,
+				4C90558C230F6D04006A6B59 /* Hardwood */,
+				4C90558D230F6D0C006A6B59 /* Acrylic */,
+				4C90559A23107857006A6B59 /* Brass */,
+				4C90559B2310785E006A6B59 /* Aluminum */,
+				4C90559C23107864006A6B59 /* Steel */,
+				4C9055B62310A5D1006A6B59 /* Glass and Tile */,
+			);
+			path = Materials;
+			sourceTree = "<group>";
+		};
+		4C90558C230F6D04006A6B59 /* Hardwood */ = {
+			isa = PBXGroup;
+			children = (
+				4C90558F230F6D34006A6B59 /* Hardwood.png */,
+				4C905590230F6D34006A6B59 /* Hardwood @2x.png */,
+				4C90558E230F6D34006A6B59 /* Hardwood @3x.png */,
+				4C08CD7D23189E06004D8C9B /* Hardwood.blend */,
+			);
+			path = Hardwood;
+			sourceTree = "<group>";
+		};
+		4C90558D230F6D0C006A6B59 /* Acrylic */ = {
+			isa = PBXGroup;
+			children = (
+				4C905595230F6D3B006A6B59 /* Acrylic.png */,
+				4C905596230F6D3B006A6B59 /* Acrylic @2x.png */,
+				4C905594230F6D3B006A6B59 /* Acrylic @3x.png */,
+				4C08CD7F23189E2A004D8C9B /* Acrylic.blend */,
+			);
+			path = Acrylic;
+			sourceTree = "<group>";
+		};
+		4C90559A23107857006A6B59 /* Brass */ = {
+			isa = PBXGroup;
+			children = (
+				4C9055A9231078A3006A6B59 /* Brass.png */,
+				4C9055AB231078A3006A6B59 /* Brass @2x.png */,
+				4C9055AA231078A3006A6B59 /* Brass @3x.png */,
+				4C08CD8123189F57004D8C9B /* Brass.blend */,
+			);
+			path = Brass;
+			sourceTree = "<group>";
+		};
+		4C90559B2310785E006A6B59 /* Aluminum */ = {
+			isa = PBXGroup;
+			children = (
+				4C9055A32310789C006A6B59 /* Aluminum.png */,
+				4C9055A42310789C006A6B59 /* Aluminum @2x.png */,
+				4C9055A52310789C006A6B59 /* Aluminum @3x.png */,
+				4C08CD8323189F6C004D8C9B /* Aluminum.blend */,
+			);
+			path = Aluminum;
+			sourceTree = "<group>";
+		};
+		4C90559C23107864006A6B59 /* Steel */ = {
+			isa = PBXGroup;
+			children = (
+				4C90559F23107893006A6B59 /* Steel.png */,
+				4C90559D23107893006A6B59 /* Steel @2x.png */,
+				4C90559E23107893006A6B59 /* Steel @3x.png */,
+				4C08CD8523189F80004D8C9B /* Steel.blend */,
+			);
+			path = Steel;
+			sourceTree = "<group>";
+		};
+		4C9055AF23107908006A6B59 /* Softwood */ = {
+			isa = PBXGroup;
+			children = (
+				4C9055B12310791F006A6B59 /* Softwood.png */,
+				4C9055B22310791F006A6B59 /* Softwood @2x.png */,
+				4C9055B02310791F006A6B59 /* Softwood @3x.png */,
+				4C08CD7B23189DEC004D8C9B /* Softwood.blend */,
+			);
+			path = Softwood;
+			sourceTree = "<group>";
+		};
+		4C9055B62310A5D1006A6B59 /* Glass and Tile */ = {
+			isa = PBXGroup;
+			children = (
+				4C9055B92310A680006A6B59 /* Glass and Tile.png */,
+				4C9055B82310A680006A6B59 /* Glass and Tile @2x.png */,
+				4C9055B72310A680006A6B59 /* Glass and Tile @3x.png */,
+				4C08CD8723189F90004D8C9B /* Glass and Tile.blend */,
+			);
+			path = "Glass and Tile";
+			sourceTree = "<group>";
+		};
+		4C9055BD2310A880006A6B59 /* Forstner Bit */ = {
+			isa = PBXGroup;
+			children = (
+				4C9055C82310D7C6006A6B59 /* Forstner Bit.png */,
+				4C9055C72310D7C6006A6B59 /* Forstner Bit @2x.png */,
+				4C9055C92310D7C6006A6B59 /* Forstner Bit @3x.png */,
+				4C9055C62310D7C6006A6B59 /* Forstner Bit Zoomed.png */,
+				4C9055C52310D7C6006A6B59 /* Forstner Bit Zoomed @2x.png */,
+				4C9055CA2310D7C6006A6B59 /* Forstner Bit Zoomed @3x.png */,
+				4C08CD912318A02A004D8C9B /* Forstner Bit.blend */,
+			);
+			path = "Forstner Bit";
+			sourceTree = "<group>";
+		};
+		4C9055BE2310A88F006A6B59 /* Glass and Tile Bit */ = {
+			isa = PBXGroup;
+			children = (
+				4CA7D60023176F9E008D6993 /* Glass and Tile Bit.png */,
+				4CA7D5FF23176F9E008D6993 /* Glass and Tile Bit @2x.png */,
+				4CA7D60223176F9E008D6993 /* Glass and Tile Bit @3x.png */,
+				4CA7D60323176F9E008D6993 /* Glass and Tile Bit Zoomed.png */,
+				4CA7D60123176F9E008D6993 /* Glass and Tile Bit Zoomed @2x.png */,
+				4CA7D60423176F9E008D6993 /* Glass and Tile Bit Zoomed @3x.png */,
+				4C08CD932318A03E004D8C9B /* Glass and Tile Bit.blend */,
+			);
+			path = "Glass and Tile Bit";
+			sourceTree = "<group>";
+		};
+		4C9055BF2310A8AF006A6B59 /* Hole Saw */ = {
+			isa = PBXGroup;
+			children = (
+				4C9055E223146F41006A6B59 /* Hole Saw.png */,
+				4C9055DD23146F41006A6B59 /* Hole Saw @2x.png */,
+				4C9055DE23146F41006A6B59 /* Hole Saw @3x.png */,
+				4C9055E123146F41006A6B59 /* Hole Saw Zoomed.png */,
+				4C9055DF23146F41006A6B59 /* Hole Saw Zoomed @2x.png */,
+				4C9055E023146F41006A6B59 /* Hole Saw Zoomed @3x.png */,
+				4C08CD952318A054004D8C9B /* Hole Saw.blend */,
+			);
+			path = "Hole Saw";
+			sourceTree = "<group>";
+		};
+		4C9055C02310A8B5006A6B59 /* Multi Spur Bit */ = {
+			isa = PBXGroup;
+			children = (
+				4C9055D42311FC91006A6B59 /* Multi Spur Bit.png */,
+				4C9055D52311FC91006A6B59 /* Multi Spur Bit @2x.png */,
+				4C9055D32311FC91006A6B59 /* Multi Spur Bit @3x.png */,
+				4C9055D22311FC91006A6B59 /* Multi Spur Bit Zoomed.png */,
+				4C9055D62311FC91006A6B59 /* Multi Spur Bit Zoomed @2x.png */,
+				4C9055D12311FC91006A6B59 /* Multi Spur Bit Zoomed @3x.png */,
+				4C08CD972318A064004D8C9B /* Multi Spur Bit.blend */,
+			);
+			path = "Multi Spur Bit";
+			sourceTree = "<group>";
+		};
+		4C9055C12310A8C0006A6B59 /* Spade Bit */ = {
+			isa = PBXGroup;
+			children = (
+				4C9055EE23146F52006A6B59 /* Spade BIt.png */,
+				4C9055EC23146F52006A6B59 /* Spade BIt @2x.png */,
+				4C9055E923146F52006A6B59 /* Spade BIt @3x.png */,
+				4C9055ED23146F52006A6B59 /* Spade BIt Zoomed.png */,
+				4C9055EA23146F52006A6B59 /* Spade BIt Zoomed @2x.png */,
+				4C9055EB23146F52006A6B59 /* Spade BIt Zoomed @3x.png */,
+				4C08CD992318A071004D8C9B /* Spade Bit.blend */,
+			);
+			path = "Spade Bit";
+			sourceTree = "<group>";
+		};
+		4C9055C22310A8C5006A6B59 /* Spade Bit with Spurs */ = {
+			isa = PBXGroup;
+			children = (
+				4C9055F823146F5F006A6B59 /* Spade BIt with Spurs.png */,
+				4C9055FA23146F5F006A6B59 /* Spade BIt with Spurs @2x.png */,
+				4C9055F923146F5F006A6B59 /* Spade BIt with Spurs @3x.png */,
+				4C9055F623146F5F006A6B59 /* Spade BIt with Spurs Zoomed.png */,
+				4C9055F523146F5F006A6B59 /* Spade BIt with Spurs Zoomed @2x.png */,
+				4C9055F723146F5F006A6B59 /* Spade BIt with Spurs Zoomed @3x.png */,
+				4C08CD9B2318A080004D8C9B /* Spade Bit with Spurs.blend */,
+			);
+			path = "Spade Bit with Spurs";
+			sourceTree = "<group>";
+		};
+		4C9055C32310A8D3006A6B59 /* Powerbore Drill Bit */ = {
+			isa = PBXGroup;
+			children = (
+				4C90560523146F6D006A6B59 /* Powerbore Drill Bit.png */,
+				4C90560623146F6D006A6B59 /* Powerbore Drill Bit @2x.png */,
+				4C90560123146F6D006A6B59 /* Powerbore Drill Bit @3x.png */,
+				4C90560323146F6D006A6B59 /* Powerbore Drill Bit Zoomed.png */,
+				4C90560423146F6D006A6B59 /* Powerbore Drill Bit Zoomed @2x.png */,
+				4C90560223146F6D006A6B59 /* Powerbore Drill Bit Zoomed @3x.png */,
+				4C08CD9D2318A08E004D8C9B /* Powerbore Drill Bit.blend */,
+			);
+			path = "Powerbore Drill Bit";
+			sourceTree = "<group>";
+		};
+		4C9055C42310A8DE006A6B59 /* Circle Cutter */ = {
+			isa = PBXGroup;
+			children = (
+				4CA7D60B231783C7008D6993 /* Circle Cutter.png */,
+				4CA7D60E231783C7008D6993 /* Circle Cutter @2x.png */,
+				4CA7D60F231783C7008D6993 /* Circle Cutter @3x.png */,
+				4CA7D60C231783C7008D6993 /* Circle Cutter Zoomed.png */,
+				4CA7D60D231783C7008D6993 /* Circle Cutter Zoomed @2x.png */,
+				4CA7D610231783C7008D6993 /* Circle Cutter Zoomed @3x.png */,
+				4C08CD9F2318A09C004D8C9B /* Circle Cutter.blend */,
+			);
+			path = "Circle Cutter";
+			sourceTree = "<group>";
+		};
+		4C90560F23171C1B006A6B59 /* App Icon */ = {
+			isa = PBXGroup;
+			children = (
+				4CA7D5E723173469008D6993 /* App Icon 20pt.png */,
+				4CA7D5E623173469008D6993 /* App Icon 20pt @2x.png */,
+				4CA7D5ED23173469008D6993 /* App Icon 20pt @3x.png */,
+				4CA7D5E923173469008D6993 /* App Icon 29pt.png */,
+				4CA7D5EC23173469008D6993 /* App Icon 29pt @2x.png */,
+				4CA7D5EE23173469008D6993 /* App Icon 29pt @3x.png */,
+				4CA7D5E823173469008D6993 /* App Icon 40pt.png */,
+				4CA7D5E323173469008D6993 /* App Icon 40pt @2x.png */,
+				4CA7D5E023173468008D6993 /* App Icon 40pt @3x.png */,
+				4CA7D5E223173468008D6993 /* App Icon 60pt @2x.png */,
+				4CA7D5E423173469008D6993 /* App Icon 60pt @3x.png */,
+				4CA7D5EA23173469008D6993 /* App Icon 76pt.png */,
+				4CA7D5DF23173468008D6993 /* App Icon 76pt @2x.png */,
+				4CA7D5E523173469008D6993 /* App Icon 83.5pt @2x.png */,
+				4CA7D5EB23173469008D6993 /* App Icon 1024pt.png */,
+				4CA7D5E123173468008D6993 /* Twist Bit App Icon.png */,
+			);
+			path = "App Icon";
 			sourceTree = "<group>";
 		};
 		4CCA205622EBCF4C00D0468C /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				4CCA205722EBCF5F00D0468C /* Warnings.swift */,
 				4CCA205922EBCF7800D0468C /* DrillBit.swift */,
 				4CCA205B22EBCF8D00D0468C /* Material.swift */,
 				4CCA205F22EBEF9A00D0468C /* Unit.swift */,
@@ -365,24 +885,138 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C08CD7C23189DEC004D8C9B /* Softwood.blend in Resources */,
 				4C46FA8122E23C550081A381 /* Divider@2x.png in Resources */,
-				4C68361322E2D83C00AFF50E /* Warning@2x.png in Resources */,
-				4C46FA7422DCED210081A381 /* Image.png in Resources */,
+				4CA7D611231783C7008D6993 /* Circle Cutter.png in Resources */,
+				4C90557322FE22B9006A6B59 /* Bullet Pilot Point Zoomed.png in Resources */,
+				4C9055E423146F41006A6B59 /* Hole Saw @3x.png in Resources */,
+				4C08CD962318A054004D8C9B /* Hole Saw.blend in Resources */,
+				4C905599230F6D3B006A6B59 /* Acrylic @2x.png in Resources */,
+				4CA7D5F823173469008D6993 /* App Icon 40pt.png in Resources */,
+				4CA7D5F923173469008D6993 /* App Icon 29pt.png in Resources */,
+				4C08CD8C23189FFC004D8C9B /* Twist Bit.blend in Resources */,
+				4C9055AD231078A3006A6B59 /* Brass @3x.png in Resources */,
+				4C90556622FE1862006A6B59 /* Twist Bit Zoomed @3x.png in Resources */,
+				4CA7D5EF23173469008D6993 /* App Icon 76pt @2x.png in Resources */,
+				4C9055A023107893006A6B59 /* Steel @2x.png in Resources */,
+				4C90558322FE2D4A006A6B59 /* Brad Point Zoomed @3x.png in Resources */,
+				4C90560B23146F6D006A6B59 /* Powerbore Drill Bit.png in Resources */,
+				4C9055FB23146F5F006A6B59 /* Spade BIt with Spurs Zoomed @2x.png in Resources */,
+				4C90557F22FE2D4A006A6B59 /* Brad Point.png in Resources */,
+				4C08CD982318A064004D8C9B /* Multi Spur Bit.blend in Resources */,
+				4C9055BC2310A680006A6B59 /* Glass and Tile.png in Resources */,
+				4C9055E323146F41006A6B59 /* Hole Saw @2x.png in Resources */,
+				4C08CD9C2318A080004D8C9B /* Spade Bit with Spurs.blend in Resources */,
+				4C905597230F6D3B006A6B59 /* Acrylic @3x.png in Resources */,
+				4CA7D60723176F9E008D6993 /* Glass and Tile Bit Zoomed @2x.png in Resources */,
+				4C90556522FE1862006A6B59 /* Twist Bit Zoomed.png in Resources */,
+				4C90558222FE2D4A006A6B59 /* Brad Point @3x.png in Resources */,
+				4C9055AE231078A3006A6B59 /* Brass @2x.png in Resources */,
+				4C9055F223146F52006A6B59 /* Spade BIt @2x.png in Resources */,
+				4C9055F323146F52006A6B59 /* Spade BIt Zoomed.png in Resources */,
+				4C9055CF2310D7C6006A6B59 /* Forstner Bit @3x.png in Resources */,
+				4C90555F22FE001E006A6B59 /* Twist Bit.png in Resources */,
+				4C905592230F6D34006A6B59 /* Hardwood.png in Resources */,
 				4C46FA7F22E23C550081A381 /* Divider.png in Resources */,
+				4C90560C23146F6D006A6B59 /* Powerbore Drill Bit @2x.png in Resources */,
+				4C9055DA2311FC91006A6B59 /* Multi Spur Bit.png in Resources */,
 				4C46FA2322D6F7D30081A381 /* LaunchScreen.storyboard in Resources */,
 				4C46FA8022E23C550081A381 /* Chevron.png in Resources */,
-				4C68361422E2D83C00AFF50E /* Warning@3x.png in Resources */,
+				4C9055B42310791F006A6B59 /* Softwood.png in Resources */,
+				4C9055FD23146F5F006A6B59 /* Spade BIt with Spurs Zoomed @3x.png in Resources */,
+				4CA7D60823176F9E008D6993 /* Glass and Tile Bit @3x.png in Resources */,
+				4C905598230F6D3B006A6B59 /* Acrylic.png in Resources */,
+				4C9055CD2310D7C6006A6B59 /* Forstner Bit @2x.png in Resources */,
+				4CA7D612231783C7008D6993 /* Circle Cutter Zoomed.png in Resources */,
+				4C9055FE23146F5F006A6B59 /* Spade BIt with Spurs.png in Resources */,
+				4C9055F123146F52006A6B59 /* Spade BIt Zoomed @3x.png in Resources */,
+				4CA7D5F623173469008D6993 /* App Icon 20pt @2x.png in Resources */,
+				4C90557522FE22B9006A6B59 /* Bullet Pilot Point.png in Resources */,
+				4C08CD8623189F80004D8C9B /* Steel.blend in Resources */,
+				4C08CD922318A02A004D8C9B /* Forstner Bit.blend in Resources */,
+				4C90558122FE2D4A006A6B59 /* Brad Point Zoomed @2x.png in Resources */,
 				4C46FA2022D6F7D30081A381 /* Assets.xcassets in Resources */,
-				4C68361522E2D83C00AFF50E /* Warning.png in Resources */,
+				4C90557222FE22B9006A6B59 /* Bullet Pilot Point @2x.png in Resources */,
+				4C08CDA02318A09D004D8C9B /* Circle Cutter.blend in Resources */,
+				4CA7D60A23176F9E008D6993 /* Glass and Tile Bit Zoomed @3x.png in Resources */,
+				4C08CD9A2318A071004D8C9B /* Spade Bit.blend in Resources */,
+				4C90558022FE2D4A006A6B59 /* Brad Point @2x.png in Resources */,
+				4CA7D5FB23173469008D6993 /* App Icon 1024pt.png in Resources */,
+				4C90556722FE1862006A6B59 /* Twist Bit @2x.png in Resources */,
+				4C9055CB2310D7C6006A6B59 /* Forstner Bit Zoomed @2x.png in Resources */,
+				4C9055D02310D7C6006A6B59 /* Forstner Bit Zoomed @3x.png in Resources */,
+				4C9055E723146F41006A6B59 /* Hole Saw Zoomed.png in Resources */,
+				4CA7D5FD23173469008D6993 /* App Icon 20pt @3x.png in Resources */,
+				4CA7D5F223173469008D6993 /* App Icon 60pt @2x.png in Resources */,
+				4C90560A23146F6D006A6B59 /* Powerbore Drill Bit Zoomed @2x.png in Resources */,
+				4C08CD9E2318A08E004D8C9B /* Powerbore Drill Bit.blend in Resources */,
+				4C90556922FE1E98006A6B59 /* Twist Bit Zoomed @2x.png in Resources */,
 				4C46FA5B22D84DD90081A381 /* DrillBits UI.sketch in Resources */,
-				4C46FA7522DCED210081A381 /* Image@2x.png in Resources */,
+				4C90560923146F6D006A6B59 /* Powerbore Drill Bit Zoomed.png in Resources */,
+				4C90560023146F5F006A6B59 /* Spade BIt with Spurs @2x.png in Resources */,
+				4C9055E623146F41006A6B59 /* Hole Saw Zoomed @3x.png in Resources */,
+				4C08CD8823189F90004D8C9B /* Glass and Tile.blend in Resources */,
+				4C9055A82310789C006A6B59 /* Aluminum @3x.png in Resources */,
+				4C9055F023146F52006A6B59 /* Spade BIt Zoomed @2x.png in Resources */,
+				4C905593230F6D34006A6B59 /* Hardwood @2x.png in Resources */,
+				4CA7D616231783C7008D6993 /* Circle Cutter Zoomed @3x.png in Resources */,
+				4C9055E823146F41006A6B59 /* Hole Saw.png in Resources */,
+				4C9055FC23146F5F006A6B59 /* Spade BIt with Spurs Zoomed.png in Resources */,
+				4C9055CE2310D7C6006A6B59 /* Forstner Bit.png in Resources */,
 				4C46FA7D22E23C550081A381 /* Chevron@3x.png in Resources */,
+				4CA7D5F323173469008D6993 /* App Icon 40pt @2x.png in Resources */,
+				4C9055D82311FC91006A6B59 /* Multi Spur Bit Zoomed.png in Resources */,
+				4C9055B32310791F006A6B59 /* Softwood @3x.png in Resources */,
+				4C9055FF23146F5F006A6B59 /* Spade BIt with Spurs @3x.png in Resources */,
+				4CA7D615231783C7008D6993 /* Circle Cutter @3x.png in Resources */,
+				4C9055B52310791F006A6B59 /* Softwood @2x.png in Resources */,
+				4CA7D5F723173469008D6993 /* App Icon 20pt.png in Resources */,
+				4CA7D60523176F9E008D6993 /* Glass and Tile Bit @2x.png in Resources */,
+				4C08CD902318A01A004D8C9B /* Brad Point.blend in Resources */,
+				4C90556422FE1862006A6B59 /* Twist Bit @3x.png in Resources */,
+				4C08CD8423189F6C004D8C9B /* Aluminum.blend in Resources */,
+				4C9055A72310789C006A6B59 /* Aluminum @2x.png in Resources */,
 				4C46FA1E22D6F7D30081A381 /* Main.storyboard in Resources */,
+				4CA7D5F023173469008D6993 /* App Icon 40pt @3x.png in Resources */,
+				4C9055A62310789C006A6B59 /* Aluminum.png in Resources */,
 				4C46FA6722DCEAAE0081A381 /* UIDetailView.xib in Resources */,
-				4C46FA8522E2BB550081A381 /* UIAlertLabel.xib in Resources */,
-				4C46FA7322DCED210081A381 /* Image@3x.png in Resources */,
+				4CA7D60923176F9E008D6993 /* Glass and Tile Bit Zoomed.png in Resources */,
+				4C08CD7E23189E06004D8C9B /* Hardwood.blend in Resources */,
+				4C9055A123107893006A6B59 /* Steel @3x.png in Resources */,
+				4CA7D614231783C7008D6993 /* Circle Cutter @2x.png in Resources */,
+				4C90557622FE22B9006A6B59 /* Bullet Pilot Point Zoomed @3x.png in Resources */,
+				4CA7D5FE23173469008D6993 /* App Icon 29pt @3x.png in Resources */,
+				4C90557422FE22B9006A6B59 /* Bullet Pilot Point Zoomed @2x.png in Resources */,
+				4CA7D5F423173469008D6993 /* App Icon 60pt @3x.png in Resources */,
+				4C90560823146F6D006A6B59 /* Powerbore Drill Bit Zoomed @3x.png in Resources */,
+				4C9055BB2310A680006A6B59 /* Glass and Tile @2x.png in Resources */,
+				4CA7D5FC23173469008D6993 /* App Icon 29pt @2x.png in Resources */,
+				4CA7D5F123173469008D6993 /* Twist Bit App Icon.png in Resources */,
+				4CA7D613231783C7008D6993 /* Circle Cutter Zoomed @2x.png in Resources */,
+				4C9055A223107893006A6B59 /* Steel.png in Resources */,
+				4C9055CC2310D7C6006A6B59 /* Forstner Bit Zoomed.png in Resources */,
+				4CA7D60623176F9E008D6993 /* Glass and Tile Bit.png in Resources */,
+				4CA7D5FA23173469008D6993 /* App Icon 76pt.png in Resources */,
+				4C90557E22FE2D4A006A6B59 /* Brad Point Zoomed.png in Resources */,
+				4C9055E523146F41006A6B59 /* Hole Saw Zoomed @2x.png in Resources */,
+				4C9055F423146F52006A6B59 /* Spade BIt.png in Resources */,
+				4C08CD8E2318A00A004D8C9B /* Bullet Pilot Point.blend in Resources */,
+				4C9055DC2311FC92006A6B59 /* Multi Spur Bit Zoomed @2x.png in Resources */,
+				4C08CD942318A03E004D8C9B /* Glass and Tile Bit.blend in Resources */,
+				4C08CD8023189E2A004D8C9B /* Acrylic.blend in Resources */,
+				4CA7D5F523173469008D6993 /* App Icon 83.5pt @2x.png in Resources */,
+				4C08CD8223189F57004D8C9B /* Brass.blend in Resources */,
+				4C9055DB2311FC92006A6B59 /* Multi Spur Bit @2x.png in Resources */,
+				4C9055BA2310A680006A6B59 /* Glass and Tile @3x.png in Resources */,
 				4C46FA7E22E23C550081A381 /* Chevron@2x.png in Resources */,
 				4C46FA7C22E23C550081A381 /* Divider@3x.png in Resources */,
+				4C905591230F6D34006A6B59 /* Hardwood @3x.png in Resources */,
+				4C9055EF23146F52006A6B59 /* Spade BIt @3x.png in Resources */,
+				4C9055D72311FC91006A6B59 /* Multi Spur Bit Zoomed @3x.png in Resources */,
+				4C90560723146F6D006A6B59 /* Powerbore Drill Bit @3x.png in Resources */,
+				4C90557122FE22B9006A6B59 /* Bullet Pilot Point @3x.png in Resources */,
+				4C9055D92311FC91006A6B59 /* Multi Spur Bit @3x.png in Resources */,
+				4C9055AC231078A3006A6B59 /* Brass.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +1044,6 @@
 				4C46FA5822D7B2980081A381 /* StringExtensions.swift in Sources */,
 				4C46FA4E22D7AA520081A381 /* ConstraintHelper.swift in Sources */,
 				4C46FA5622D7B1930081A381 /* ObjectExtensions.swift in Sources */,
-				4C46FA8322E2BB470081A381 /* UIAlertLabel.swift in Sources */,
 				4C46FA6522DCEA9E0081A381 /* UIDetailView.swift in Sources */,
 				4CCA206022EBEF9A00D0468C /* Unit.swift in Sources */,
 				4C46FA1B22D6F7D30081A381 /* ViewController.swift in Sources */,
@@ -419,7 +1052,6 @@
 				4CC790C222F7E15400BF87ED /* Sizes.swift in Sources */,
 				4C46FA6322DCE8C30081A381 /* UISnappingSlider.swift in Sources */,
 				4CC790C422FB1D1C00BF87ED /* UICancelableScrollView.swift in Sources */,
-				4CCA205822EBCF5F00D0468C /* Warnings.swift in Sources */,
 				4CCA205C22EBCF8D00D0468C /* Material.swift in Sources */,
 				4C46FA4922D6FA850081A381 /* UISelector.swift in Sources */,
 				4CC790C022F7DF7200BF87ED /* Data.swift in Sources */,
@@ -601,6 +1233,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7T8HUX83A;
 				INFOPLIST_FILE = DrillBits/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -609,7 +1242,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lepario.DrillBits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -618,6 +1251,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7T8HUX83A;
 				INFOPLIST_FILE = DrillBits/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -626,7 +1260,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lepario.DrillBits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

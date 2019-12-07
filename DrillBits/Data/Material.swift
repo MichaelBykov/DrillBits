@@ -41,19 +41,19 @@ func ToString(Mat: Material) -> String {
 func GetDescFor(Mat: Material) -> String {
 	switch Mat {
 	case .Softwood:
-		return "";
+		return "Very versatile";
 	case .Hardwood:
-		return "";
+		return "Long lasting";
 	case .Acrylic:
-		return "";
+		return "Best paired with a spade bit with spurs";
 	case .Brass:
-		return "";
+		return "Doesn't cause sparks";
 	case .Aluminum:
-		return "";
+		return "A very lightweight metal, resists corrosion";
 	case .Steel:
-		return "";
+		return "Strong and inexpensive";
 	case .GlassAndTile:
-		return "";
+		return "Should only be cut with a glass-and-tile drill bit";
 	}
 }
 
