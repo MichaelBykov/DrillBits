@@ -176,6 +176,7 @@ class ViewController: UIViewController {
 		UserDefaults.standard.set(IsImperial, forKey: "Imperial");
 	}
 	
+	var LastSize: Unit = Unit(Inches: Fraction(w: 0, n: 1, d: 4), Millimeters: 6);
 	@IBAction func SizeValueChanged(_ sender: UISnappingSlider) {
 		if (IsImperial) {
 			let div = InchesStep / LowerSize.Inches.Denominator;
@@ -205,12 +206,18 @@ class ViewController: UIViewController {
 			}
 			
 			Size.Inches = min;
+			if (SetLastSize) {
+				LastSize.Inches = min;
+			}
 			SizeWhole.text = "\(min.Whole == 0 ? "" : "\(min.Whole)")";
 			SizeNumerator.text = "\(min.Numerator)";
 			SizeDenominator.text = "\(min.Denominator)";
 		} else {
 			let s = LowerSize.Millimeters + (CGFloat(SizeSlider.value) / 2);
 			Size.Millimeters = s;
+			if (SetLastSize) {
+				LastSize.Millimeters = s;
+			}
 			SizeWhole.text = "\(s)";
 		}
 		
@@ -250,6 +257,7 @@ class ViewController: UIViewController {
 		SetLastMaterial = true;
 	}
 	
+	var SetLastSize: Bool = true;
 	func MaterialSelectionChanged(_: Int, Tag: Int) {
 		// Set upper and lower size boundry
 		let Mat = Material.init(rawValue: Tag)!;
@@ -270,9 +278,47 @@ class ViewController: UIViewController {
 		let div = CGFloat(InchesStep) / CGFloat(Distance.Denominator);
 		self.SizeDistance.0 = Distance.Whole * InchesStep + Int(CGFloat(Distance.Numerator) * div);
 		
+		SetLastSize = false;
 		self.SizeSlider.maximumValue = Float(self.IsImperial ? self.SizeDistance.0 : self.SizeDistance.1);
-		self.SizeSlider.value = self.SizeSlider.maximumValue * 0.2;
+		
+		// Keep old size value
+		if (self.IsImperial) {
+			let _s = self.LastSize.Inches, _a = self.LowerSize.Inches, _b = self.UpperSize.Inches;
+			let s = CGFloat(_s.Whole) + (CGFloat(_s.Numerator) / CGFloat(_s.Denominator)),
+				a = CGFloat(_a.Whole) + (CGFloat(_a.Numerator) / CGFloat(_a.Denominator)),
+				b = CGFloat(_b.Whole) + (CGFloat(_b.Numerator) / CGFloat(_b.Denominator));
+			
+			if (s <= a) {
+				self.SizeSlider.value = 0;
+			} else if (s >= b) {
+				self.SizeSlider.value = self.SizeSlider.maximumValue;
+			} else {
+				let sMin = self.LowerSize.Inches, sMax = self.LastSize.Inches;
+				let Min = Fraction(w: sMin.Whole, n: sMin.Numerator * sMax.Denominator, d: sMin.Denominator * sMax.Denominator), Max = Fraction(w: sMax.Whole, n: sMax.Numerator * sMin.Denominator, d: sMax.Denominator * sMin.Denominator);
+				var Distance = Fraction(w: Max.Whole - Min.Whole, n: Max.Numerator - Min.Numerator, d: Min.Denominator);
+				if (Distance.Numerator < 0) {
+					Distance.Numerator += Distance.Denominator;
+					let _ = Distance.Whole--;
+				}
+				
+				let div = CGFloat(InchesStep) / CGFloat(Distance.Denominator);
+				self.SizeSlider.value = Float(Distance.Whole * InchesStep + Int(CGFloat(Distance.Numerator) * div));
+			}
+
+		} else {
+			let s = self.LastSize.Millimeters, a = self.LowerSize.Millimeters, b = self.UpperSize.Millimeters;
+			
+			if (s <= a) {
+				self.SizeSlider.value = 0;
+			} else if (s >= b) {
+				self.SizeSlider.value = self.SizeSlider.maximumValue;
+			} else {
+				self.SizeSlider.value = Float(floor((self.LastSize.Millimeters - self.LowerSize.Millimeters) * 2));
+			}
+		}
+		
 		self.SizeValueChanged(self.SizeSlider);
+		SetLastSize = true;
 		
 		if (SetLastMaterial) {
 			LastMaterial = Mat;
