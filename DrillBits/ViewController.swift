@@ -64,22 +64,24 @@ class ViewController: UIViewController {
 		DrillBitPicker.Data = BitData.map({ d in return (d.Image, d.Index, d.Name, d.Desc); });
 		
 		// Add handlers (because swift doesn't allow custom IBActions for views)
+		// Selection changed
 		DrillBitPicker.OnSelectionChanged += DrillBitSelectionChanged;
-		DrillBitPicker.OnSelectionEnded += { UserDefaults.standard.set(self.SelectedBit.rawValue as Int, forKey: "Bit"); UserDefaults.standard.set(self.SelectedMat.rawValue as Int, forKey: "Mat"); UserDefaults.standard.set(self.SizeSlider.value, forKey: "Size"); };
 		MaterialPicker.OnSelectionChanged += MaterialSelectionChanged;
-		MaterialPicker.OnSelectionEnded += { UserDefaults.standard.set(self.SelectedMat.rawValue as Int, forKey: "Mat"); UserDefaults.standard.set(self.SizeSlider.value, forKey: "Size"); };
-		SizeSlider.OnSelectionEnded = { UserDefaults.standard.set(self.SizeSlider.value, forKey: "Size"); };
+		// Selection ended (save values)
+		DrillBitPicker.OnSelectionEnded += { self.SaveBit(); self.SaveMat(); self.SaveSize(); };
+		MaterialPicker.OnSelectionEnded += { self.SaveMat(); self.SaveSize(); };
+		SizeSlider.OnSelectionEnded = { self.SaveSize(); };
 		
 		// Load user prefrences for units, size, material, bit
-		if (UserDefaults.standard.object(forKey: "Start") != nil) {
-			let NewSize = UserDefaults.standard.float(forKey: "Size");
-			let Mat = Material(rawValue: UserDefaults.standard.integer(forKey: "Mat"))!;
+		if (Defaults.Start) {
+			let NewSize = Defaults.Size;
+			let Mat = Defaults.Mat;
 			
-			IsImperial = !UserDefaults.standard.bool(forKey: "Imperial");
+			IsImperial = !Defaults.Imperial;
 			SizeUnitSelector.selectedSegmentIndex = IsImperial ? 1 : 0;
 			SizeUnitSelectorValueChanged(SizeUnitSelector);
 			
-			SelectedBit = DrillBit(rawValue: UserDefaults.standard.integer(forKey: "Bit"))!;
+			SelectedBit = Defaults.Bit;
 			
 			DrillBitPicker.Select(Index: SelectedBit.rawValue);
 			DrillBitSelectionChanged(SelectedBit.rawValue, Tag: SelectedBit.rawValue);
@@ -90,14 +92,12 @@ class ViewController: UIViewController {
 			SizeValueChanged(SizeSlider);
 		} else {
 			// Setup user prefrences
-			UserDefaults.standard.set(true, forKey: "Start");
+			Defaults.Imperial = IsImperial;
 			
-			UserDefaults.standard.set(IsImperial, forKey: "Imperial");
+			Defaults.Size = 0;
 			
-			UserDefaults.standard.set(Float(0), forKey: "Size");
-			
-			UserDefaults.standard.set(SelectedBit.rawValue as Int, forKey: "Bit");
-			UserDefaults.standard.set(SelectedMat.rawValue as Int, forKey: "Mat");
+			Defaults.Bit = SelectedBit;
+			Defaults.Mat = SelectedMat;
 			
 			DrillBitPicker.Select(Index: 0);
 			DrillBitSelectionChanged(0, Tag: 0);
@@ -110,16 +110,28 @@ class ViewController: UIViewController {
 			h = h < 40 ? 40 : h > 60 ? 60 : h;
 			
 			self.Result.font = UIFont(descriptor: self.Result.font.fontDescriptor, size: h);
-			
-			print(h);
 		};
 	}
 	
 	
 	
-	//
-	// Size
-	//
+	
+	// MARK: - Defaults
+	
+	/// Save what the currently selected drill bit is
+	public func SaveBit() { Defaults.Bit = SelectedBit; }
+	/// Save what the currently selected material is
+	public func SaveMat() { Defaults.Mat = SelectedMat; }
+	/// Save what the currently selected size is
+	public func SaveSize() { Defaults.Size = SizeSlider.value; }
+	/// Save what the currently selected unit system is
+	public func SaveImperial() { Defaults.Imperial = IsImperial; }
+	
+	
+	
+	
+	// MARK: - Size
+	
 	
 	/// Update the size input size value
 	public func SizeUpdateFraction() {
@@ -170,7 +182,7 @@ class ViewController: UIViewController {
 		
 		updateViewConstraints();
 		
-		UserDefaults.standard.set(IsImperial, forKey: "Imperial");
+		SaveImperial();
 	}
 	
 	var LastSize: DrillBitsData.Unit = Unit(Inches: Fraction(w: 0, n: 1, d: 4), Millimeters: 6);
@@ -223,17 +235,15 @@ class ViewController: UIViewController {
 	
 	
 	
-	//
-	// Result View
-	//
+	// MARK: - Result View
 	
 	
 	
 	
 	
-	//
-	// Other
-	//
+	
+	// MARK: -Other
+	
 	
 	var LastMaterial: Material = .Softwood;
 	var SetLastMaterial: Bool = true;
