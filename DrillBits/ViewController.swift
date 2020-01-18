@@ -56,16 +56,12 @@ class ViewController: UIViewController {
 		
 		// Make sure our scroll view has proper insets
 		ScrollView.contentInsetAdjustmentBehavior = .always;
+		// Make sure the scroll view doesn't start scrolling while the user is inputting
 		ScrollView.RootCancels = [ DrillBitPicker.SelectionView, MaterialPicker.SelectionView, SizeSlider ];
 		
 		// Add data for pickers
-		var BitData: [(UIImage, Int, String, String)] = [ ];
-		for i in 0...10 {
-			let Bit = DrillBit(rawValue: i)!;
-			BitData.append((GetImageFor(Bit: Bit), i, ToString(Bit: Bit), GetDescFor(Bit: Bit)));
-		}
-		
-		DrillBitPicker.Data = BitData;
+		let BitData: [DrillBitData] = LoadDrillBitData();
+		DrillBitPicker.Data = BitData.map({ d in return (d.Image, d.Index, d.Name, d.Desc); });
 		
 		// Add handlers (because swift doesn't allow custom IBActions for views)
 		DrillBitPicker.OnSelectionChanged += DrillBitSelectionChanged;
