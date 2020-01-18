@@ -30,8 +30,6 @@ class ViewController: UIViewController {
 	/// Are we using the Imperial (inches) or Metric (mm) system?
 	@inline(__always) public var IsImperial: Bool { get { return Size.IsImperial!; } set { Size.IsImperial = newValue; } }
 	public var Size: DrillBitsData.Unit = Unit(Inches: Fraction(w: 0));
-	public var UpperSize: DrillBitsData.Unit = Unit(Inches: Fraction(w: 0)), LowerSize: DrillBitsData.Unit = Unit(Inches: Fraction(w: 0));
-	public var SizeDistance: (Int, Int) = (0, 0);
 	
 	public var InchesStep: Int = 16;
 	
@@ -174,7 +172,9 @@ class ViewController: UIViewController {
 			SizeUnitToWhole.priority = UILayoutPriority.defaultHigh;
 		}
 		
-		let val: CGFloat = CGFloat(SizeSlider.value) / CGFloat(SizeSlider.maximumValue - SizeSlider.minimumValue);
+		// Preserve Size slider position & update values
+		let val: CGFloat = CGFloat(SizeSlider.value - SizeSlider.minimumValue) / CGFloat(SizeSlider.maximumValue - SizeSlider.minimumValue);
+		// "Bubble" event
 		MaterialSelectionChanged(0, Tag: SelectedMat.rawValue);
 		SizeSlider.value = Float(CGFloat(SizeSlider.maximumValue - SizeSlider.minimumValue) * val);
 		SizeValueChanged(SizeSlider);
@@ -188,61 +188,55 @@ class ViewController: UIViewController {
 	var LastSize: DrillBitsData.Unit = Unit(Inches: Fraction(w: 0, n: 1, d: 4), Millimeters: 6);
 	@IBAction func SizeValueChanged(_ sender: UISnappingSlider) {
 		if (IsImperial) {
-			let div = InchesStep / LowerSize.Inches.Denominator;
-			var min = Fraction(w: LowerSize.Inches.Whole, n: LowerSize.Inches.Numerator * div, d: InchesStep);
-			min.Numerator += Int(sender.value);
-			while (min.Numerator >= InchesStep) {
-				min.Numerator -= InchesStep;
-				let _ = min.Whole++;
+			// Derive new value
+			let inches = Fraction(Normal: Int(sender.value), MaxDenominator: InchesStep);
+			
+			// Set values
+			Size.Inches = inches;
+			if (SetLastSize) {
+				LastSize.Inches = inches;
 			}
 			
-			if (min.Numerator == 0) {
-				// Remove fraction
+			// Update text
+			SizeWhole.text = "\(inches.Whole == 0 ? "" : "\(inches.Whole)")";
+			SizeNumerator.text = "\(inches.Numerator)";
+			SizeDenominator.text = "\(inches.Denominator)";
+			
+			// Toggle the fraction
+			if (inches.Numerator == 0) {
+				// Remove fraction display
 				SizeFractionWrapper.isHidden = true;
 				SizeFractionLeading.priority = UILayoutPriority.defaultLow;
 				SizeFractionTrailing.priority = UILayoutPriority.defaultLow;
 				SizeUnitToWhole.priority = UILayoutPriority.defaultHigh;
 			} else {
+				// Add back fraction display
 				SizeFractionWrapper.isHidden = false;
 				SizeUnitToWhole.priority = UILayoutPriority.defaultLow;
 				SizeFractionLeading.priority = UILayoutPriority.defaultHigh;
 				SizeFractionTrailing.priority = UILayoutPriority.defaultHigh;
 			}
-			
-			while (min.Numerator % 2 == 0 && min.Denominator > 2) {
-				min.Numerator /= 2;
-				min.Denominator /= 2;
-			}
-			
-			Size.Inches = min;
-			if (SetLastSize) {
-				LastSize.Inches = min;
-			}
-			SizeWhole.text = "\(min.Whole == 0 ? "" : "\(min.Whole)")";
-			SizeNumerator.text = "\(min.Numerator)";
-			SizeDenominator.text = "\(min.Denominator)";
 		} else {
-			let s = LowerSize.Millimeters + (CGFloat(SizeSlider.value) / 2);
+			// Derive new value
+			let s = CGFloat(SizeSlider.value) / 2;
+			
+			// Set values
 			Size.Millimeters = s;
 			if (SetLastSize) {
 				LastSize.Millimeters = s;
 			}
+			
+			// Update text
 			SizeWhole.text = "\(s)";
 		}
 		
+		// Update results
 		self.Result.text = "\(GetSpeed(Bit: SelectedBit, Mat: SelectedMat, Size: Size))"
 	}
 	
 	
 	
-	// MARK: - Result View
-	
-	
-	
-	
-	
-	
-	// MARK: -Other
+	// MARK: - Other
 	
 	
 	var LastMaterial: Material = .Softwood;
@@ -266,64 +260,38 @@ class ViewController: UIViewController {
 	
 	var SetLastSize: Bool = true;
 	func MaterialSelectionChanged(_: Int, Tag: Int) {
-		// Set upper and lower size boundry
-		let Mat = Material.init(rawValue: Tag)!;
+		// Update material display
+		let Mat = Material(rawValue: Tag)!;
 		self.SelectedMat = Mat;
 		self.MaterialPicker.SelectedImage.image = GetImageFor(Mat: Mat);
 		
-		(self.LowerSize, self.UpperSize) = GetSize(Bit: self.SelectedBit, Mat: self.SelectedMat);
-		self.SizeDistance.1 = Int(floor((self.UpperSize.Millimeters - self.LowerSize.Millimeters) * 2));
-		// Inches
-		let sMin = self.LowerSize.Inches, sMax = self.UpperSize.Inches;
-		let Min = Fraction(w: sMin.Whole, n: sMin.Numerator * sMax.Denominator, d: sMin.Denominator * sMax.Denominator), Max = Fraction(w: sMax.Whole, n: sMax.Numerator * sMin.Denominator, d: sMax.Denominator * sMin.Denominator);
-		var Distance = Fraction(w: Max.Whole - Min.Whole, n: Max.Numerator - Min.Numerator, d: Min.Denominator);
-		if (Distance.Numerator < 0) {
-			Distance.Numerator += Distance.Denominator;
-			let _ = Distance.Whole--;
-		}
 		
-		let div = CGFloat(InchesStep) / CGFloat(Distance.Denominator);
-		self.SizeDistance.0 = Distance.Whole * InchesStep + Int(CGFloat(Distance.Numerator) * div);
+		// Get the new size bound data for the bit + material
+		let (LowerSize, UpperSize) = GetSize(Bit: self.SelectedBit, Mat: self.SelectedMat);
 		
 		SetLastSize = false;
-		self.SizeSlider.maximumValue = Float(self.IsImperial ? self.SizeDistance.0 : self.SizeDistance.1);
 		
-		// Keep old size value
-		if (self.IsImperial) {
-			let _s = self.LastSize.Inches, _a = self.LowerSize.Inches, _b = self.UpperSize.Inches;
-			let s = CGFloat(_s.Whole) + (CGFloat(_s.Numerator) / CGFloat(_s.Denominator)),
-				a = CGFloat(_a.Whole) + (CGFloat(_a.Numerator) / CGFloat(_a.Denominator)),
-				b = CGFloat(_b.Whole) + (CGFloat(_b.Numerator) / CGFloat(_b.Denominator));
-			
-			if (s <= a) {
-				self.SizeSlider.value = 0;
-			} else if (s >= b) {
-				self.SizeSlider.value = self.SizeSlider.maximumValue;
-			} else {
-				let sMin = self.LowerSize.Inches, sMax = self.LastSize.Inches;
-				let Min = Fraction(w: sMin.Whole, n: sMin.Numerator * sMax.Denominator, d: sMin.Denominator * sMax.Denominator), Max = Fraction(w: sMax.Whole, n: sMax.Numerator * sMin.Denominator, d: sMax.Denominator * sMin.Denominator);
-				var Distance = Fraction(w: Max.Whole - Min.Whole, n: Max.Numerator - Min.Numerator, d: Min.Denominator);
-				if (Distance.Numerator < 0) {
-					Distance.Numerator += Distance.Denominator;
-					let _ = Distance.Whole--;
-				}
-				
-				let div = CGFloat(InchesStep) / CGFloat(Distance.Denominator);
-				self.SizeSlider.value = Float(Distance.Whole * InchesStep + Int(CGFloat(Distance.Numerator) * div));
-			}
-
+		// Adjust size slider bounds
+		if (IsImperial) {
+			SizeSlider.minimumValue = Float(LowerSize.Inches.Normalize(MaxDenominator: InchesStep));
+			SizeSlider.maximumValue = Float(UpperSize.Inches.Normalize(MaxDenominator: InchesStep));
 		} else {
-			let s = self.LastSize.Millimeters, a = self.LowerSize.Millimeters, b = self.UpperSize.Millimeters;
-			
-			if (s <= a) {
-				self.SizeSlider.value = 0;
-			} else if (s >= b) {
-				self.SizeSlider.value = self.SizeSlider.maximumValue;
-			} else {
-				self.SizeSlider.value = Float(floor((self.LastSize.Millimeters - self.LowerSize.Millimeters) * 2));
-			}
+			SizeSlider.minimumValue = Float(LowerSize.Millimeters * 2);
+			SizeSlider.maximumValue = Float(UpperSize.Millimeters * 2);
 		}
 		
+		// keep old size value
+		let last = Float(IsImperial ? LastSize.Inches.Normalize(MaxDenominator: InchesStep) : Int(LastSize.Millimeters * 2));
+		
+		if (last <= SizeSlider.minimumValue) {
+			SizeSlider.value = SizeSlider.minimumValue;
+		} else if (last >= SizeSlider.maximumValue) {
+			SizeSlider.value = SizeSlider.maximumValue;
+		} else {
+			self.SizeSlider.value = last;
+		}
+		
+		// "Bubble" event
 		self.SizeValueChanged(self.SizeSlider);
 		SetLastSize = true;
 		

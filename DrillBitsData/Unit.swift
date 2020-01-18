@@ -82,6 +82,18 @@ public struct Fraction {
 		Denominator = d;
 	}
 	
+	/// Initialize a new fraction
+	/// - Parameter MaxDenominator: The maximum value a denominator can be (should be a power of 2)
+	public init(Normal: Int, MaxDenominator: Int) {
+		Whole = Int(floor(Float(Normal) / Float(MaxDenominator)));
+		Numerator = Normal - (Whole * MaxDenominator);
+		Denominator = MaxDenominator;
+		while (Numerator != 0 && Numerator % 2 == 0) {
+			Numerator /= 2;
+			Denominator /= 2;
+		}
+	}
+	
 	/// Compare 2 fractions
 	/// - Parameter to: The fraction to comapre to
 	/// - Parameter Comparison: How to compare the two fractions
@@ -102,5 +114,23 @@ public struct Fraction {
 		{ return Comparison == .RightGreater || Comparison == .RightGreaterEqual; }
 		
 		return Comparison == .LeftGreaterEqual || Comparison == .Equal || Comparison == .RightGreaterEqual;
+	}
+	
+	
+	
+	/// Convert the fraction into a number single number (whole * 16 + numerator)
+	/// - Parameter MaxDenominator: The maximum value a denominator can be (should be a power of 2)
+	public func Normalize(MaxDenominator: Int) -> Int {
+		return (Whole * MaxDenominator) + (Numerator * MaxDenominator / Denominator);
+	}
+	
+	/// Convert the fraction into a CGFloat
+	public func ToCGFloat() -> CGFloat {
+		return CGFloat(Whole) + (CGFloat(Numerator) / CGFloat(Denominator));
+	}
+	
+	/// Convert the fraction into a float
+	public func ToFloat() -> Float {
+		return Float(Whole) + (Float(Numerator) / Float(Denominator));
 	}
 }
