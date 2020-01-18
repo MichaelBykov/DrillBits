@@ -3,10 +3,11 @@
 //  DrillBits
 //
 //  Created by Michael Bykov on 7/10/19.
-//  Copyright © 2019 Lepario. All rights reserved.
+//  Copyright © 2020 Lepario. All rights reserved.
 //
 
 import UIKit
+import DrillBitsData
 
 class ViewController: UIViewController {
 	
@@ -28,8 +29,8 @@ class ViewController: UIViewController {
 	
 	/// Are we using the Imperial (inches) or Metric (mm) system?
 	@inline(__always) public var IsImperial: Bool { get { return Size.IsImperial!; } set { Size.IsImperial = newValue; } }
-	public var Size: Unit = Unit(Inches: Fraction(w: 0));
-	public var UpperSize: Unit = Unit(Inches: Fraction(w: 0)), LowerSize: Unit = Unit(Inches: Fraction(w: 0));
+	public var Size: DrillBitsData.Unit = Unit(Inches: Fraction(w: 0));
+	public var UpperSize: DrillBitsData.Unit = Unit(Inches: Fraction(w: 0)), LowerSize: DrillBitsData.Unit = Unit(Inches: Fraction(w: 0));
 	public var SizeDistance: (Int, Int) = (0, 0);
 	
 	public var InchesStep: Int = 16;
@@ -176,7 +177,7 @@ class ViewController: UIViewController {
 		UserDefaults.standard.set(IsImperial, forKey: "Imperial");
 	}
 	
-	var LastSize: Unit = Unit(Inches: Fraction(w: 0, n: 1, d: 4), Millimeters: 6);
+	var LastSize: DrillBitsData.Unit = Unit(Inches: Fraction(w: 0, n: 1, d: 4), Millimeters: 6);
 	@IBAction func SizeValueChanged(_ sender: UISnappingSlider) {
 		if (IsImperial) {
 			let div = InchesStep / LowerSize.Inches.Denominator;

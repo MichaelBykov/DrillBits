@@ -3,13 +3,13 @@
 //  DrillBits
 //
 //  Created by Michael Bykov on 7/26/19.
-//  Copyright © 2019 Lepario. All rights reserved.
+//  Copyright © 2020 Lepario. All rights reserved.
 //
 
 import UIKit
 
 /// An enumerator for all the possible (supported) drill bits
-enum DrillBit: Int {
+public enum DrillBit: Int {
 	/// Twist drill bit
 	case Twist				= 0
 	/// Bullet pilot-point drill bit
@@ -34,7 +34,7 @@ enum DrillBit: Int {
 	case CircleCutter		= 10
 }
 
-func ToString(Bit: DrillBit) -> String {
+public func ToString(Bit: DrillBit) -> String {
 	switch Bit {
 	case .Twist:
 		return "Twist Bit";
@@ -61,7 +61,7 @@ func ToString(Bit: DrillBit) -> String {
 	}
 }
 
-func GetDescFor(Bit: DrillBit) -> String {
+public func GetDescFor(Bit: DrillBit) -> String {
 	switch Bit {
 	case .Twist:
 		return "Good bit for metal";
@@ -88,12 +88,12 @@ func GetDescFor(Bit: DrillBit) -> String {
 	}
 }
 
-func GetImageFor(Bit: DrillBit) -> UIImage {
+public func GetImageFor(Bit: DrillBit) -> UIImage {
 	return UIImage(named: ToString(Bit: Bit))!;
 }
 
 /// Get all the "supported" materials for a drillbit
-func Materials(For: DrillBit) -> [Material] {
+public func Materials(For: DrillBit) -> [Material] {
 	switch For {
 	case .Twist:
 		return [ .Softwood, .Hardwood, .Acrylic, .Brass, .Aluminum, .Steel ];

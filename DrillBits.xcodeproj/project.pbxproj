@@ -162,12 +162,13 @@
 		4CA7D614231783C7008D6993 /* Circle Cutter @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D60E231783C7008D6993 /* Circle Cutter @2x.png */; };
 		4CA7D615231783C7008D6993 /* Circle Cutter @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D60F231783C7008D6993 /* Circle Cutter @3x.png */; };
 		4CA7D616231783C7008D6993 /* Circle Cutter Zoomed @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D610231783C7008D6993 /* Circle Cutter Zoomed @3x.png */; };
-		4CC790C022F7DF7200BF87ED /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790BF22F7DF7200BF87ED /* Data.swift */; };
-		4CC790C222F7E15400BF87ED /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790C122F7E15400BF87ED /* Sizes.swift */; };
 		4CC790C422FB1D1C00BF87ED /* UICancelableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */; };
-		4CCA205A22EBCF7800D0468C /* DrillBit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205922EBCF7800D0468C /* DrillBit.swift */; };
-		4CCA205C22EBCF8D00D0468C /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205B22EBCF8D00D0468C /* Material.swift */; };
-		4CCA206022EBEF9A00D0468C /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205F22EBEF9A00D0468C /* Unit.swift */; };
+		4CD945A523D37D07005930F2 /* DrillBit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205922EBCF7800D0468C /* DrillBit.swift */; };
+		4CD945A623D37D22005930F2 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205B22EBCF8D00D0468C /* Material.swift */; };
+		4CD945A723D37D34005930F2 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205F22EBEF9A00D0468C /* Unit.swift */; };
+		4CD945A823D37D37005930F2 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790BF22F7DF7200BF87ED /* Data.swift */; };
+		4CD945A923D37D39005930F2 /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790C122F7E15400BF87ED /* Sizes.swift */; };
+		4CD945AB23D37DBC005930F2 /* libDrillBitsData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9459E23D37C75005930F2 /* libDrillBitsData.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +200,13 @@
 			remoteGlobalIDString = 4C5336AA23D2E5DF00335D57;
 			remoteInfo = Watch;
 		};
+		4CD945AC23D37DBC005930F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C46FA0D22D6F7D30081A381 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CD9459D23D37C75005930F2;
+			remoteInfo = DrillBitsData;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -222,6 +230,15 @@
 				4C5336B823D2E5DF00335D57 /* Watch Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CD9459C23D37C75005930F2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -396,6 +413,7 @@
 		4CCA205922EBCF7800D0468C /* DrillBit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillBit.swift; sourceTree = "<group>"; };
 		4CCA205B22EBCF8D00D0468C /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		4CCA205F22EBEF9A00D0468C /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		4CD9459E23D37C75005930F2 /* libDrillBitsData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDrillBitsData.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -403,6 +421,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD945AB23D37DBC005930F2 /* libDrillBitsData.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +440,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4C5336B423D2E5DF00335D57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CD9459B23D37C75005930F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -447,7 +473,9 @@
 				4C46FA3722D6F7D40081A381 /* DrillBitsUITests */,
 				4C5336AC23D2E5DF00335D57 /* Watch */,
 				4C5336BB23D2E5DF00335D57 /* Watch Extension */,
+				4CD9459F23D37C75005930F2 /* DrillBitsData */,
 				4C46FA1622D6F7D30081A381 /* Products */,
+				4CD945AA23D37DBC005930F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -459,6 +487,7 @@
 				4C46FA3422D6F7D40081A381 /* DrillBitsUITests.xctest */,
 				4C5336AB23D2E5DF00335D57 /* Watch.app */,
 				4C5336B723D2E5DF00335D57 /* Watch Extension.appex */,
+				4CD9459E23D37C75005930F2 /* libDrillBitsData.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -466,7 +495,6 @@
 		4C46FA1722D6F7D30081A381 /* DrillBits */ = {
 			isa = PBXGroup;
 			children = (
-				4CCA205622EBCF4C00D0468C /* Data */,
 				4C46FA4A22D7AA2B0081A381 /* Helpers */,
 				4C46FA4722D6FA690081A381 /* Views */,
 				4C46FA1822D6F7D30081A381 /* AppDelegate.swift */,
@@ -873,7 +901,7 @@
 			path = "App Icon";
 			sourceTree = "<group>";
 		};
-		4CCA205622EBCF4C00D0468C /* Data */ = {
+		4CD9459F23D37C75005930F2 /* DrillBitsData */ = {
 			isa = PBXGroup;
 			children = (
 				4CCA205922EBCF7800D0468C /* DrillBit.swift */,
@@ -882,7 +910,14 @@
 				4CC790BF22F7DF7200BF87ED /* Data.swift */,
 				4CC790C122F7E15400BF87ED /* Sizes.swift */,
 			);
-			path = Data;
+			path = DrillBitsData;
+			sourceTree = "<group>";
+		};
+		4CD945AA23D37DBC005930F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -901,6 +936,7 @@
 			);
 			dependencies = (
 				4C5336CB23D2E5E000335D57 /* PBXTargetDependency */,
+				4CD945AD23D37DBC005930F2 /* PBXTargetDependency */,
 			);
 			name = DrillBits;
 			productName = DrillBits;
@@ -977,6 +1013,23 @@
 			productReference = 4C5336B723D2E5DF00335D57 /* Watch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		4CD9459D23D37C75005930F2 /* DrillBitsData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CD945A423D37C75005930F2 /* Build configuration list for PBXNativeTarget "DrillBitsData" */;
+			buildPhases = (
+				4CD9459A23D37C75005930F2 /* Sources */,
+				4CD9459B23D37C75005930F2 /* Frameworks */,
+				4CD9459C23D37C75005930F2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrillBitsData;
+			productName = DrillBitsData;
+			productReference = 4CD9459E23D37C75005930F2 /* libDrillBitsData.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1004,6 +1057,9 @@
 					4C5336B623D2E5DF00335D57 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
+					4CD9459D23D37C75005930F2 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 4C46FA1022D6F7D30081A381 /* Build configuration list for PBXProject "DrillBits" */;
@@ -1024,6 +1080,7 @@
 				4C46FA3322D6F7D40081A381 /* DrillBitsUITests */,
 				4C5336AA23D2E5DF00335D57 /* Watch */,
 				4C5336B623D2E5DF00335D57 /* Watch Extension */,
+				4CD9459D23D37C75005930F2 /* DrillBitsData */,
 			);
 		};
 /* End PBXProject section */
@@ -1211,16 +1268,11 @@
 				4C46FA4E22D7AA520081A381 /* ConstraintHelper.swift in Sources */,
 				4C46FA5622D7B1930081A381 /* ObjectExtensions.swift in Sources */,
 				4C46FA6522DCEA9E0081A381 /* UIDetailView.swift in Sources */,
-				4CCA206022EBEF9A00D0468C /* Unit.swift in Sources */,
 				4C46FA1B22D6F7D30081A381 /* ViewController.swift in Sources */,
 				4C46FA1922D6F7D30081A381 /* AppDelegate.swift in Sources */,
-				4CCA205A22EBCF7800D0468C /* DrillBit.swift in Sources */,
-				4CC790C222F7E15400BF87ED /* Sizes.swift in Sources */,
 				4C46FA6322DCE8C30081A381 /* UISnappingSlider.swift in Sources */,
 				4CC790C422FB1D1C00BF87ED /* UICancelableScrollView.swift in Sources */,
-				4CCA205C22EBCF8D00D0468C /* Material.swift in Sources */,
 				4C46FA4922D6FA850081A381 /* UISelector.swift in Sources */,
-				4CC790C022F7DF7200BF87ED /* Data.swift in Sources */,
 				4C46FA8722E2D3390081A381 /* UIViewWatcher.swift in Sources */,
 				4C46FA5422D7B1440081A381 /* NumberHelper.swift in Sources */,
 				4C46FA5222D7AEF10081A381 /* Event.swift in Sources */,
@@ -1254,6 +1306,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CD9459A23D37C75005930F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD945A923D37D39005930F2 /* Sizes.swift in Sources */,
+				4CD945A823D37D37005930F2 /* Data.swift in Sources */,
+				4CD945A723D37D34005930F2 /* Unit.swift in Sources */,
+				4CD945A623D37D22005930F2 /* Material.swift in Sources */,
+				4CD945A523D37D07005930F2 /* DrillBit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1276,6 +1340,11 @@
 			isa = PBXTargetDependency;
 			target = 4C5336AA23D2E5DF00335D57 /* Watch */;
 			targetProxy = 4C5336CA23D2E5E000335D57 /* PBXContainerItemProxy */;
+		};
+		4CD945AD23D37DBC005930F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CD9459D23D37C75005930F2 /* DrillBitsData */;
+			targetProxy = 4CD945AC23D37DBC005930F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1430,6 +1499,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7T8HUX83A;
 				INFOPLIST_FILE = DrillBits/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1448,6 +1518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7T8HUX83A;
 				INFOPLIST_FILE = DrillBits/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1623,6 +1694,34 @@
 			};
 			name = Release;
 		};
+		4CD945A223D37C75005930F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7T8HUX83A;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CD945A323D37C75005930F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7T8HUX83A;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1676,6 +1775,15 @@
 			buildConfigurations = (
 				4C5336CE23D2E5E000335D57 /* Debug */,
 				4C5336CF23D2E5E000335D57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CD945A423D37C75005930F2 /* Build configuration list for PBXNativeTarget "DrillBitsData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CD945A223D37C75005930F2 /* Debug */,
+				4CD945A323D37C75005930F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

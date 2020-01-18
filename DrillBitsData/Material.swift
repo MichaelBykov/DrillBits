@@ -3,13 +3,13 @@
 //  DrillBits
 //
 //  Created by Michael Bykov on 7/26/19.
-//  Copyright © 2019 Lepario. All rights reserved.
+//  Copyright © 2020 Lepario. All rights reserved.
 //
 
 import UIKit
 
 /// An enumerator that represents all the different (supported) materials
-enum Material: Int {
+public enum Material: Int {
 	case Softwood		= 0
 	case Hardwood		= 1
 	case Acrylic		= 2
@@ -19,7 +19,7 @@ enum Material: Int {
 	case GlassAndTile	= 6
 }
 
-func ToString(Mat: Material) -> String {
+public func ToString(Mat: Material) -> String {
 	switch Mat {
 	case .Softwood:
 		return "Softwood";
@@ -38,7 +38,7 @@ func ToString(Mat: Material) -> String {
 	}
 }
 
-func GetDescFor(Mat: Material) -> String {
+public func GetDescFor(Mat: Material) -> String {
 	switch Mat {
 	case .Softwood:
 		return "Very versatile";
@@ -57,6 +57,6 @@ func GetDescFor(Mat: Material) -> String {
 	}
 }
 
-func GetImageFor(Mat: Material) -> UIImage {
+public func GetImageFor(Mat: Material) -> UIImage {
 	return UIImage(named: ToString(Mat: Mat))!;
 }

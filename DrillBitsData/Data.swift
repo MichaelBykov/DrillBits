@@ -3,10 +3,10 @@
 //  DrillBits
 //
 //  Created by Michael Bykov on 8/4/19.
-//  Copyright © 2019 Lepario. All rights reserved.
+//  Copyright © 2020 Lepario. All rights reserved.
 //
 
-func GetSpeed(Bit: DrillBit, Mat: Material, Size: Unit) -> Int {
+public func GetSpeed(Bit: DrillBit, Mat: Material, Size: Unit) -> Int {
 	switch Bit {
 	case .Twist:
 		switch Mat {

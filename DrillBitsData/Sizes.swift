@@ -3,12 +3,12 @@
 //  DrillBits
 //
 //  Created by Michael Bykov on 8/4/19.
-//  Copyright © 2019 Lepario. All rights reserved.
+//  Copyright © 2020 Lepario. All rights reserved.
 //
 
 /// Get the upper and lower bound of sizes for the given drill bit
 /// - Parameter Bit:
-func GetSize(Bit: DrillBit, Mat: Material) -> (Unit, Unit) {
+public func GetSize(Bit: DrillBit, Mat: Material) -> (Unit, Unit) {
 	let lookup: [DrillBit: [Material: (Unit, Unit)]] = [
 		.Twist: [
 			.Softwood: (Unit(Inches: Fraction(w: 0, n: 1, d: 16), Millimeters: 1), Unit(Inches: Fraction(w: 1), Millimeters: 25)),
