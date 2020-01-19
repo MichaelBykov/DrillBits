@@ -30,8 +30,6 @@
 		4C46FA1E22D6F7D30081A381 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA1C22D6F7D30081A381 /* Main.storyboard */; };
 		4C46FA2022D6F7D30081A381 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA1F22D6F7D30081A381 /* Assets.xcassets */; };
 		4C46FA2322D6F7D30081A381 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA2122D6F7D30081A381 /* LaunchScreen.storyboard */; };
-		4C46FA2E22D6F7D40081A381 /* DrillBitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA2D22D6F7D40081A381 /* DrillBitsTests.swift */; };
-		4C46FA3922D6F7D40081A381 /* DrillBitsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA3822D6F7D40081A381 /* DrillBitsUITests.swift */; };
 		4C46FA4922D6FA850081A381 /* UISelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA4822D6FA850081A381 /* UISelector.swift */; };
 		4C46FA4E22D7AA520081A381 /* ConstraintHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA4D22D7AA520081A381 /* ConstraintHelper.swift */; };
 		4C46FA5222D7AEF10081A381 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA5122D7AEF10081A381 /* Event.swift */; };
@@ -175,20 +173,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4C46FA2A22D6F7D40081A381 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C46FA0D22D6F7D30081A381 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C46FA1422D6F7D30081A381;
-			remoteInfo = DrillBits;
-		};
-		4C46FA3522D6F7D40081A381 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C46FA0D22D6F7D30081A381 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C46FA1422D6F7D30081A381;
-			remoteInfo = DrillBits;
-		};
 		4C5336B923D2E5DF00335D57 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C46FA0D22D6F7D30081A381 /* Project object */;
@@ -272,12 +256,6 @@
 		4C46FA1F22D6F7D30081A381 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C46FA2222D6F7D30081A381 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C46FA2422D6F7D30081A381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C46FA2922D6F7D40081A381 /* DrillBitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrillBitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C46FA2D22D6F7D40081A381 /* DrillBitsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillBitsTests.swift; sourceTree = "<group>"; };
-		4C46FA2F22D6F7D40081A381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C46FA3422D6F7D40081A381 /* DrillBitsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrillBitsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C46FA3822D6F7D40081A381 /* DrillBitsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillBitsUITests.swift; sourceTree = "<group>"; };
-		4C46FA3A22D6F7D40081A381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C46FA4822D6FA850081A381 /* UISelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISelector.swift; sourceTree = "<group>"; };
 		4C46FA4D22D7AA520081A381 /* ConstraintHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintHelper.swift; sourceTree = "<group>"; };
 		4C46FA5122D7AEF10081A381 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -431,20 +409,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C46FA2622D6F7D40081A381 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C46FA3122D6F7D40081A381 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4C5336B423D2E5DF00335D57 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,8 +439,6 @@
 			children = (
 				4C46FA5922D84D190081A381 /* Image Source */,
 				4C46FA1722D6F7D30081A381 /* DrillBits */,
-				4C46FA2C22D6F7D40081A381 /* DrillBitsTests */,
-				4C46FA3722D6F7D40081A381 /* DrillBitsUITests */,
 				4C5336AC23D2E5DF00335D57 /* Watch */,
 				4C5336BB23D2E5DF00335D57 /* Watch Extension */,
 				4CD9459F23D37C75005930F2 /* DrillBitsData */,
@@ -489,8 +451,6 @@
 			isa = PBXGroup;
 			children = (
 				4C46FA1522D6F7D30081A381 /* DrillBits.app */,
-				4C46FA2922D6F7D40081A381 /* DrillBitsTests.xctest */,
-				4C46FA3422D6F7D40081A381 /* DrillBitsUITests.xctest */,
 				4C5336AB23D2E5DF00335D57 /* Watch.app */,
 				4C5336B723D2E5DF00335D57 /* Watch Extension.appex */,
 				4CD9459E23D37C75005930F2 /* libDrillBitsData.a */,
@@ -511,24 +471,6 @@
 				4C46FA2422D6F7D30081A381 /* Info.plist */,
 			);
 			path = DrillBits;
-			sourceTree = "<group>";
-		};
-		4C46FA2C22D6F7D40081A381 /* DrillBitsTests */ = {
-			isa = PBXGroup;
-			children = (
-				4C46FA2D22D6F7D40081A381 /* DrillBitsTests.swift */,
-				4C46FA2F22D6F7D40081A381 /* Info.plist */,
-			);
-			path = DrillBitsTests;
-			sourceTree = "<group>";
-		};
-		4C46FA3722D6F7D40081A381 /* DrillBitsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4C46FA3822D6F7D40081A381 /* DrillBitsUITests.swift */,
-				4C46FA3A22D6F7D40081A381 /* Info.plist */,
-			);
-			path = DrillBitsUITests;
 			sourceTree = "<group>";
 		};
 		4C46FA4722D6FA690081A381 /* Views */ = {
@@ -952,42 +894,6 @@
 			productReference = 4C46FA1522D6F7D30081A381 /* DrillBits.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4C46FA2822D6F7D40081A381 /* DrillBitsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C46FA4022D6F7D40081A381 /* Build configuration list for PBXNativeTarget "DrillBitsTests" */;
-			buildPhases = (
-				4C46FA2522D6F7D40081A381 /* Sources */,
-				4C46FA2622D6F7D40081A381 /* Frameworks */,
-				4C46FA2722D6F7D40081A381 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4C46FA2B22D6F7D40081A381 /* PBXTargetDependency */,
-			);
-			name = DrillBitsTests;
-			productName = DrillBitsTests;
-			productReference = 4C46FA2922D6F7D40081A381 /* DrillBitsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4C46FA3322D6F7D40081A381 /* DrillBitsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C46FA4322D6F7D40081A381 /* Build configuration list for PBXNativeTarget "DrillBitsUITests" */;
-			buildPhases = (
-				4C46FA3022D6F7D40081A381 /* Sources */,
-				4C46FA3122D6F7D40081A381 /* Frameworks */,
-				4C46FA3222D6F7D40081A381 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4C46FA3622D6F7D40081A381 /* PBXTargetDependency */,
-			);
-			name = DrillBitsUITests;
-			productName = DrillBitsUITests;
-			productReference = 4C46FA3422D6F7D40081A381 /* DrillBitsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		4C5336AA23D2E5DF00335D57 /* Watch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C5336D423D2E5E000335D57 /* Build configuration list for PBXNativeTarget "Watch" */;
@@ -1052,14 +958,6 @@
 					4C46FA1422D6F7D30081A381 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
-					4C46FA2822D6F7D40081A381 = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = 4C46FA1422D6F7D30081A381;
-					};
-					4C46FA3322D6F7D40081A381 = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = 4C46FA1422D6F7D30081A381;
-					};
 					4C5336AA23D2E5DF00335D57 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -1085,8 +983,6 @@
 			projectRoot = "";
 			targets = (
 				4C46FA1422D6F7D30081A381 /* DrillBits */,
-				4C46FA2822D6F7D40081A381 /* DrillBitsTests */,
-				4C46FA3322D6F7D40081A381 /* DrillBitsUITests */,
 				4C5336AA23D2E5DF00335D57 /* Watch */,
 				4C5336B623D2E5DF00335D57 /* Watch Extension */,
 				4CD9459D23D37C75005930F2 /* DrillBitsData */,
@@ -1234,20 +1130,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C46FA2722D6F7D40081A381 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C46FA3222D6F7D40081A381 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4C5336A923D2E5DF00335D57 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1288,22 +1170,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C46FA2522D6F7D40081A381 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C46FA2E22D6F7D40081A381 /* DrillBitsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C46FA3022D6F7D40081A381 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C46FA3922D6F7D40081A381 /* DrillBitsUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4C5336B323D2E5DF00335D57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1333,16 +1199,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4C46FA2B22D6F7D40081A381 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C46FA1422D6F7D30081A381 /* DrillBits */;
-			targetProxy = 4C46FA2A22D6F7D40081A381 /* PBXContainerItemProxy */;
-		};
-		4C46FA3622D6F7D40081A381 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C46FA1422D6F7D30081A381 /* DrillBits */;
-			targetProxy = 4C46FA3522D6F7D40081A381 /* PBXContainerItemProxy */;
-		};
 		4C5336BA23D2E5DF00335D57 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4C5336B623D2E5DF00335D57 /* Watch Extension */;
@@ -1542,84 +1398,6 @@
 			};
 			name = Release;
 		};
-		4C46FA4122D6F7D40081A381 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DrillBitsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lepario.DrillBitsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrillBits.app/DrillBits";
-			};
-			name = Debug;
-		};
-		4C46FA4222D6F7D40081A381 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DrillBitsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lepario.DrillBitsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrillBits.app/DrillBits";
-			};
-			name = Release;
-		};
-		4C46FA4422D6F7D40081A381 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DrillBitsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lepario.DrillBitsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DrillBits;
-			};
-			name = Debug;
-		};
-		4C46FA4522D6F7D40081A381 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DrillBitsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lepario.DrillBitsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DrillBits;
-			};
-			name = Release;
-		};
 		4C5336CE23D2E5E000335D57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1751,24 +1529,6 @@
 			buildConfigurations = (
 				4C46FA3E22D6F7D40081A381 /* Debug */,
 				4C46FA3F22D6F7D40081A381 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4C46FA4022D6F7D40081A381 /* Build configuration list for PBXNativeTarget "DrillBitsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4C46FA4122D6F7D40081A381 /* Debug */,
-				4C46FA4222D6F7D40081A381 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4C46FA4322D6F7D40081A381 /* Build configuration list for PBXNativeTarget "DrillBitsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4C46FA4422D6F7D40081A381 /* Debug */,
-				4C46FA4522D6F7D40081A381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
