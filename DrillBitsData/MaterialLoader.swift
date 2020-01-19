@@ -9,7 +9,10 @@
 import UIKit
 
 /// A struct for holding all data associated with a material
-public struct MaterialData {
+public struct MaterialData: Identifiable {
+	/// The id (index) of the object
+	public var id: Int;
+	
 	/// The type of material
 	public var Mat: Material;
 	/// The index of the material type
@@ -26,6 +29,7 @@ public struct MaterialData {
 	public init(mat: Material) {
 		Mat = mat;
 		Index = mat.rawValue;
+		id = Index;
 		// Load all data
 		Name = ToString(Mat: Mat);
 		Desc = GetDescFor(Mat: Mat);
@@ -37,6 +41,7 @@ public struct MaterialData {
 	public init(index: Int) {
 		Mat = Material(rawValue: index)!;
 		Index = index;
+		id = index;
 		// Load all data
 		Name = ToString(Mat: Mat);
 		Desc = GetDescFor(Mat: Mat);

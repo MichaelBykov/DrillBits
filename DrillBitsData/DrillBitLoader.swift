@@ -9,7 +9,10 @@
 import UIKit
 
 /// A struct for holding all data associated with a drill bit
-public struct DrillBitData {
+public struct DrillBitData: Identifiable {
+	/// The id (index) of the object
+	public var id: Int;
+	
 	/// The type of drill bit
 	public var Bit: DrillBit;
 	/// The index of the bit type
@@ -26,6 +29,7 @@ public struct DrillBitData {
 	public init(bit: DrillBit) {
 		Bit = bit;
 		Index = bit.rawValue;
+		id = Index;
 		// Load all data
 		Name = ToString(Bit: Bit);
 		Desc = GetDescFor(Bit: Bit);
@@ -37,6 +41,7 @@ public struct DrillBitData {
 	public init(index: Int) {
 		Bit = DrillBit(rawValue: index)!;
 		Index = index;
+		id = index;
 		// Load all data
 		Name = ToString(Bit: Bit);
 		Desc = GetDescFor(Bit: Bit);
