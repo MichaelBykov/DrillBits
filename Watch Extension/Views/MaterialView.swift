@@ -20,16 +20,9 @@ struct MaterialView: View {
 	
     var body: some View {
 		List(Mats) { Mat in
-			NavigationLink(destination: ResultView(ForBit: self.Bit, AndMat: Mat.Mat)) {
-				HStack {
-					VStack {
-						Image(Mat.Name)
-						Text(Mat.Name)
-					}
-					Text(">")
-				}
-			}
-		}
+			ItemView(label: Mat.Name, image: Mat.Image, destination: ResultView(ForBit: self.Bit, AndMat: Mat.Mat))
+				.aspectRatio(3, contentMode: .fit)
+		}.navigationBarTitle(ToString(Bit: Bit))
     }
 }
 

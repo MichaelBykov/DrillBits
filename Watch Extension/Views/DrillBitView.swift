@@ -15,17 +15,10 @@ struct DrillBitView: View {
     var body: some View {
 		VStack {
 			List(Bits) { Bit in
-				NavigationLink(destination: MaterialView(For: Bit.Bit)) {
-					HStack {
-						VStack {
-							Image(Bit.Name);
-							Text(Bit.Name)
-						}
-						Text(">")
-					}
-				}
+				ItemView(label: Bit.Name, image: Bit.Image, destination: MaterialView(For: Bit.Bit))
+					.aspectRatio(3, contentMode: .fit)
 			}
-		}
+		}.navigationBarTitle("Drill Bits")
     }
 }
 
