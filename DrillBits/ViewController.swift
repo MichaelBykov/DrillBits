@@ -57,7 +57,7 @@ class ViewController: UIViewController {
 		// Make sure the scroll view doesn't start scrolling while the user is inputting
 		ScrollView.RootCancels = [ DrillBitPicker.SelectionView, MaterialPicker.SelectionView, SizeSlider ];
 		
-		// Add data for pickers
+		// Add data for drill bit picker
 		let BitData: [DrillBitData] = LoadDrillBitData();
 		DrillBitPicker.Data = BitData.map({ d in return (d.Image, d.Index, d.Name, d.Desc); });
 		
@@ -113,8 +113,8 @@ class ViewController: UIViewController {
 	
 	
 	
-	
 	// MARK: - Defaults
+	
 	
 	/// Save what the currently selected drill bit is
 	public func SaveBit() { Defaults.Bit = SelectedBit; }
@@ -124,7 +124,6 @@ class ViewController: UIViewController {
 	public func SaveSize() { Defaults.Size = SizeSlider.value; }
 	/// Save what the currently selected unit system is
 	public func SaveImperial() { Defaults.Imperial = IsImperial; }
-	
 	
 	
 	
@@ -242,17 +241,20 @@ class ViewController: UIViewController {
 	var LastMaterial: Material = .Softwood;
 	var SetLastMaterial: Bool = true;
 	func DrillBitSelectionChanged(_: Int, Tag: Int) {
-		// Set materials
+		// Update drill bit display
 		let Bit = DrillBit(rawValue: Tag)!;
 		self.SelectedBit = Bit;
 		self.DrillBitPicker.SelectedImage.image = UIImage(named: "\(ToString(Bit: Bit)) Detail");
-		let NewData = Materials(For: Bit).map({ m in return (GetImageFor(Mat: m), m.rawValue, ToString(Mat: m), GetDescFor(Mat: m)); });
-		let MatIndex = NewData.firstIndex(where: { item in return item.1 == LastMaterial.rawValue; });
-		SetLastMaterial = false;
 		
-		self.MaterialPicker.Data = NewData;
+		// Add data for material picker
+		let NewData = LoadMaterialData(For: Bit);
+		let MatIndex = NewData.firstIndex(where: { item in return item.Mat == LastMaterial; });
+		
+		SetLastMaterial = false;
+		self.MaterialPicker.Data = NewData.map({ m in return (m.Image, m.Index, m.Name, m.Desc); });
 		
 		if (MatIndex != nil) {
+			// "Bubble" event
 			self.MaterialPicker.Select(Index: MatIndex!);
 		}
 		SetLastMaterial = true;

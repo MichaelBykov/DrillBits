@@ -171,6 +171,7 @@
 		4CD945AB23D37DBC005930F2 /* libDrillBitsData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9459E23D37C75005930F2 /* libDrillBitsData.a */; };
 		4CD945B223D39607005930F2 /* DrillBitLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD945B123D39607005930F2 /* DrillBitLoader.swift */; };
 		4CD945B423D3A5EF005930F2 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD945B323D3A5EF005930F2 /* Defaults.swift */; };
+		4CD945B623D3D299005930F2 /* MaterialLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD945B523D3D299005930F2 /* MaterialLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -418,6 +419,7 @@
 		4CD9459E23D37C75005930F2 /* libDrillBitsData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDrillBitsData.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD945B123D39607005930F2 /* DrillBitLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillBitLoader.swift; sourceTree = "<group>"; };
 		4CD945B323D3A5EF005930F2 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		4CD945B523D3D299005930F2 /* MaterialLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -911,6 +913,7 @@
 				4CCA205922EBCF7800D0468C /* DrillBit.swift */,
 				4CD945B123D39607005930F2 /* DrillBitLoader.swift */,
 				4CCA205B22EBCF8D00D0468C /* Material.swift */,
+				4CD945B523D3D299005930F2 /* MaterialLoader.swift */,
 				4CCA205F22EBEF9A00D0468C /* Unit.swift */,
 				4CC790BF22F7DF7200BF87ED /* Data.swift */,
 				4CC790C122F7E15400BF87ED /* Sizes.swift */,
@@ -1321,6 +1324,7 @@
 				4CD945A823D37D37005930F2 /* Data.swift in Sources */,
 				4CD945A723D37D34005930F2 /* Unit.swift in Sources */,
 				4CD945A623D37D22005930F2 /* Material.swift in Sources */,
+				4CD945B623D3D299005930F2 /* MaterialLoader.swift in Sources */,
 				4CD945B223D39607005930F2 /* DrillBitLoader.swift in Sources */,
 				4CD945A523D37D07005930F2 /* DrillBit.swift in Sources */,
 			);
