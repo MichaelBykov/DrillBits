@@ -25,6 +25,7 @@
 		4C08CD9C2318A080004D8C9B /* Spade Bit with Spurs.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD9B2318A080004D8C9B /* Spade Bit with Spurs.blend */; };
 		4C08CD9E2318A08E004D8C9B /* Powerbore Drill Bit.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD9D2318A08E004D8C9B /* Powerbore Drill Bit.blend */; };
 		4C08CDA02318A09D004D8C9B /* Circle Cutter.blend in Resources */ = {isa = PBXBuildFile; fileRef = 4C08CD9F2318A09C004D8C9B /* Circle Cutter.blend */; };
+		4C30FD9623DA6A81007D5E87 /* FractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C30FD9523DA6A81007D5E87 /* FractionView.swift */; };
 		4C46FA1922D6F7D30081A381 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA1822D6F7D30081A381 /* AppDelegate.swift */; };
 		4C46FA1B22D6F7D30081A381 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA1A22D6F7D30081A381 /* ViewController.swift */; };
 		4C46FA1E22D6F7D30081A381 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA1C22D6F7D30081A381 /* Main.storyboard */; };
@@ -174,6 +175,8 @@
 		4CB4D81D23D3F62300B3766D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB4D81C23D3F62300B3766D /* ResultView.swift */; };
 		4CC790C422FB1D1C00BF87ED /* UICancelableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */; };
 		4CC99B5023D4012900788AED /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC99B4F23D4012900788AED /* ItemView.swift */; };
+		4CC99B5223D51EDE00788AED /* UnitSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC99B5123D51EDE00788AED /* UnitSelector.swift */; };
+		4CD77B7923D5424D005AF12F /* ContentSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD77B7823D5424D005AF12F /* ContentSlider.swift */; };
 		4CD945A523D37D07005930F2 /* DrillBit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205922EBCF7800D0468C /* DrillBit.swift */; };
 		4CD945A623D37D22005930F2 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205B22EBCF8D00D0468C /* Material.swift */; };
 		4CD945A723D37D34005930F2 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205F22EBEF9A00D0468C /* Unit.swift */; };
@@ -278,6 +281,7 @@
 		4C08CD9B2318A080004D8C9B /* Spade Bit with Spurs.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spade Bit with Spurs.blend"; sourceTree = "<group>"; };
 		4C08CD9D2318A08E004D8C9B /* Powerbore Drill Bit.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Powerbore Drill Bit.blend"; sourceTree = "<group>"; };
 		4C08CD9F2318A09C004D8C9B /* Circle Cutter.blend */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Circle Cutter.blend"; sourceTree = "<group>"; };
+		4C30FD9523DA6A81007D5E87 /* FractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractionView.swift; sourceTree = "<group>"; };
 		4C46FA1522D6F7D30081A381 /* DrillBits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrillBits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C46FA1822D6F7D30081A381 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C46FA1A22D6F7D30081A381 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -424,9 +428,11 @@
 		4CC790C122F7E15400BF87ED /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
 		4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICancelableScrollView.swift; sourceTree = "<group>"; };
 		4CC99B4F23D4012900788AED /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		4CC99B5123D51EDE00788AED /* UnitSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitSelector.swift; sourceTree = "<group>"; };
 		4CCA205922EBCF7800D0468C /* DrillBit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillBit.swift; sourceTree = "<group>"; };
 		4CCA205B22EBCF8D00D0468C /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		4CCA205F22EBEF9A00D0468C /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		4CD77B7823D5424D005AF12F /* ContentSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSlider.swift; sourceTree = "<group>"; };
 		4CD9459E23D37C75005930F2 /* libDrillBitsData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDrillBitsData.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD945B123D39607005930F2 /* DrillBitLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillBitLoader.swift; sourceTree = "<group>"; };
 		4CD945B323D3A5EF005930F2 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
@@ -906,6 +912,9 @@
 				4CB4D81923D3F4E100B3766D /* MaterialView.swift */,
 				4CB4D81C23D3F62300B3766D /* ResultView.swift */,
 				4CC99B4F23D4012900788AED /* ItemView.swift */,
+				4CC99B5123D51EDE00788AED /* UnitSelector.swift */,
+				4CD77B7823D5424D005AF12F /* ContentSlider.swift */,
+				4C30FD9523DA6A81007D5E87 /* FractionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1259,11 +1268,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C5336BF23D2E5DF00335D57 /* HostingController.swift in Sources */,
+				4CD77B7923D5424D005AF12F /* ContentSlider.swift in Sources */,
 				4C5336C323D2E5DF00335D57 /* ComplicationController.swift in Sources */,
+				4CC99B5223D51EDE00788AED /* UnitSelector.swift in Sources */,
 				4CB4D81A23D3F4E100B3766D /* MaterialView.swift in Sources */,
 				4C5336BD23D2E5DF00335D57 /* DrillBitView.swift in Sources */,
 				4CC99B5023D4012900788AED /* ItemView.swift in Sources */,
 				4C5336C123D2E5DF00335D57 /* ExtensionDelegate.swift in Sources */,
+				4C30FD9623DA6A81007D5E87 /* FractionView.swift in Sources */,
 				4CB4D81D23D3F62300B3766D /* ResultView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ItemView<D>: View where D: View {
+struct ItemView<D>: View where D : View {
 	var _Label: String;
 	var _Image: UIImage;
 	var _Destination: D;

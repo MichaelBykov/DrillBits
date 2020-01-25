@@ -35,6 +35,14 @@ public struct Unit {
 		
 	}
 	
+	/// Get the normalized value for the unit
+	/// - Parameter Imperial: Should inches or millimeters be used? (If nil then `IsImperial` or `true` will be used)
+	/// - Returns: The normalized unit
+	public func Normalize(Imperial: Bool? = nil) -> Float {
+		let imp = Imperial == nil ? (IsImperial == nil ? true : IsImperial!) : Imperial!;
+		return imp ? Float(Inches.Normalize(MaxDenominator: 16)) : Float(Millimeters * 2);
+	}
+	
 	/// Compare 2 units
 	/// - Parameter to: The unit to comapre to
 	/// - Parameter Comparison: How to compare the two units

@@ -10,8 +10,10 @@ import WatchKit
 import Foundation
 import SwiftUI
 
-class HostingController: WKHostingController<DrillBitView> {
-    override var body: DrillBitView {
-        return DrillBitView()
+class HostingController: WKHostingController<AnyView> {
+	var ResultViewSharedData: ResultViewShared = ResultViewShared();
+	
+    override var body: AnyView {
+		return AnyView(DrillBitView().environmentObject(self.ResultViewSharedData))
     }
 }
