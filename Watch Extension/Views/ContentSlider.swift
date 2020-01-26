@@ -37,6 +37,10 @@ struct ContentSlider<C>: View where C : View {
 	/// Controls showing the glow around the control
 	@State var Scrolling: Bool = false;
 	
+	private class Counter { var i: Int = 0; }
+	/// For droppping only the very first 4 results
+	private var FirstRecieved = Counter();
+	
 	init (value: Binding<Float>, crown: Binding<Float>, lastCrown: Binding<Float>, min: Int, max: Int, @ViewBuilder content: @escaping () -> C) {
 		_Value = value;
 		_Crown = crown;
@@ -51,9 +55,13 @@ struct ContentSlider<C>: View where C : View {
 		return HStack {
 			GeometryReader { g in
 				Button(action: {
-					self.Value -= 1;
 					self.Crown -= 1;
 					self.LastCrown = self.Crown;
+					if (self.Value - 1 != self.Crown) {
+						self.Value = self.Crown - 1;
+					} else {
+						self.Value -= 1;
+					}
 					
 					withAnimation(Animation.linear(duration: 0.1)) {
 						self.MinusDown = true;
@@ -91,9 +99,13 @@ struct ContentSlider<C>: View where C : View {
 			
 			GeometryReader { g in
 				Button(action: {
-					self.Value += 1;
 					self.Crown += 1;
 					self.LastCrown = self.Crown;
+					if (self.Value + 1 != self.Crown) {
+						self.Value = self.Crown + 1;
+					} else {
+						self.Value += 1;
+					}
 					
 					withAnimation(Animation.linear(duration: 0.1)) {
 						self.PlusDown = true;
@@ -136,15 +148,16 @@ struct ContentSlider<C>: View where C : View {
 			.frame(height: 42)
 			.background(BackgroundColor)
 			.cornerRadius(8)
-			// Init
-			.onAppear {
-				self.Crown = self.Value;
-				self.LastCrown = self.Value;
-			}
 			// Handle crown rotation
 			.focusable()
 			.digitalCrownRotation($Crown, from: Float(self.Min), through: Float(self.Max), by: 1, sensitivity: .medium, isContinuous: false, isHapticFeedbackEnabled: true)
 			.onReceive(Just(Crown).removeDuplicates()) { out in
+				// First 4 results are from initialization, we don't want to touch anything during that time
+				if (self.FirstRecieved.i < 4) {
+					self.FirstRecieved.i += 1;
+					return;
+				}
+				
 				// Simply setting `Value` on crown rotation doesn't work, it needs its own state and listener
 				self.Value = round(out);
 				

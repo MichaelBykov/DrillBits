@@ -102,13 +102,13 @@ struct ResultView: View {
 				let val: Float;
 				if (self.Shared.Slider == 0) {
 					let Initial = (MaxValue - MinValue) * 0.5;
+					self.Shared.Slider = Initial;
 					val = Initial;
 				} else {
 					let s = self.Shared.Slider;
 					val = s > MaxValue ? MaxValue : s < MinValue ? MinValue : s;
 				}
 
-				self.Shared.Slider = val;
 				self.Crown = val; self.LastCrown = val;
 				self.UpdateSize();
 			}
