@@ -10,9 +10,10 @@ import SwiftUI
 import DrillBitsDataWatch
 
 public class ResultViewShared: ObservableObject {
-	@Published public var Imperial: Bool = true;
+	// If you put semicolons in this get/set the swift compiler complains
+	public var Imperial: Bool { get { return self.Size.IsImperial! } set { self.Size.IsImperial = newValue } }
 	@Published public var Slider: Float = 0;
-	@Published public var Size: DrillBitsDataWatch.Unit = DrillBitsDataWatch.Unit(Inches: Fraction(w: 0, n: 0, d: 1), Millimeters: 0);
+	@Published public var Size: DrillBitsDataWatch.Unit = DrillBitsDataWatch.Unit(Inches: Fraction(w: 0, n: 0, d: 1));
 	@Published public var ShowFraction: Bool = true;
 	
 	init() {
@@ -97,6 +98,15 @@ struct ResultView: View {
 					}
 				}.scaledToFit()
 			}
+			
+			HStack(alignment: .firstTextBaseline) {
+				Text("\(GetSpeed(Bit: self.Bit, Mat: self.Mat, Size: self.Shared.Size))")
+					.font(.system(.title))
+				Spacer()
+					.frame(width: 2)
+				Text("RPM")
+					.font(.system(size: 12, weight: .semibold, design: .default))
+			}
 		}
 			.onAppear {
 				let val: Float;
@@ -115,8 +125,11 @@ struct ResultView: View {
     }
 }
 
+#if DEBUG
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
 		ResultView(ForBit: .Twist, AndMat: .Softwood)
+			.environmentObject(ResultViewShared())
     }
 }
+#endif
