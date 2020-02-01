@@ -75,6 +75,8 @@ struct ResultView: View {
 		});
 		
 		return VStack {
+			Spacer()
+			
 			UnitSelector(IsImperial: ImperialBinding)
 			
 			ContentSlider(value: SizeBinding, crown: $Crown, lastCrown: $LastCrown, min: Int(MinValue), max: Int(MaxValue)) {
@@ -99,6 +101,16 @@ struct ResultView: View {
 				}.scaledToFit()
 			}
 			
+			Spacer()
+			
+			Image("Chevron Apple Watch")
+				.resizable()
+				.aspectRatio(contentMode: .fit)
+				.frame(height: 30)
+			
+			Spacer()
+				.frame(height: -7)
+			
 			HStack(alignment: .firstTextBaseline) {
 				Text("\(GetSpeed(Bit: self.Bit, Mat: self.Mat, Size: self.Shared.Size))")
 					.font(.system(.title))
@@ -107,6 +119,9 @@ struct ResultView: View {
 				Text("RPM")
 					.font(.system(size: 12, weight: .semibold, design: .default))
 			}
+			
+			Spacer()
+				.frame(height: -25)
 		}
 			.onAppear {
 				let val: Float;
@@ -122,6 +137,7 @@ struct ResultView: View {
 				self.Crown = val; self.LastCrown = val;
 				self.UpdateSize();
 			}
+			.navigationBarTitle(ToString(Mat: Mat))
     }
 }
 

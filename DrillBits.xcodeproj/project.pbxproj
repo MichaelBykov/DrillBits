@@ -133,6 +133,7 @@
 		4C90560A23146F6D006A6B59 /* Powerbore Drill Bit Zoomed @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90560423146F6D006A6B59 /* Powerbore Drill Bit Zoomed @2x.png */; };
 		4C90560B23146F6D006A6B59 /* Powerbore Drill Bit.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90560523146F6D006A6B59 /* Powerbore Drill Bit.png */; };
 		4C90560C23146F6D006A6B59 /* Powerbore Drill Bit @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90560623146F6D006A6B59 /* Powerbore Drill Bit @2x.png */; };
+		4C91B52423E5094A005F0F79 /* Chevron Apple Watch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91B52123E5094A005F0F79 /* Chevron Apple Watch.png */; };
 		4CA7D5EF23173469008D6993 /* App Icon 76pt @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5DF23173468008D6993 /* App Icon 76pt @2x.png */; };
 		4CA7D5F023173469008D6993 /* App Icon 40pt @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5E023173468008D6993 /* App Icon 40pt @3x.png */; };
 		4CA7D5F123173469008D6993 /* Twist Bit App Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5E123173468008D6993 /* Twist Bit App Icon.png */; };
@@ -393,6 +394,7 @@
 		4C90560423146F6D006A6B59 /* Powerbore Drill Bit Zoomed @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Powerbore Drill Bit Zoomed @2x.png"; sourceTree = "<group>"; };
 		4C90560523146F6D006A6B59 /* Powerbore Drill Bit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Powerbore Drill Bit.png"; sourceTree = "<group>"; };
 		4C90560623146F6D006A6B59 /* Powerbore Drill Bit @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Powerbore Drill Bit @2x.png"; sourceTree = "<group>"; };
+		4C91B52123E5094A005F0F79 /* Chevron Apple Watch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chevron Apple Watch.png"; sourceTree = "<group>"; };
 		4CA7D5DF23173468008D6993 /* App Icon 76pt @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 76pt @2x.png"; sourceTree = "<group>"; };
 		4CA7D5E023173468008D6993 /* App Icon 40pt @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 40pt @3x.png"; sourceTree = "<group>"; };
 		4CA7D5E123173468008D6993 /* Twist Bit App Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twist Bit App Icon.png"; sourceTree = "<group>"; };
@@ -563,6 +565,7 @@
 		4C46FA6822DCEC730081A381 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				4C91B52123E5094A005F0F79 /* Chevron Apple Watch.png */,
 				4C46FA7A22E23C550081A381 /* Chevron.png */,
 				4C46FA7822E23C550081A381 /* Chevron@2x.png */,
 				4C46FA7722E23C550081A381 /* Chevron@3x.png */,
@@ -1132,6 +1135,7 @@
 				4CA7D612231783C7008D6993 /* Circle Cutter Zoomed.png in Resources */,
 				4C9055FE23146F5F006A6B59 /* Spade BIt with Spurs.png in Resources */,
 				4C9055F123146F52006A6B59 /* Spade BIt Zoomed @3x.png in Resources */,
+				4C91B52423E5094A005F0F79 /* Chevron Apple Watch.png in Resources */,
 				4CA7D5F623173469008D6993 /* App Icon 20pt @2x.png in Resources */,
 				4C90557522FE22B9006A6B59 /* Bullet Pilot Point.png in Resources */,
 				4C08CD8623189F80004D8C9B /* Steel.blend in Resources */,
