@@ -13,15 +13,15 @@ public class Defaults {
 	// MARK: - Keys
 	
 	/// The key for if user defaults are saved
-	public static let    StartKey = "Start";
+	private static let    StartKey = "Start";
 	/// The key for what drill bit is currently selected
-	public static let      BitKey = "Bit";
+	private static let      BitKey = "Bit";
 	/// The key for what material is currently selected
-	public static let      MatKey = "Mat";
+	private static let      MatKey = "Mat";
 	/// The key for what size is currenly selected
-	public static let     SizeKey = "Size";
+	private static let     SizeKey = "Size";
 	/// The key for what unit system we are currently using
-	public static let ImperialKey = "Imperial";
+	private static let ImperialKey = "Imperial";
 	
 	
 	
@@ -69,28 +69,28 @@ public class Defaults {
 	// MARK: - Load
 	
 	/// Get whether or not user defaults have been saved
-	public static func GetStart() -> Bool                       { UserDefaults.standard.bool(forKey:    StartKey); }
+	private static func GetStart() -> Bool                       { UserDefaults.standard.bool(forKey:    StartKey); }
 	/// Get what drill bit was last selected
-	public static func GetBit() -> DrillBit  { DrillBit(rawValue: UserDefaults.standard.integer(forKey:   BitKey))!; }
+	private static func GetBit() -> DrillBit  { DrillBit(rawValue: UserDefaults.standard.integer(forKey:   BitKey))!; }
 	/// Get what material was last selected
-	public static func GetMat() -> Material  { Material(rawValue: UserDefaults.standard.integer(forKey:   MatKey))!; }
+	private static func GetMat() -> Material  { Material(rawValue: UserDefaults.standard.integer(forKey:   MatKey))!; }
 	/// Get what size was last selected
-	public static func GetSize() -> Float                       { UserDefaults.standard.float(forKey:    SizeKey); }
+	private static func GetSize() -> Float                       { UserDefaults.standard.float(forKey:    SizeKey); }
 	/// Get what unit system we last used
-	public static func GetImperial() -> Bool                    { UserDefaults.standard.bool(forKey: ImperialKey); }
+	private static func GetImperial() -> Bool                    { UserDefaults.standard.bool(forKey: ImperialKey); }
 	
 	
 	
 	// MARK: - Save
 	
 	/// Set whether or not user defaults have been saved
-	public static func SetStart(_ Start: Bool)       { UserDefaults.standard.set(Start,        forKey:    StartKey); }
+	private static func SetStart(_ Start: Bool)       { UserDefaults.standard.set(Start,        forKey:    StartKey); }
 	/// Set what drill bit is currently selected
-	public static func SetBit(_ Bit: DrillBit)       { UserDefaults.standard.set(Bit.rawValue, forKey:      BitKey); }
+	private static func SetBit(_ Bit: DrillBit)       { UserDefaults.standard.set(Bit.rawValue, forKey:      BitKey); }
 	/// Set what material is currently selected
-	public static func SetMat(_ Mat: Material)       { UserDefaults.standard.set(Mat.rawValue, forKey:      MatKey); }
+	private static func SetMat(_ Mat: Material)       { UserDefaults.standard.set(Mat.rawValue, forKey:      MatKey); }
 	/// Set what size is currenly selected
-	public static func SetSize(_ Size: Float)        { UserDefaults.standard.set(Size,         forKey:     SizeKey); }
+	private static func SetSize(_ Size: Float)        { UserDefaults.standard.set(Size,         forKey:     SizeKey); }
 	/// Set what unit system we are currently using
-	public static func SetImperial(_ Imperial: Bool) { UserDefaults.standard.set(Imperial,     forKey: ImperialKey); }
+	private static func SetImperial(_ Imperial: Bool) { UserDefaults.standard.set(Imperial,     forKey: ImperialKey); }
 }

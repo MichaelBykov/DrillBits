@@ -13,14 +13,20 @@ struct ItemView<D>: View where D : View {
 	var _Image: UIImage;
 	var _Destination: D;
 	
-	init (label: String, image: UIImage, destination: D) {
+	@State var Push: Bool;
+	
+	@EnvironmentObject var Shared: SharedData;
+	
+	init(label: String, image: UIImage, destination: D, autoSelect: Bool = false) {
 		_Label = label;
 		_Image = image;
 		_Destination = destination;
+		
+		_Push = State(initialValue: autoSelect);
 	}
 	
     var body: some View {
-		NavigationLink(destination: _Destination) {
+		NavigationLink(destination: _Destination, isActive: self.$Push) {
 			HStack {
 				GeometryReader { Metrics in
 					Image(uiImage: self._Image)
@@ -34,6 +40,9 @@ struct ItemView<D>: View where D : View {
 					.multilineTextAlignment(.trailing)
 			}.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
 		}
+			.onTapGesture {
+				self.Push = true;
+			}
     }
 }
 

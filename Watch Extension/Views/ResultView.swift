@@ -9,23 +9,11 @@
 import SwiftUI
 import DrillBitsDataWatch
 
-public class ResultViewShared: ObservableObject {
-	// If you put semicolons in this get/set the swift compiler complains
-	public var Imperial: Bool { get { return self.Size.IsImperial! } set { self.Size.IsImperial = newValue } }
-	@Published public var Slider: Float = 0;
-	@Published public var Size: DrillBitsDataWatch.Unit = DrillBitsDataWatch.Unit(Inches: Fraction(w: 0, n: 0, d: 1));
-	@Published public var ShowFraction: Bool = true;
-	
-	init() {
-		ShowFraction = Size.Inches.Numerator > 0;
-	}
-}
-
 struct ResultView: View {
 	var Bit: DrillBit;
 	var Mat: Material;
 	let LowerSize: DrillBitsDataWatch.Unit, UpperSize: DrillBitsDataWatch.Unit;
-	@EnvironmentObject var Shared: ResultViewShared;
+	@EnvironmentObject var Shared: SharedData;
 	
 	@State var Crown: Float = 0;
 	@State var LastCrown: Float = 0;
@@ -72,6 +60,9 @@ struct ResultView: View {
 			
 			self.Shared.Slider = round(newValue);
 			self.UpdateSize();
+			
+			// Save the size value
+			Defaults.Size = round(newValue);
 		});
 		
 		return VStack {
@@ -136,6 +127,10 @@ struct ResultView: View {
 
 				self.Crown = val; self.LastCrown = val;
 				self.UpdateSize();
+				
+				self.Shared.CurrentView = 2;
+				self.Shared.LoadedViews = 2;
+				self.Shared.LastMat = self.Mat;
 			}
 			.navigationBarTitle(ToString(Mat: Mat))
     }
@@ -145,7 +140,7 @@ struct ResultView: View {
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
 		ResultView(ForBit: .Twist, AndMat: .Softwood)
-			.environmentObject(ResultViewShared())
+			.environmentObject(SharedData())
     }
 }
 #endif

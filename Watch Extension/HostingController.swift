@@ -11,9 +11,9 @@ import Foundation
 import SwiftUI
 
 class HostingController: WKHostingController<AnyView> {
-	var ResultViewSharedData: ResultViewShared = ResultViewShared();
+	var Shared: SharedData = SharedData();
 	
     override var body: AnyView {
-		return AnyView(DrillBitView().environmentObject(self.ResultViewSharedData))
+		return AnyView(DrillBitView().environmentObject(self.Shared))
     }
 }

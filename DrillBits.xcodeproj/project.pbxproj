@@ -134,6 +134,8 @@
 		4C90560B23146F6D006A6B59 /* Powerbore Drill Bit.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90560523146F6D006A6B59 /* Powerbore Drill Bit.png */; };
 		4C90560C23146F6D006A6B59 /* Powerbore Drill Bit @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C90560623146F6D006A6B59 /* Powerbore Drill Bit @2x.png */; };
 		4C91B52423E5094A005F0F79 /* Chevron Apple Watch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C91B52123E5094A005F0F79 /* Chevron Apple Watch.png */; };
+		4C91B52623E5196B005F0F79 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C91B52523E5196B005F0F79 /* SharedData.swift */; };
+		4C91B52823E51B90005F0F79 /* AppleWatchDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C91B52723E51B8F005F0F79 /* AppleWatchDefaults.swift */; };
 		4CA7D5EF23173469008D6993 /* App Icon 76pt @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5DF23173468008D6993 /* App Icon 76pt @2x.png */; };
 		4CA7D5F023173469008D6993 /* App Icon 40pt @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5E023173468008D6993 /* App Icon 40pt @3x.png */; };
 		4CA7D5F123173469008D6993 /* Twist Bit App Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D5E123173468008D6993 /* Twist Bit App Icon.png */; };
@@ -395,6 +397,8 @@
 		4C90560523146F6D006A6B59 /* Powerbore Drill Bit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Powerbore Drill Bit.png"; sourceTree = "<group>"; };
 		4C90560623146F6D006A6B59 /* Powerbore Drill Bit @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Powerbore Drill Bit @2x.png"; sourceTree = "<group>"; };
 		4C91B52123E5094A005F0F79 /* Chevron Apple Watch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chevron Apple Watch.png"; sourceTree = "<group>"; };
+		4C91B52523E5196B005F0F79 /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		4C91B52723E51B8F005F0F79 /* AppleWatchDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchDefaults.swift; sourceTree = "<group>"; };
 		4CA7D5DF23173468008D6993 /* App Icon 76pt @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 76pt @2x.png"; sourceTree = "<group>"; };
 		4CA7D5E023173468008D6993 /* App Icon 40pt @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App Icon 40pt @3x.png"; sourceTree = "<group>"; };
 		4CA7D5E123173468008D6993 /* Twist Bit App Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twist Bit App Icon.png"; sourceTree = "<group>"; };
@@ -596,6 +600,7 @@
 		4C5336BB23D2E5DF00335D57 /* Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4C91B52523E5196B005F0F79 /* SharedData.swift */,
 				4CB4D81B23D3F5CE00B3766D /* Views */,
 				4C5336BE23D2E5DF00335D57 /* HostingController.swift */,
 				4C5336C023D2E5DF00335D57 /* ExtensionDelegate.swift */,
@@ -904,6 +909,7 @@
 		4CAAAFA823D3F00B0073C848 /* DrillBitsDataWatch */ = {
 			isa = PBXGroup;
 			children = (
+				4C91B52723E51B8F005F0F79 /* AppleWatchDefaults.swift */,
 			);
 			path = DrillBitsDataWatch;
 			sourceTree = "<group>";
@@ -1278,6 +1284,7 @@
 				4CB4D81A23D3F4E100B3766D /* MaterialView.swift in Sources */,
 				4C5336BD23D2E5DF00335D57 /* DrillBitView.swift in Sources */,
 				4CC99B5023D4012900788AED /* ItemView.swift in Sources */,
+				4C91B52623E5196B005F0F79 /* SharedData.swift in Sources */,
 				4C5336C123D2E5DF00335D57 /* ExtensionDelegate.swift in Sources */,
 				4C30FD9623DA6A81007D5E87 /* FractionView.swift in Sources */,
 				4CB4D81D23D3F62300B3766D /* ResultView.swift in Sources */,
@@ -1289,6 +1296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CAAAFB523D3F0390073C848 /* Unit.swift in Sources */,
+				4C91B52823E51B90005F0F79 /* AppleWatchDefaults.swift in Sources */,
 				4CAAAFB823D3F0390073C848 /* Defaults.swift in Sources */,
 				4CAAAFB623D3F0390073C848 /* Data.swift in Sources */,
 				4CAAAFB223D3F0390073C848 /* DrillBitLoader.swift in Sources */,
