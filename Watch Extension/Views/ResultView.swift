@@ -38,20 +38,7 @@ struct ResultView: View {
 		let MinValue: Float = LowerSize.Normalize(Imperial: Shared.Imperial);
 		let MaxValue: Float = UpperSize.Normalize(Imperial: Shared.Imperial);
 		
-		// Create custome binding for updating values
-		let ImperialBinding = Binding(get: { return self.Shared.Imperial; }, set: { newValue in
-			self.Shared.Imperial = newValue;
-			
-			// Update slider too
-			let val: Float = (self.Shared.Slider - MinValue) / (MaxValue - MinValue);
-			
-			let _MinValue: Float = self.LowerSize.Normalize(Imperial: newValue);
-			let _MaxValue: Float = self.UpperSize.Normalize(Imperial: newValue);
-			
-			self.Shared.Slider = round((_MaxValue - _MinValue) * val + _MinValue);
-			self.Crown = self.Shared.Slider; self.LastCrown = self.Shared.Slider;
-			self.UpdateSize();
-		});
+		// Create custom binding for updating values
 		let SizeBinding = Binding(get: { return self.Shared.Slider; }, set: { newValue in
 			if (newValue == 0 || self.Shared.Slider == round(newValue)) {
 				// Discard, useless value
@@ -66,53 +53,56 @@ struct ResultView: View {
 		});
 		
 		return VStack {
+			// SwiftUI doesn't account for the navigation bar
 			Spacer()
+				.frame(height: 10)
 			
-			UnitSelector(IsImperial: ImperialBinding)
-			
-			ContentSlider(value: SizeBinding, crown: $Crown, lastCrown: $LastCrown, min: Int(MinValue), max: Int(MaxValue)) {
-				HStack {
-					if (self.Shared.Imperial) {
-						Text(self.Shared.Size.Inches.Whole > 0 ? "\(self.Shared.Size.Inches.Whole)" : "")
-
-						Spacer()
-							.frame(width: self.Shared.ShowFraction ? 8 : 0)
-							
-						if (self.Shared.ShowFraction) {
-							FractionView(n: self.Shared.Size.Inches.Numerator, d: self.Shared.Size.Inches.Denominator)
-						}
-						
-						Spacer()
-							.frame(width: 8)
-						
-						Text("in")
-					} else {
-						Text(self.Shared.Size.Millimeters.description + " mm")
-					}
-				}.scaledToFit()
-			}
-			
-			Spacer()
-			
-			Image("Chevron Apple Watch")
-				.resizable()
-				.aspectRatio(contentMode: .fit)
-				.frame(height: 30)
-			
-			Spacer()
-				.frame(height: -7)
-			
-			HStack(alignment: .firstTextBaseline) {
-				Text("\(GetSpeed(Bit: self.Bit, Mat: self.Mat, Size: self.Shared.Size))")
-					.font(.system(.title))
+			VStack() {
 				Spacer()
-					.frame(width: 2)
-				Text("RPM")
-					.font(.system(size: 12, weight: .semibold, design: .default))
+				
+				ContentSlider(value: SizeBinding, crown: $Crown, lastCrown: $LastCrown, min: Int(MinValue), max: Int(MaxValue)) {
+					HStack {
+						if (self.Shared.Imperial) {
+							Text(self.Shared.Size.Inches.Whole > 0 ? "\(self.Shared.Size.Inches.Whole)" : "")
+
+							Spacer()
+								.frame(width: self.Shared.ShowFraction ? 8 : 0)
+								
+							if (self.Shared.ShowFraction) {
+								FractionView(n: self.Shared.Size.Inches.Numerator, d: self.Shared.Size.Inches.Denominator)
+							}
+							
+							Spacer()
+								.frame(width: 8)
+							
+							Text("in")
+						} else {
+							Text(self.Shared.Size.Millimeters.description + " mm")
+						}
+					}.scaledToFit()
+				}
+				
+				Spacer()
+				
+				Image("Chevron Apple Watch")
+					.resizable()
+					.aspectRatio(contentMode: .fit)
+					.frame(height: 30)
+				
+				Spacer()
+					.frame(height: -20)
+				
+				Spacer()
+				
+				HStack(alignment: .firstTextBaseline) {
+					Text("\(GetSpeed(Bit: self.Bit, Mat: self.Mat, Size: self.Shared.Size))")
+						.font(.system(.title))
+					Spacer()
+						.frame(width: 2)
+					Text("RPM")
+						.font(.system(size: 12, weight: .semibold, design: .default))
+				}
 			}
-			
-			Spacer()
-				.frame(height: -25)
 		}
 			.onAppear {
 				let val: Float;
@@ -133,6 +123,28 @@ struct ResultView: View {
 				self.Shared.LastMat = self.Mat;
 			}
 			.navigationBarTitle(ToString(Mat: Mat))
+			.contextMenu {
+				// Unit system switcher
+				Button(action: {
+					// Toggle system
+					self.Shared.Imperial.toggle();
+					
+					// Update slider too
+					let val: Float = (self.Shared.Slider - MinValue) / (MaxValue - MinValue);
+					
+					let _MinValue: Float = self.LowerSize.Normalize(Imperial: self.Shared.Imperial);
+					let _MaxValue: Float = self.UpperSize.Normalize(Imperial: self.Shared.Imperial);
+					
+					self.Shared.Slider = round((_MaxValue - _MinValue) * val + _MinValue);
+					self.Crown = self.Shared.Slider; self.LastCrown = self.Shared.Slider;
+					self.UpdateSize();
+				}) {
+					VStack {
+						Image(self.Shared.Imperial ? "Inches" : "Millimeters")
+						Text("Units")
+					}
+				}
+			}
     }
 }
 

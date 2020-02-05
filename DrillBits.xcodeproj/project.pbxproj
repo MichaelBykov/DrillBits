@@ -164,6 +164,8 @@
 		4CA7D614231783C7008D6993 /* Circle Cutter @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D60E231783C7008D6993 /* Circle Cutter @2x.png */; };
 		4CA7D615231783C7008D6993 /* Circle Cutter @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D60F231783C7008D6993 /* Circle Cutter @3x.png */; };
 		4CA7D616231783C7008D6993 /* Circle Cutter Zoomed @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D610231783C7008D6993 /* Circle Cutter Zoomed @3x.png */; };
+		4CA8AEAB23EA49E400220BC6 /* Millimeters.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA8AEA923EA49E400220BC6 /* Millimeters.png */; };
+		4CA8AEAC23EA49E400220BC6 /* Inches.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA8AEAA23EA49E400220BC6 /* Inches.png */; };
 		4CAAAFAE23D3F0160073C848 /* libDrillBitsDataWatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAAAFA723D3F00B0073C848 /* libDrillBitsDataWatch.a */; };
 		4CAAAFB123D3F0390073C848 /* DrillBit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205922EBCF7800D0468C /* DrillBit.swift */; };
 		4CAAAFB223D3F0390073C848 /* DrillBitLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD945B123D39607005930F2 /* DrillBitLoader.swift */; };
@@ -427,6 +429,8 @@
 		4CA7D60E231783C7008D6993 /* Circle Cutter @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle Cutter @2x.png"; sourceTree = "<group>"; };
 		4CA7D60F231783C7008D6993 /* Circle Cutter @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle Cutter @3x.png"; sourceTree = "<group>"; };
 		4CA7D610231783C7008D6993 /* Circle Cutter Zoomed @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle Cutter Zoomed @3x.png"; sourceTree = "<group>"; };
+		4CA8AEA923EA49E400220BC6 /* Millimeters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Millimeters.png; sourceTree = "<group>"; };
+		4CA8AEAA23EA49E400220BC6 /* Inches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Inches.png; sourceTree = "<group>"; };
 		4CAAAFA723D3F00B0073C848 /* libDrillBitsDataWatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDrillBitsDataWatch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB4D81923D3F4E100B3766D /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		4CB4D81C23D3F62300B3766D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
@@ -569,6 +573,8 @@
 		4C46FA6822DCEC730081A381 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				4CA8AEAA23EA49E400220BC6 /* Inches.png */,
+				4CA8AEA923EA49E400220BC6 /* Millimeters.png */,
 				4C91B52123E5094A005F0F79 /* Chevron Apple Watch.png */,
 				4C46FA7A22E23C550081A381 /* Chevron.png */,
 				4C46FA7822E23C550081A381 /* Chevron@2x.png */,
@@ -1161,6 +1167,7 @@
 				4CA7D5FD23173469008D6993 /* App Icon 20pt @3x.png in Resources */,
 				4CA7D5F223173469008D6993 /* App Icon 60pt @2x.png in Resources */,
 				4C90560A23146F6D006A6B59 /* Powerbore Drill Bit Zoomed @2x.png in Resources */,
+				4CA8AEAB23EA49E400220BC6 /* Millimeters.png in Resources */,
 				4C08CD9E2318A08E004D8C9B /* Powerbore Drill Bit.blend in Resources */,
 				4C90556922FE1E98006A6B59 /* Twist Bit Zoomed @2x.png in Resources */,
 				4C46FA5B22D84DD90081A381 /* DrillBits UI.sketch in Resources */,
@@ -1208,6 +1215,7 @@
 				4C9055A223107893006A6B59 /* Steel.png in Resources */,
 				4C9055CC2310D7C6006A6B59 /* Forstner Bit Zoomed.png in Resources */,
 				4CA7D60623176F9E008D6993 /* Glass and Tile Bit.png in Resources */,
+				4CA8AEAC23EA49E400220BC6 /* Inches.png in Resources */,
 				4CA7D5FA23173469008D6993 /* App Icon 76pt.png in Resources */,
 				4C90557E22FE2D4A006A6B59 /* Brad Point Zoomed.png in Resources */,
 				4C9055E523146F41006A6B59 /* Hole Saw Zoomed @2x.png in Resources */,
