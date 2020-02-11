@@ -166,6 +166,7 @@
 		4CA7D616231783C7008D6993 /* Circle Cutter Zoomed @3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7D610231783C7008D6993 /* Circle Cutter Zoomed @3x.png */; };
 		4CA8AEAB23EA49E400220BC6 /* Millimeters.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA8AEA923EA49E400220BC6 /* Millimeters.png */; };
 		4CA8AEAC23EA49E400220BC6 /* Inches.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA8AEAA23EA49E400220BC6 /* Inches.png */; };
+		4CA8AEAE23EB715100220BC6 /* ContentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8AEAD23EB715100220BC6 /* ContentPicker.swift */; };
 		4CAAAFAE23D3F0160073C848 /* libDrillBitsDataWatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAAAFA723D3F00B0073C848 /* libDrillBitsDataWatch.a */; };
 		4CAAAFB123D3F0390073C848 /* DrillBit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCA205922EBCF7800D0468C /* DrillBit.swift */; };
 		4CAAAFB223D3F0390073C848 /* DrillBitLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD945B123D39607005930F2 /* DrillBitLoader.swift */; };
@@ -178,6 +179,8 @@
 		4CB4D81823D3F22700B3766D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA1F22D6F7D30081A381 /* Assets.xcassets */; };
 		4CB4D81A23D3F4E100B3766D /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB4D81923D3F4E100B3766D /* MaterialView.swift */; };
 		4CB4D81D23D3F62300B3766D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB4D81C23D3F62300B3766D /* ResultView.swift */; };
+		4CC4908423F0969E0054DE50 /* FractionPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4908323F0969E0054DE50 /* FractionPicker.swift */; };
+		4CC4908623F099180054DE50 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4908523F099180054DE50 /* CarouselView.swift */; };
 		4CC790C422FB1D1C00BF87ED /* UICancelableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */; };
 		4CC99B5023D4012900788AED /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC99B4F23D4012900788AED /* ItemView.swift */; };
 		4CC99B5223D51EDE00788AED /* UnitSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC99B5123D51EDE00788AED /* UnitSelector.swift */; };
@@ -431,9 +434,12 @@
 		4CA7D610231783C7008D6993 /* Circle Cutter Zoomed @3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circle Cutter Zoomed @3x.png"; sourceTree = "<group>"; };
 		4CA8AEA923EA49E400220BC6 /* Millimeters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Millimeters.png; sourceTree = "<group>"; };
 		4CA8AEAA23EA49E400220BC6 /* Inches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Inches.png; sourceTree = "<group>"; };
+		4CA8AEAD23EB715100220BC6 /* ContentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPicker.swift; sourceTree = "<group>"; };
 		4CAAAFA723D3F00B0073C848 /* libDrillBitsDataWatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDrillBitsDataWatch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB4D81923D3F4E100B3766D /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		4CB4D81C23D3F62300B3766D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		4CC4908323F0969E0054DE50 /* FractionPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractionPicker.swift; sourceTree = "<group>"; };
+		4CC4908523F099180054DE50 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		4CC790BF22F7DF7200BF87ED /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		4CC790C122F7E15400BF87ED /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
 		4CC790C322FB1D1C00BF87ED /* UICancelableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICancelableScrollView.swift; sourceTree = "<group>"; };
@@ -929,7 +935,10 @@
 				4CC99B4F23D4012900788AED /* ItemView.swift */,
 				4CC99B5123D51EDE00788AED /* UnitSelector.swift */,
 				4CD77B7823D5424D005AF12F /* ContentSlider.swift */,
+				4CA8AEAD23EB715100220BC6 /* ContentPicker.swift */,
 				4C30FD9523DA6A81007D5E87 /* FractionView.swift */,
+				4CC4908323F0969E0054DE50 /* FractionPicker.swift */,
+				4CC4908523F099180054DE50 /* CarouselView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1288,6 +1297,9 @@
 				4C5336BF23D2E5DF00335D57 /* HostingController.swift in Sources */,
 				4CD77B7923D5424D005AF12F /* ContentSlider.swift in Sources */,
 				4C5336C323D2E5DF00335D57 /* ComplicationController.swift in Sources */,
+				4CA8AEAE23EB715100220BC6 /* ContentPicker.swift in Sources */,
+				4CC4908623F099180054DE50 /* CarouselView.swift in Sources */,
+				4CC4908423F0969E0054DE50 /* FractionPicker.swift in Sources */,
 				4CC99B5223D51EDE00788AED /* UnitSelector.swift in Sources */,
 				4CB4D81A23D3F4E100B3766D /* MaterialView.swift in Sources */,
 				4C5336BD23D2E5DF00335D57 /* DrillBitView.swift in Sources */,

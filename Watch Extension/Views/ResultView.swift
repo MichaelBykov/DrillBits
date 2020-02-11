@@ -15,6 +15,8 @@ struct ResultView: View {
 	let LowerSize: DrillBitsDataWatch.Unit, UpperSize: DrillBitsDataWatch.Unit;
 	@EnvironmentObject var Shared: SharedData;
 	
+	@State var InchesWhole = 0;
+	
 	@State var Crown: Float = 0;
 	@State var LastCrown: Float = 0;
 	
@@ -60,26 +62,12 @@ struct ResultView: View {
 			VStack() {
 				Spacer()
 				
-				ContentSlider(value: SizeBinding, crown: $Crown, lastCrown: $LastCrown, min: Int(MinValue), max: Int(MaxValue)) {
-					HStack {
-						if (self.Shared.Imperial) {
-							Text(self.Shared.Size.Inches.Whole > 0 ? "\(self.Shared.Size.Inches.Whole)" : "")
-
-							Spacer()
-								.frame(width: self.Shared.ShowFraction ? 8 : 0)
-								
-							if (self.Shared.ShowFraction) {
-								FractionView(n: self.Shared.Size.Inches.Numerator, d: self.Shared.Size.Inches.Denominator)
-							}
-							
-							Spacer()
-								.frame(width: 8)
-							
-							Text("in")
-						} else {
-							Text(self.Shared.Size.Millimeters.description + " mm")
-						}
-					}.scaledToFit()
+				if (self.Shared.Imperial) {
+					FractionPicker(min: LowerSize.Inches, max: UpperSize.Inches)
+				} else {
+					ContentSlider(value: SizeBinding, crown: $Crown, lastCrown: $LastCrown, min: Int(MinValue), max: Int(MaxValue)) {
+						Text(self.Shared.Size.Millimeters.description + " mm")
+					}
 				}
 				
 				Spacer()
