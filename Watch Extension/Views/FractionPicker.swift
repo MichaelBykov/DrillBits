@@ -40,9 +40,15 @@ struct FractionPicker: View {
 	@State var fCrown: Float;
 	
 	init(min: Fraction, max: Fraction, out: Binding<Float>) {
+		func clamp(x: Int, min: Int, max: Int) -> Int { return x <= min ? min : x >= max ? max : x; }
+		
 		Min = min;
-		nMin = min.Normalize(MaxDenominator: 16);
+		let nMin = min.Normalize(MaxDenominator: 16);
+		self.nMin = nMin;
 		Max = max;
+		let nMax = max.Normalize(MaxDenominator: 16);
+		
+		let InitOut = clamp(x: Int(out.wrappedValue), min: nMin, max: nMax);
 		
 		_Out = out;
 		
@@ -63,11 +69,11 @@ struct FractionPicker: View {
 		Denominators = Fracs.map({ f in "\(f.Denominator)" });
 		
 		// Set initial values
-		let wIndex = Fraction(Normal: Int(out.wrappedValue), MaxDenominator: 16).Whole - min.Whole;
+		let wIndex = Fraction(Normal: Int(InitOut), MaxDenominator: 16).Whole - min.Whole;
 		self._wIndex = State(initialValue: wIndex);
 		self._wCrown = State(initialValue: Float(wIndex));
 		
-		let fIndex = Int(out.wrappedValue) - nMin;
+		let fIndex = Int(InitOut) - nMin;
 		self._fIndex = State(initialValue: fIndex);
 		self._fCrown = State(initialValue: Float(fIndex));
 	}
