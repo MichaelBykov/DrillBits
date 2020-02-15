@@ -8,18 +8,18 @@
 
 import SwiftUI
 
-struct FractionView: View {
-	var Numerator: Int;
-	var Denominator: Int;
+struct FractionView<N, D>: View where N: View, D: View {
+	var Numerator: N;
+	var Denominator: D;
 	
-	init (n: Int, d: Int) {
+	init (n: N, d: D) {
 		Numerator = n;
 		Denominator = d;
 	}
 	
     var body: some View {
         VStack {
-			Text("\(Numerator)")
+			Numerator
 			Spacer()
 				.frame(height: 0)
 			Rectangle()
@@ -27,7 +27,7 @@ struct FractionView: View {
 				.padding(.horizontal, -4)
 			Spacer()
 				.frame(height: 0)
-			Text("\(Denominator)")
+			Denominator
 		}
 			.scaledToFit()
     }
@@ -35,6 +35,6 @@ struct FractionView: View {
 
 struct FractionView_Previews: PreviewProvider {
     static var previews: some View {
-		FractionView(n: 1, d: 2)
+		FractionView(n: Text("1"), d: Text("2"))
     }
 }

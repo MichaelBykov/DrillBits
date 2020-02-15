@@ -29,10 +29,9 @@ struct ResultView: View {
 	/// Update stored size values (state)
 	func UpdateSize() {
 		if (Shared.Imperial) {
-			Shared.Size.Inches = Fraction(Normal: Int(round(Crown)), MaxDenominator: 16);
-			Shared.ShowFraction = Shared.Size.Inches.Numerator > 0;
+			Shared.Size.Inches = Fraction(Normal: Int(self.Shared.Slider), MaxDenominator: 16);
 		} else {
-			Shared.Size.Millimeters = CGFloat(round(Crown) / 2);
+			Shared.Size.Millimeters = CGFloat(round(self.Shared.Slider) / 2);
 		}
 	}
 	
@@ -60,10 +59,18 @@ struct ResultView: View {
 				.frame(height: 10)
 			
 			VStack() {
+				Text("Drill Bit Size")
+					.opacity(0.85)
+				
 				Spacer()
 				
 				if (self.Shared.Imperial) {
-					FractionPicker(min: LowerSize.Inches, max: UpperSize.Inches)
+					HStack {
+						FractionPicker(min: LowerSize.Inches, max: UpperSize.Inches, out: SizeBinding)
+						
+						Text("in")
+							.padding(.horizontal)
+					}
 				} else {
 					ContentSlider(value: SizeBinding, crown: $Crown, lastCrown: $LastCrown, min: Int(MinValue), max: Int(MaxValue)) {
 						Text(self.Shared.Size.Millimeters.description + " mm")

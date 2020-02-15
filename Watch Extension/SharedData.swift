@@ -41,7 +41,6 @@ public class SharedData: ObservableObject {
 	public var Imperial: Bool { get { return self.Size.IsImperial! } set { Defaults.Imperial = newValue; return self.Size.IsImperial = newValue } }
 	@Published public var Slider: Float = 0;
 	@Published public var Size: DrillBitsDataWatch.Unit = DrillBitsDataWatch.Unit(Inches: Fraction(w: 0, n: 0, d: 1));
-	@Published public var ShowFraction: Bool = true;
 	
 	init() {
 		// Load all values
@@ -66,7 +65,5 @@ public class SharedData: ObservableObject {
 			Defaults.Imperial = true;
 			Defaults.Size = 0;
 		}
-		
-		ShowFraction = Size.Inches.Numerator > 0;
 	}
 }

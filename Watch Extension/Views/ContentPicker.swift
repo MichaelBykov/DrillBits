@@ -10,35 +10,33 @@ import SwiftUI
 import Combine
 
 struct ContentPicker<C>: View where C : View {
-	/// The main background color of the control
-	private let BackgroundColor = Color(red: 31.0 / 255, green: 31.0 / 255, blue: 31.0 / 255);
-
 	/// The control's content
 	var Content: () -> C;
 	
 	/// The actual main value
 	@Binding var Index: Int;
 	/// The last value
-	@State var LastIndex: Int;
+	@State var LastIndex: Int = -1;
 	
 	/// The maximum value the picker can go to
 	var Max: Float;
 	
 	/// Current crown rotation
-	@State var Crown: Float;
+	@Binding var Crown: Float;
 	/// Used to show a glow around the focused picker
 	@State var Focused: Bool = false;
 	
 	/// Current drag rotation
 	@Binding var Rotation: Double;
 	
+	private class Counter { var i: Int = 0; }
+	/// For droppping only the very first 4 results
+	private var FirstRecieved = Counter();
 	
-	
-	init(index: Binding<Int>, rotation: Binding<Double>, length: Int, @ViewBuilder content: @escaping () -> C) {
+	init(index: Binding<Int>, rotation: Binding<Double>, crown: Binding<Float>, length: Int, @ViewBuilder content: @escaping () -> C) {
 		_Index = index;
-		_LastIndex = State(initialValue: index.wrappedValue);
 		_Rotation = rotation;
-		_Crown = State(initialValue: Float(index.wrappedValue));
+		_Crown = crown;
 		
 		Content = content;
 		Max = Float(length - 1);
@@ -53,9 +51,8 @@ struct ContentPicker<C>: View where C : View {
 			.overlay(
 				// Glow when the picker is focused
 				RoundedRectangle(cornerRadius: 8)
-					.stroke(Focused ? Color(red: 100.0 / 255, green: 218.0 / 255, blue: 124.0 / 255) : Color.clear, lineWidth: 4)
+					.stroke(Focused ? Color(red: 100.0 / 255, green: 218.0 / 255, blue: 124.0 / 255) : Color(red: 0.2, green: 0.2, blue: 0.2), lineWidth: 4)
 			)
-			.background(BackgroundColor)
 			.cornerRadius(8)
 			// Handle crown rotation
 			.focusable { f in
@@ -66,16 +63,16 @@ struct ContentPicker<C>: View where C : View {
 			.digitalCrownRotation($Crown, from: 0, through: Max, by: 1, sensitivity: .low, isContinuous: false, isHapticFeedbackEnabled: true)
 			.onReceive(Just(Crown).removeDuplicates()) { out in
 				let Last = self.Index;
-				self.Index = Int(round(out));
-				
-				// Throw away duplicates
-				if (Last == self.Index) {
+				// Update index if necessary
+				if (self.Index != Int(round(out))) {
+					self.Index = Int(round(out));
+				} else {
 					return;
 				}
-				
+
 				// Update the drag too
 				self.LastIndex = self.Index;
-				
+
 				// Animate the picker going to the next value
 				self.Rotation = Last > self.Index ? 45 : -45;
 				let sign: Double = self.Rotation < 0 ? -1 : 1;
@@ -95,6 +92,10 @@ struct ContentPicker<C>: View where C : View {
 			// Handle drag rotation
 			.gesture(DragGesture()
 				.onChanged { value in
+					if (self.LastIndex == -1) {
+						self.LastIndex = self.Index;
+					}
+					
 					/// The drag rotation
 					let rot = -Double(value.translation.height);
 					
@@ -134,8 +135,8 @@ struct ContentPicker<C>: View where C : View {
 						self.Rotation = sign * rot;
 					}
 					
-					// Update the selected index
-					self.LastIndex = self.Index;
+					// Reset state
+					self.LastIndex = -1;
 				})
     }
 }
@@ -148,9 +149,17 @@ extension Double {
 	}
 }
 
+extension Float {
+	public func mod(_ x: Float) -> Float {
+		let sign: Float = self < 0 ? -1 : 1;
+		let _mod = abs(self).remainder(dividingBy: x);
+		return sign * (_mod > 0 ? _mod : x + _mod)
+	}
+}
+
 struct ContentPicker_Previews: PreviewProvider {
     static var previews: some View {
-		ContentPicker(index: .constant(0), rotation: .constant(0), length: 10) {
+		ContentPicker(index: .constant(0), rotation: .constant(0), crown: .constant(0), length: 10) {
 			Text("Hello World")
 		}
     }
