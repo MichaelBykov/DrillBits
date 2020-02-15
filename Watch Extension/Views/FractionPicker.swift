@@ -28,7 +28,7 @@ struct FractionPicker: View {
 	/// All the possible denominator values
 	var Denominators: [String];
 	
-	@Binding var Out: Float;
+	@Binding var Value: Float;
 	
 	@State var wIndex: Int;
 	@State var wRot: Double = 0;
@@ -39,7 +39,7 @@ struct FractionPicker: View {
 	@State var fRot: Double = 0;
 	@State var fCrown: Float;
 	
-	init(min: Fraction, max: Fraction, out: Binding<Float>) {
+	init(value: Binding<Float>, min: Fraction, max: Fraction) {
 		func clamp(x: Int, min: Int, max: Int) -> Int { return x <= min ? min : x >= max ? max : x; }
 		
 		Min = min;
@@ -48,9 +48,9 @@ struct FractionPicker: View {
 		Max = max;
 		let nMax = max.Normalize(MaxDenominator: 16);
 		
-		let InitOut = clamp(x: Int(out.wrappedValue), min: nMin, max: nMax);
+		let InitValue = clamp(x: Int(value.wrappedValue), min: nMin, max: nMax);
 		
-		_Out = out;
+		_Value = value;
 		
 		
 		// Load all data
@@ -69,11 +69,11 @@ struct FractionPicker: View {
 		Denominators = Fracs.map({ f in "\(f.Denominator)" });
 		
 		// Set initial values
-		let wIndex = Fraction(Normal: Int(InitOut), MaxDenominator: 16).Whole - min.Whole;
+		let wIndex = Fraction(Normal: Int(InitValue), MaxDenominator: 16).Whole - min.Whole;
 		self._wIndex = State(initialValue: wIndex);
 		self._wCrown = State(initialValue: Float(wIndex));
 		
-		let fIndex = Int(InitOut) - nMin;
+		let fIndex = Int(InitValue) - nMin;
 		self._fIndex = State(initialValue: fIndex);
 		self._fCrown = State(initialValue: Float(fIndex));
 	}
@@ -108,7 +108,7 @@ struct FractionPicker: View {
 			self.fCrown = Float(self.fIndex);
 			
 			// Update output
-			self.Out = Float(self.fIndex + self.nMin);
+			self.Value = Float(self.fIndex + self.nMin);
 		});
 		
 		let bfIndex = Binding<Int>(get: { self.fIndex }, set: { newValue in
@@ -118,7 +118,7 @@ struct FractionPicker: View {
 			self.wCrown = Float(self.wIndex);
 			
 			// Update output
-			self.Out = Float(self.fIndex + self.nMin);
+			self.Value = Float(self.fIndex + self.nMin);
 		});
 		
 		return HStack {
@@ -143,6 +143,6 @@ extension Fraction {
 
 struct FractionPicker_Previews: PreviewProvider {
     static var previews: some View {
-		FractionPicker(min: Fraction(w: 0, n: 1, d: 8), max: Fraction(w: 2, n: 1, d: 2), out: .constant(0))
+		FractionPicker(value: .constant(0), min: Fraction(w: 0, n: 1, d: 8), max: Fraction(w: 2, n: 1, d: 2))
     }
 }

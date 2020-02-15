@@ -15,11 +15,6 @@ struct ResultView: View {
 	let LowerSize: DrillBitsDataWatch.Unit, UpperSize: DrillBitsDataWatch.Unit;
 	@EnvironmentObject var Shared: SharedData;
 	
-	@State var InchesWhole = 0;
-	
-	@State var Crown: Float = 0;
-	@State var LastCrown: Float = 0;
-	
 	init(ForBit: DrillBit, AndMat: Material) {
 		Bit = ForBit;
 		Mat = AndMat;
@@ -66,13 +61,13 @@ struct ResultView: View {
 				
 				if (self.Shared.Imperial) {
 					HStack {
-						FractionPicker(min: LowerSize.Inches, max: UpperSize.Inches, out: SizeBinding)
+						FractionPicker(value: SizeBinding, min: LowerSize.Inches, max: UpperSize.Inches)
 						
 						Text("in")
 							.padding(.horizontal)
 					}
 				} else {
-					ContentSlider(value: SizeBinding, crown: $Crown, lastCrown: $LastCrown, min: Int(MinValue), max: Int(MaxValue)) {
+					ContentSlider(value: SizeBinding, min: Int(MinValue), max: Int(MaxValue)) {
 						Text(self.Shared.Size.Millimeters.description + " mm")
 					}
 				}
@@ -100,6 +95,7 @@ struct ResultView: View {
 			}
 		}
 			.onAppear {
+				// Check if we need to set an inital value
 				let val: Float;
 				if (self.Shared.Slider == 0) {
 					let Initial = (MaxValue - MinValue) * 0.5;
@@ -110,7 +106,7 @@ struct ResultView: View {
 					val = s > MaxValue ? MaxValue : s < MinValue ? MinValue : s;
 				}
 
-				self.Crown = val; self.LastCrown = val;
+				self.Shared.Slider = val;
 				self.UpdateSize();
 				
 				self.Shared.CurrentView = 2;
@@ -131,7 +127,6 @@ struct ResultView: View {
 					let _MaxValue: Float = self.UpperSize.Normalize(Imperial: self.Shared.Imperial);
 					
 					self.Shared.Slider = round((_MaxValue - _MinValue) * val + _MinValue);
-					self.Crown = self.Shared.Slider; self.LastCrown = self.Shared.Slider;
 					self.UpdateSize();
 				}) {
 					VStack {

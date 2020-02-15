@@ -29,10 +29,6 @@ struct ContentPicker<C>: View where C : View {
 	/// Current drag rotation
 	@Binding var Rotation: Double;
 	
-	private class Counter { var i: Int = 0; }
-	/// For droppping only the very first 4 results
-	private var FirstRecieved = Counter();
-	
 	init(index: Binding<Int>, rotation: Binding<Double>, crown: Binding<Float>, length: Int, @ViewBuilder content: @escaping () -> C) {
 		_Index = index;
 		_Rotation = rotation;

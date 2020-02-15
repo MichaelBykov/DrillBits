@@ -31,20 +31,22 @@ struct ContentSlider<C>: View where C : View {
 	@State private var PlusDown: Bool = false;
 	
 	/// Current crown rotation
-	@Binding var Crown: Float;
-	/// The last crown rotation (for removing duplicates)
-	@Binding var LastCrown: Float;
+	@State var Crown: Float;
+	/// The last crown rotation (for removing duplicates in border glow)
+	@State var LastCrown: Float;
 	/// Controls showing the glow around the control
 	@State var Scrolling: Bool = false;
 	
 	private class Counter { var i: Int = 0; }
-	/// For droppping only the very first 4 results
+	/// For droppping only the very first 2 results
 	private var FirstRecieved = Counter();
 	
-	init (value: Binding<Float>, crown: Binding<Float>, lastCrown: Binding<Float>, min: Int, max: Int, @ViewBuilder content: @escaping () -> C) {
+	init (value: Binding<Float>, min: Int, max: Int, @ViewBuilder content: @escaping () -> C) {
 		_Value = value;
-		_Crown = crown;
-		_LastCrown = lastCrown;
+		let x = value.wrappedValue;
+		let Initial = x < Float(min) ? Float(min) : x > Float(max) ? Float(max) : x;
+		_Crown = State(initialValue: Initial);
+		_LastCrown = State(initialValue: Initial);
 		
 		Content = content;
 		Min = Float(min);
@@ -56,7 +58,6 @@ struct ContentSlider<C>: View where C : View {
 			GeometryReader { g in
 				Button(action: {
 					self.Crown -= 1;
-					self.LastCrown = self.Crown;
 					if (self.Value - 1 != self.Crown) {
 						self.Value = self.Crown - 1;
 					} else {
@@ -100,7 +101,6 @@ struct ContentSlider<C>: View where C : View {
 			GeometryReader { g in
 				Button(action: {
 					self.Crown += 1;
-					self.LastCrown = self.Crown;
 					if (self.Value + 1 != self.Crown) {
 						self.Value = self.Crown + 1;
 					} else {
@@ -152,8 +152,8 @@ struct ContentSlider<C>: View where C : View {
 			.focusable()
 			.digitalCrownRotation($Crown, from: Float(self.Min), through: Float(self.Max), by: 1, sensitivity: .medium, isContinuous: false, isHapticFeedbackEnabled: true)
 			.onReceive(Just(Crown).removeDuplicates()) { out in
-				// First 4 results are from initialization, we don't want to touch anything during that time
-				if (self.FirstRecieved.i < 4) {
+				// First 2 results are from initialization, we don't want to touch anything during that time
+				if (self.FirstRecieved.i < 2) {
 					self.FirstRecieved.i += 1;
 					return;
 				}
@@ -179,6 +179,6 @@ struct ContentSlider<C>: View where C : View {
 
 struct ContentSlider_Previews: PreviewProvider {
     static var previews: some View {
-		ContentSlider(value: .constant(0), crown: .constant(0), lastCrown: .constant(0), min: 0, max: 10) { Text("Hello World!"); }
+		ContentSlider(value: .constant(0), min: 0, max: 10) { Text("Hello World!"); }
     }
 }
