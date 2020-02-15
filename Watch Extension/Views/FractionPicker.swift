@@ -30,14 +30,14 @@ struct FractionPicker: View {
 	
 	@Binding var Out: Float;
 	
-	@State var wIndex: Int = 0;
+	@State var wIndex: Int;
 	@State var wRot: Double = 0;
-	@State var wCrown: Float = 0;
+	@State var wCrown: Float;
 	
-	@State var fIndex: Int = 0;
+	@State var fIndex: Int;
 	@State var LastFIndex: Int = -1;
 	@State var fRot: Double = 0;
-	@State var fCrown: Float = 0;
+	@State var fCrown: Float;
 	
 	init(min: Fraction, max: Fraction, out: Binding<Float>) {
 		Min = min;
@@ -63,8 +63,13 @@ struct FractionPicker: View {
 		Denominators = Fracs.map({ f in "\(f.Denominator)" });
 		
 		// Set initial values
-		self.wIndex = Fraction(Normal: Int(out.wrappedValue), MaxDenominator: 16).Whole - min.Whole;
-		self.fIndex = Int(out.wrappedValue) - nMin;
+		let wIndex = Fraction(Normal: Int(out.wrappedValue), MaxDenominator: 16).Whole - min.Whole;
+		self._wIndex = State(initialValue: wIndex);
+		self._wCrown = State(initialValue: Float(wIndex));
+		
+		let fIndex = Int(out.wrappedValue) - nMin;
+		self._fIndex = State(initialValue: fIndex);
+		self._fCrown = State(initialValue: Float(fIndex));
 	}
 	
     var body: some View {
