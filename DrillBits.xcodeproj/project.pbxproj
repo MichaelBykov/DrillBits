@@ -48,6 +48,28 @@
 		4C46FA8022E23C550081A381 /* Chevron.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7A22E23C550081A381 /* Chevron.png */; };
 		4C46FA8122E23C550081A381 /* Divider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C46FA7B22E23C550081A381 /* Divider@2x.png */; };
 		4C46FA8722E2D3390081A381 /* UIViewWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA8622E2D3390081A381 /* UIViewWatcher.swift */; };
+		4C4D8A5A23F8EB30007652A3 /* Brad Point Complication40px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A4423F8EB2F007652A3 /* Brad Point Complication40px.png */; };
+		4C4D8A5B23F8EB30007652A3 /* Glass and Tile Bit Complication44px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A4523F8EB2F007652A3 /* Glass and Tile Bit Complication44px.png */; };
+		4C4D8A5C23F8EB30007652A3 /* Spade BIt Complication44px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A4623F8EB2F007652A3 /* Spade BIt Complication44px.png */; };
+		4C4D8A5D23F8EB30007652A3 /* Bullet Pilot Point Complication44px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A4723F8EB2F007652A3 /* Bullet Pilot Point Complication44px.png */; };
+		4C4D8A5E23F8EB30007652A3 /* Forstner Bit Complication44px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A4823F8EB2F007652A3 /* Forstner Bit Complication44px.png */; };
+		4C4D8A5F23F8EB30007652A3 /* Twist Bit Complication40px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A4923F8EB2F007652A3 /* Twist Bit Complication40px.png */; };
+		4C4D8A6023F8EB30007652A3 /* Glass and Tile Bit Complication40px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A4A23F8EB2F007652A3 /* Glass and Tile Bit Complication40px.png */; };
+		4C4D8A6123F8EB30007652A3 /* Powerbore Drill Bit Complication44px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A4B23F8EB2F007652A3 /* Powerbore Drill Bit Complication44px.png */; };
+		4C4D8A6223F8EB30007652A3 /* Multi Spur Bit Complication40px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A4C23F8EB2F007652A3 /* Multi Spur Bit Complication40px.png */; };
+		4C4D8A6323F8EB30007652A3 /* Forstner Bit Complication40px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A4D23F8EB2F007652A3 /* Forstner Bit Complication40px.png */; };
+		4C4D8A6423F8EB30007652A3 /* Hole Saw Complication44px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A4E23F8EB2F007652A3 /* Hole Saw Complication44px.png */; };
+		4C4D8A6523F8EB30007652A3 /* Brad Point Complication44px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A4F23F8EB30007652A3 /* Brad Point Complication44px.png */; };
+		4C4D8A6623F8EB30007652A3 /* Twist Bit Complication44px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A5023F8EB30007652A3 /* Twist Bit Complication44px.png */; };
+		4C4D8A6723F8EB30007652A3 /* Bullet Pilot Point Complication40px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A5123F8EB30007652A3 /* Bullet Pilot Point Complication40px.png */; };
+		4C4D8A6823F8EB30007652A3 /* Multi Spur Bit Complication44px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A5223F8EB30007652A3 /* Multi Spur Bit Complication44px.png */; };
+		4C4D8A6923F8EB30007652A3 /* Powerbore Drill Bit Complication40px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A5323F8EB30007652A3 /* Powerbore Drill Bit Complication40px.png */; };
+		4C4D8A6A23F8EB30007652A3 /* Circle Cutter Complication44px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A5423F8EB30007652A3 /* Circle Cutter Complication44px.png */; };
+		4C4D8A6B23F8EB30007652A3 /* Hole Saw Complication40px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A5523F8EB30007652A3 /* Hole Saw Complication40px.png */; };
+		4C4D8A6C23F8EB30007652A3 /* Spade BIt with Spurs Complication40px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A5623F8EB30007652A3 /* Spade BIt with Spurs Complication40px.png */; };
+		4C4D8A6D23F8EB30007652A3 /* Spade BIt Complication40px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A5723F8EB30007652A3 /* Spade BIt Complication40px.png */; };
+		4C4D8A6E23F8EB30007652A3 /* Circle Cutter Complication40px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A5823F8EB30007652A3 /* Circle Cutter Complication40px.png */; };
+		4C4D8A6F23F8EB30007652A3 /* Spade BIt with Spurs Complication44px.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8A5923F8EB30007652A3 /* Spade BIt with Spurs Complication44px.png */; };
 		4C5336AF23D2E5DF00335D57 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5336AD23D2E5DF00335D57 /* Interface.storyboard */; };
 		4C5336B123D2E5DF00335D57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5336B023D2E5DF00335D57 /* Assets.xcassets */; };
 		4C5336B823D2E5DF00335D57 /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4C5336B723D2E5DF00335D57 /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -315,6 +337,28 @@
 		4C46FA7A22E23C550081A381 /* Chevron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chevron.png; sourceTree = "<group>"; };
 		4C46FA7B22E23C550081A381 /* Divider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Divider@2x.png"; sourceTree = "<group>"; };
 		4C46FA8622E2D3390081A381 /* UIViewWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewWatcher.swift; sourceTree = "<group>"; };
+		4C4D8A4423F8EB2F007652A3 /* Brad Point Complication40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Brad Point Complication40px.png"; path = "Image Source/Drill Bits Complication/Brad Point Complication40px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A4523F8EB2F007652A3 /* Glass and Tile Bit Complication44px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Glass and Tile Bit Complication44px.png"; path = "Image Source/Drill Bits Complication/Glass and Tile Bit Complication44px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A4623F8EB2F007652A3 /* Spade BIt Complication44px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Spade BIt Complication44px.png"; path = "../Spade BIt Complication44px.png"; sourceTree = "<group>"; };
+		4C4D8A4723F8EB2F007652A3 /* Bullet Pilot Point Complication44px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bullet Pilot Point Complication44px.png"; path = "Image Source/Drill Bits Complication/Bullet Pilot Point Complication44px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A4823F8EB2F007652A3 /* Forstner Bit Complication44px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Forstner Bit Complication44px.png"; path = "Image Source/Drill Bits Complication/Forstner Bit Complication44px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A4923F8EB2F007652A3 /* Twist Bit Complication40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Twist Bit Complication40px.png"; path = "Image Source/Drill Bits Complication/Twist Bit Complication40px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A4A23F8EB2F007652A3 /* Glass and Tile Bit Complication40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Glass and Tile Bit Complication40px.png"; path = "Image Source/Drill Bits Complication/Glass and Tile Bit Complication40px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A4B23F8EB2F007652A3 /* Powerbore Drill Bit Complication44px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Powerbore Drill Bit Complication44px.png"; path = "Image Source/Drill Bits Complication/Powerbore Drill Bit Complication44px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A4C23F8EB2F007652A3 /* Multi Spur Bit Complication40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Multi Spur Bit Complication40px.png"; path = "Image Source/Drill Bits Complication/Multi Spur Bit Complication40px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A4D23F8EB2F007652A3 /* Forstner Bit Complication40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Forstner Bit Complication40px.png"; path = "Image Source/Drill Bits Complication/Forstner Bit Complication40px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A4E23F8EB2F007652A3 /* Hole Saw Complication44px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hole Saw Complication44px.png"; path = "Image Source/Drill Bits Complication/Hole Saw Complication44px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A4F23F8EB30007652A3 /* Brad Point Complication44px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Brad Point Complication44px.png"; path = "Image Source/Drill Bits Complication/Brad Point Complication44px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A5023F8EB30007652A3 /* Twist Bit Complication44px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Twist Bit Complication44px.png"; path = "Image Source/Drill Bits Complication/Twist Bit Complication44px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A5123F8EB30007652A3 /* Bullet Pilot Point Complication40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bullet Pilot Point Complication40px.png"; path = "Image Source/Drill Bits Complication/Bullet Pilot Point Complication40px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A5223F8EB30007652A3 /* Multi Spur Bit Complication44px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Multi Spur Bit Complication44px.png"; path = "Image Source/Drill Bits Complication/Multi Spur Bit Complication44px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A5323F8EB30007652A3 /* Powerbore Drill Bit Complication40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Powerbore Drill Bit Complication40px.png"; path = "Image Source/Drill Bits Complication/Powerbore Drill Bit Complication40px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A5423F8EB30007652A3 /* Circle Cutter Complication44px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Circle Cutter Complication44px.png"; path = "Image Source/Drill Bits Complication/Circle Cutter Complication44px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A5523F8EB30007652A3 /* Hole Saw Complication40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hole Saw Complication40px.png"; path = "Image Source/Drill Bits Complication/Hole Saw Complication40px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A5623F8EB30007652A3 /* Spade BIt with Spurs Complication40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Spade BIt with Spurs Complication40px.png"; path = "../Spade BIt with Spurs Complication40px.png"; sourceTree = "<group>"; };
+		4C4D8A5723F8EB30007652A3 /* Spade BIt Complication40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Spade BIt Complication40px.png"; path = "../Spade BIt Complication40px.png"; sourceTree = "<group>"; };
+		4C4D8A5823F8EB30007652A3 /* Circle Cutter Complication40px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Circle Cutter Complication40px.png"; path = "Image Source/Drill Bits Complication/Circle Cutter Complication40px.png"; sourceTree = SOURCE_ROOT; };
+		4C4D8A5923F8EB30007652A3 /* Spade BIt with Spurs Complication44px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Spade BIt with Spurs Complication44px.png"; path = "../Spade BIt with Spurs Complication44px.png"; sourceTree = "<group>"; };
 		4C5336AB23D2E5DF00335D57 /* Drill Bits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drill Bits.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5336AE23D2E5DF00335D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		4C5336B023D2E5DF00335D57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -572,6 +616,7 @@
 				4C08CDA12318BCCF004D8C9B /* App Store */,
 				4C905584230F2D6C006A6B59 /* Materials */,
 				4C90555C22FDFFCA006A6B59 /* Drill Bits */,
+				4C4D8A4323F8E92A007652A3 /* Drill Bits Complication */,
 				4C46FA6822DCEC730081A381 /* Misc */,
 				4C46FA5A22D84DD90081A381 /* DrillBits UI.sketch */,
 			);
@@ -599,6 +644,123 @@
 			children = (
 			);
 			path = "Screen Shots";
+			sourceTree = "<group>";
+		};
+		4C4D8A4323F8E92A007652A3 /* Drill Bits Complication */ = {
+			isa = PBXGroup;
+			children = (
+				4C4D8A7B23F8EBA1007652A3 /* Twist Bit */,
+				4C4D8A7A23F8EB7B007652A3 /* Bullet Pilot Point */,
+				4C4D8A7923F8EB78007652A3 /* Brad Point */,
+				4C4D8A7823F8EB75007652A3 /* Forstner Bit */,
+				4C4D8A7723F8EB72007652A3 /* Glass and Tile Bit */,
+				4C4D8A7623F8EB70007652A3 /* Hole Saw */,
+				4C4D8A7523F8EB6E007652A3 /* Multi Spur Bit */,
+				4C4D8A7423F8EB6C007652A3 /* Spade Bit */,
+				4C4D8A7323F8EB69007652A3 /* Spade Bit with Spurs */,
+				4C4D8A7223F8EB50007652A3 /* Powerbore Drill Bit */,
+				4C4D8A7123F8EB49007652A3 /* Circle Cutter */,
+			);
+			path = "Drill Bits Complication";
+			sourceTree = "<group>";
+		};
+		4C4D8A7123F8EB49007652A3 /* Circle Cutter */ = {
+			isa = PBXGroup;
+			children = (
+				4C4D8A5823F8EB30007652A3 /* Circle Cutter Complication40px.png */,
+				4C4D8A5423F8EB30007652A3 /* Circle Cutter Complication44px.png */,
+			);
+			path = "Circle Cutter";
+			sourceTree = "<group>";
+		};
+		4C4D8A7223F8EB50007652A3 /* Powerbore Drill Bit */ = {
+			isa = PBXGroup;
+			children = (
+				4C4D8A5323F8EB30007652A3 /* Powerbore Drill Bit Complication40px.png */,
+				4C4D8A4B23F8EB2F007652A3 /* Powerbore Drill Bit Complication44px.png */,
+			);
+			path = "Powerbore Drill Bit";
+			sourceTree = "<group>";
+		};
+		4C4D8A7323F8EB69007652A3 /* Spade Bit with Spurs */ = {
+			isa = PBXGroup;
+			children = (
+				4C4D8A5623F8EB30007652A3 /* Spade BIt with Spurs Complication40px.png */,
+				4C4D8A5923F8EB30007652A3 /* Spade BIt with Spurs Complication44px.png */,
+			);
+			path = "Spade Bit with Spurs";
+			sourceTree = "<group>";
+		};
+		4C4D8A7423F8EB6C007652A3 /* Spade Bit */ = {
+			isa = PBXGroup;
+			children = (
+				4C4D8A5723F8EB30007652A3 /* Spade BIt Complication40px.png */,
+				4C4D8A4623F8EB2F007652A3 /* Spade BIt Complication44px.png */,
+			);
+			path = "Spade Bit";
+			sourceTree = "<group>";
+		};
+		4C4D8A7523F8EB6E007652A3 /* Multi Spur Bit */ = {
+			isa = PBXGroup;
+			children = (
+				4C4D8A4C23F8EB2F007652A3 /* Multi Spur Bit Complication40px.png */,
+				4C4D8A5223F8EB30007652A3 /* Multi Spur Bit Complication44px.png */,
+			);
+			path = "Multi Spur Bit";
+			sourceTree = "<group>";
+		};
+		4C4D8A7623F8EB70007652A3 /* Hole Saw */ = {
+			isa = PBXGroup;
+			children = (
+				4C4D8A5523F8EB30007652A3 /* Hole Saw Complication40px.png */,
+				4C4D8A4E23F8EB2F007652A3 /* Hole Saw Complication44px.png */,
+			);
+			path = "Hole Saw";
+			sourceTree = "<group>";
+		};
+		4C4D8A7723F8EB72007652A3 /* Glass and Tile Bit */ = {
+			isa = PBXGroup;
+			children = (
+				4C4D8A4A23F8EB2F007652A3 /* Glass and Tile Bit Complication40px.png */,
+				4C4D8A4523F8EB2F007652A3 /* Glass and Tile Bit Complication44px.png */,
+			);
+			path = "Glass and Tile Bit";
+			sourceTree = "<group>";
+		};
+		4C4D8A7823F8EB75007652A3 /* Forstner Bit */ = {
+			isa = PBXGroup;
+			children = (
+				4C4D8A4D23F8EB2F007652A3 /* Forstner Bit Complication40px.png */,
+				4C4D8A4823F8EB2F007652A3 /* Forstner Bit Complication44px.png */,
+			);
+			path = "Forstner Bit";
+			sourceTree = "<group>";
+		};
+		4C4D8A7923F8EB78007652A3 /* Brad Point */ = {
+			isa = PBXGroup;
+			children = (
+				4C4D8A4423F8EB2F007652A3 /* Brad Point Complication40px.png */,
+				4C4D8A4F23F8EB30007652A3 /* Brad Point Complication44px.png */,
+			);
+			path = "Brad Point";
+			sourceTree = "<group>";
+		};
+		4C4D8A7A23F8EB7B007652A3 /* Bullet Pilot Point */ = {
+			isa = PBXGroup;
+			children = (
+				4C4D8A5123F8EB30007652A3 /* Bullet Pilot Point Complication40px.png */,
+				4C4D8A4723F8EB2F007652A3 /* Bullet Pilot Point Complication44px.png */,
+			);
+			path = "Bullet Pilot Point";
+			sourceTree = "<group>";
+		};
+		4C4D8A7B23F8EBA1007652A3 /* Twist Bit */ = {
+			isa = PBXGroup;
+			children = (
+				4C4D8A4923F8EB2F007652A3 /* Twist Bit Complication40px.png */,
+				4C4D8A5023F8EB30007652A3 /* Twist Bit Complication44px.png */,
+			);
+			path = "Twist Bit";
 			sourceTree = "<group>";
 		};
 		4C5336AC23D2E5DF00335D57 /* Watch */ = {
@@ -1129,24 +1291,31 @@
 				4CA7D5EF23173469008D6993 /* App Icon 76pt @2x.png in Resources */,
 				4C9055A023107893006A6B59 /* Steel @2x.png in Resources */,
 				4C90558322FE2D4A006A6B59 /* Brad Point Zoomed @3x.png in Resources */,
+				4C4D8A6F23F8EB30007652A3 /* Spade BIt with Spurs Complication44px.png in Resources */,
 				4C90560B23146F6D006A6B59 /* Powerbore Drill Bit.png in Resources */,
 				4C9055FB23146F5F006A6B59 /* Spade BIt with Spurs Zoomed @2x.png in Resources */,
 				4C90557F22FE2D4A006A6B59 /* Brad Point.png in Resources */,
 				4C08CD982318A064004D8C9B /* Multi Spur Bit.blend in Resources */,
 				4C9055BC2310A680006A6B59 /* Glass and Tile.png in Resources */,
 				4C9055E323146F41006A6B59 /* Hole Saw @2x.png in Resources */,
+				4C4D8A6323F8EB30007652A3 /* Forstner Bit Complication40px.png in Resources */,
 				4C08CD9C2318A080004D8C9B /* Spade Bit with Spurs.blend in Resources */,
+				4C4D8A5B23F8EB30007652A3 /* Glass and Tile Bit Complication44px.png in Resources */,
 				4C905597230F6D3B006A6B59 /* Acrylic @3x.png in Resources */,
+				4C4D8A6223F8EB30007652A3 /* Multi Spur Bit Complication40px.png in Resources */,
 				4CA7D60723176F9E008D6993 /* Glass and Tile Bit Zoomed @2x.png in Resources */,
 				4C90556522FE1862006A6B59 /* Twist Bit Zoomed.png in Resources */,
 				4C90558222FE2D4A006A6B59 /* Brad Point @3x.png in Resources */,
 				4C9055AE231078A3006A6B59 /* Brass @2x.png in Resources */,
+				4C4D8A5A23F8EB30007652A3 /* Brad Point Complication40px.png in Resources */,
 				4C9055F223146F52006A6B59 /* Spade BIt @2x.png in Resources */,
 				4C9055F323146F52006A6B59 /* Spade BIt Zoomed.png in Resources */,
 				4C9055CF2310D7C6006A6B59 /* Forstner Bit @3x.png in Resources */,
 				4C90555F22FE001E006A6B59 /* Twist Bit.png in Resources */,
+				4C4D8A6923F8EB30007652A3 /* Powerbore Drill Bit Complication40px.png in Resources */,
 				4C905592230F6D34006A6B59 /* Hardwood.png in Resources */,
 				4C46FA7F22E23C550081A381 /* Divider.png in Resources */,
+				4C4D8A6423F8EB30007652A3 /* Hole Saw Complication44px.png in Resources */,
 				4C90560C23146F6D006A6B59 /* Powerbore Drill Bit @2x.png in Resources */,
 				4C9055DA2311FC91006A6B59 /* Multi Spur Bit.png in Resources */,
 				4C46FA2322D6F7D30081A381 /* LaunchScreen.storyboard in Resources */,
@@ -1175,18 +1344,23 @@
 				4C90556722FE1862006A6B59 /* Twist Bit @2x.png in Resources */,
 				4C9055CB2310D7C6006A6B59 /* Forstner Bit Zoomed @2x.png in Resources */,
 				4C9055D02310D7C6006A6B59 /* Forstner Bit Zoomed @3x.png in Resources */,
+				4C4D8A6C23F8EB30007652A3 /* Spade BIt with Spurs Complication40px.png in Resources */,
 				4C9055E723146F41006A6B59 /* Hole Saw Zoomed.png in Resources */,
 				4CA7D5FD23173469008D6993 /* App Icon 20pt @3x.png in Resources */,
 				4CA7D5F223173469008D6993 /* App Icon 60pt @2x.png in Resources */,
 				4C90560A23146F6D006A6B59 /* Powerbore Drill Bit Zoomed @2x.png in Resources */,
 				4CA8AEAB23EA49E400220BC6 /* Millimeters.png in Resources */,
 				4C08CD9E2318A08E004D8C9B /* Powerbore Drill Bit.blend in Resources */,
+				4C4D8A5C23F8EB30007652A3 /* Spade BIt Complication44px.png in Resources */,
 				4C90556922FE1E98006A6B59 /* Twist Bit Zoomed @2x.png in Resources */,
+				4C4D8A6E23F8EB30007652A3 /* Circle Cutter Complication40px.png in Resources */,
 				4C46FA5B22D84DD90081A381 /* DrillBits UI.sketch in Resources */,
 				4C90560923146F6D006A6B59 /* Powerbore Drill Bit Zoomed.png in Resources */,
 				4C90560023146F5F006A6B59 /* Spade BIt with Spurs @2x.png in Resources */,
 				4C9055E623146F41006A6B59 /* Hole Saw Zoomed @3x.png in Resources */,
+				4C4D8A6B23F8EB30007652A3 /* Hole Saw Complication40px.png in Resources */,
 				4C08CD8823189F90004D8C9B /* Glass and Tile.blend in Resources */,
+				4C4D8A5E23F8EB30007652A3 /* Forstner Bit Complication44px.png in Resources */,
 				4C9055A82310789C006A6B59 /* Aluminum @3x.png in Resources */,
 				4C9055F023146F52006A6B59 /* Spade BIt Zoomed @2x.png in Resources */,
 				4C905593230F6D34006A6B59 /* Hardwood @2x.png in Resources */,
@@ -1198,17 +1372,22 @@
 				4CA7D5F323173469008D6993 /* App Icon 40pt @2x.png in Resources */,
 				4C9055D82311FC91006A6B59 /* Multi Spur Bit Zoomed.png in Resources */,
 				4C9055B32310791F006A6B59 /* Softwood @3x.png in Resources */,
+				4C4D8A5D23F8EB30007652A3 /* Bullet Pilot Point Complication44px.png in Resources */,
 				4C9055FF23146F5F006A6B59 /* Spade BIt with Spurs @3x.png in Resources */,
 				4CA7D615231783C7008D6993 /* Circle Cutter @3x.png in Resources */,
 				4C9055B52310791F006A6B59 /* Softwood @2x.png in Resources */,
 				4CA7D5F723173469008D6993 /* App Icon 20pt.png in Resources */,
+				4C4D8A6723F8EB30007652A3 /* Bullet Pilot Point Complication40px.png in Resources */,
 				4CA7D60523176F9E008D6993 /* Glass and Tile Bit @2x.png in Resources */,
 				4C08CD902318A01A004D8C9B /* Brad Point.blend in Resources */,
 				4C90556422FE1862006A6B59 /* Twist Bit @3x.png in Resources */,
 				4C08CD8423189F6C004D8C9B /* Aluminum.blend in Resources */,
 				4C9055A72310789C006A6B59 /* Aluminum @2x.png in Resources */,
+				4C4D8A6823F8EB30007652A3 /* Multi Spur Bit Complication44px.png in Resources */,
 				4C46FA1E22D6F7D30081A381 /* Main.storyboard in Resources */,
 				4CA7D5F023173469008D6993 /* App Icon 40pt @3x.png in Resources */,
+				4C4D8A6523F8EB30007652A3 /* Brad Point Complication44px.png in Resources */,
+				4C4D8A6023F8EB30007652A3 /* Glass and Tile Bit Complication40px.png in Resources */,
 				4C9055A62310789C006A6B59 /* Aluminum.png in Resources */,
 				4C46FA6722DCEAAE0081A381 /* UIDetailView.xib in Resources */,
 				4CA7D60923176F9E008D6993 /* Glass and Tile Bit Zoomed.png in Resources */,
@@ -1237,6 +1416,8 @@
 				4C08CD942318A03E004D8C9B /* Glass and Tile Bit.blend in Resources */,
 				4C08CD8023189E2A004D8C9B /* Acrylic.blend in Resources */,
 				4CA7D5F523173469008D6993 /* App Icon 83.5pt @2x.png in Resources */,
+				4C4D8A6A23F8EB30007652A3 /* Circle Cutter Complication44px.png in Resources */,
+				4C4D8A6123F8EB30007652A3 /* Powerbore Drill Bit Complication44px.png in Resources */,
 				4C08CD8223189F57004D8C9B /* Brass.blend in Resources */,
 				4C9055DB2311FC92006A6B59 /* Multi Spur Bit @2x.png in Resources */,
 				4C9055BA2310A680006A6B59 /* Glass and Tile @3x.png in Resources */,
@@ -1244,6 +1425,9 @@
 				4C46FA7C22E23C550081A381 /* Divider@3x.png in Resources */,
 				4C905591230F6D34006A6B59 /* Hardwood @3x.png in Resources */,
 				4C9055EF23146F52006A6B59 /* Spade BIt @3x.png in Resources */,
+				4C4D8A6D23F8EB30007652A3 /* Spade BIt Complication40px.png in Resources */,
+				4C4D8A6623F8EB30007652A3 /* Twist Bit Complication44px.png in Resources */,
+				4C4D8A5F23F8EB30007652A3 /* Twist Bit Complication40px.png in Resources */,
 				4C9055D72311FC91006A6B59 /* Multi Spur Bit Zoomed @3x.png in Resources */,
 				4C90560723146F6D006A6B59 /* Powerbore Drill Bit @3x.png in Resources */,
 				4C90557122FE22B9006A6B59 /* Bullet Pilot Point @3x.png in Resources */,
