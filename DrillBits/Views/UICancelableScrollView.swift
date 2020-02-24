@@ -3,7 +3,7 @@
 //  DrillBits
 //
 //  Created by Michael Bykov on 8/7/19.
-//  Copyright © 2019 Lepario. All rights reserved.
+//  Copyright © 2020 Lepario. All rights reserved.
 //
 
 import UIKit
