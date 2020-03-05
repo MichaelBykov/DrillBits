@@ -48,6 +48,10 @@
 		4C14C8AC2410B45600DE0A4A /* Apple Watch 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8A62410B45500DE0A4A /* Apple Watch 2.png */; };
 		4C14C8AD2410B45600DE0A4A /* Apple Watch 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8A72410B45500DE0A4A /* Apple Watch 3.png */; };
 		4C14C8AE2410B45600DE0A4A /* Apple Watch 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8A82410B45600DE0A4A /* Apple Watch 1.png */; };
+		4C14C8B32410E25700DE0A4A /* 6.5in 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8AF2410E25700DE0A4A /* 6.5in 4.png */; };
+		4C14C8B42410E25700DE0A4A /* 6.5in 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8B02410E25700DE0A4A /* 6.5in 5.png */; };
+		4C14C8B52410E25700DE0A4A /* 5.5in 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8B12410E25700DE0A4A /* 5.5in 5.png */; };
+		4C14C8B62410E25700DE0A4A /* 5.5in 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8B22410E25700DE0A4A /* 5.5in 4.png */; };
 		4C30FD9623DA6A81007D5E87 /* FractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C30FD9523DA6A81007D5E87 /* FractionView.swift */; };
 		4C46FA1922D6F7D30081A381 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA1822D6F7D30081A381 /* AppDelegate.swift */; };
 		4C46FA1B22D6F7D30081A381 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA1A22D6F7D30081A381 /* ViewController.swift */; };
@@ -364,6 +368,10 @@
 		4C14C8A62410B45500DE0A4A /* Apple Watch 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch 2.png"; sourceTree = "<group>"; };
 		4C14C8A72410B45500DE0A4A /* Apple Watch 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch 3.png"; sourceTree = "<group>"; };
 		4C14C8A82410B45600DE0A4A /* Apple Watch 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch 1.png"; sourceTree = "<group>"; };
+		4C14C8AF2410E25700DE0A4A /* 6.5in 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6.5in 4.png"; sourceTree = "<group>"; };
+		4C14C8B02410E25700DE0A4A /* 6.5in 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6.5in 5.png"; sourceTree = "<group>"; };
+		4C14C8B12410E25700DE0A4A /* 5.5in 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5.5in 5.png"; sourceTree = "<group>"; };
+		4C14C8B22410E25700DE0A4A /* 5.5in 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5.5in 4.png"; sourceTree = "<group>"; };
 		4C30FD9523DA6A81007D5E87 /* FractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractionView.swift; sourceTree = "<group>"; };
 		4C46FA1522D6F7D30081A381 /* DrillBits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrillBits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C46FA1822D6F7D30081A381 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -718,9 +726,13 @@
 				4C14C8972410AC0800DE0A4A /* 5.5in 1.png */,
 				4C14C8992410AC0800DE0A4A /* 5.5in 2.png */,
 				4C14C8982410AC0800DE0A4A /* 5.5in 3.png */,
+				4C14C8B22410E25700DE0A4A /* 5.5in 4.png */,
+				4C14C8B12410E25700DE0A4A /* 5.5in 5.png */,
 				4C14C89A2410AC0800DE0A4A /* 6.5in 1.png */,
 				4C14C89B2410AC0800DE0A4A /* 6.5in 2.png */,
 				4C14C89C2410AC0800DE0A4A /* 6.5in 3.png */,
+				4C14C8AF2410E25700DE0A4A /* 6.5in 4.png */,
+				4C14C8B02410E25700DE0A4A /* 6.5in 5.png */,
 				4C14C8A82410B45600DE0A4A /* Apple Watch 1.png */,
 				4C14C8A62410B45500DE0A4A /* Apple Watch 2.png */,
 				4C14C8A72410B45500DE0A4A /* Apple Watch 3.png */,
@@ -1390,6 +1402,7 @@
 				4C08CD7C23189DEC004D8C9B /* Softwood.blend in Resources */,
 				4CA7D611231783C7008D6993 /* Circle Cutter.png in Resources */,
 				4C90557322FE22B9006A6B59 /* Bullet Pilot Point Zoomed.png in Resources */,
+				4C14C8B52410E25700DE0A4A /* 5.5in 5.png in Resources */,
 				4C9055E423146F41006A6B59 /* Hole Saw @3x.png in Resources */,
 				4C08CD962318A054004D8C9B /* Hole Saw.blend in Resources */,
 				4C14C8A02410AC0800DE0A4A /* 6.5in 1.png in Resources */,
@@ -1463,6 +1476,7 @@
 				4C90557222FE22B9006A6B59 /* Bullet Pilot Point @2x.png in Resources */,
 				4C08CDA02318A09D004D8C9B /* Circle Cutter.blend in Resources */,
 				4CA7D60A23176F9E008D6993 /* Glass and Tile Bit Zoomed @3x.png in Resources */,
+				4C14C8B62410E25700DE0A4A /* 5.5in 4.png in Resources */,
 				4C08CD9A2318A071004D8C9B /* Spade Bit.blend in Resources */,
 				4C90558022FE2D4A006A6B59 /* Brad Point @2x.png in Resources */,
 				4CA7D5FB23173469008D6993 /* App Icon 1024pt.png in Resources */,
@@ -1487,6 +1501,7 @@
 				4C4D8A6E23F8EB30007652A3 /* Circle Cutter Complication40px.png in Resources */,
 				4C46FA5B22D84DD90081A381 /* DrillBits UI.sketch in Resources */,
 				4C90560923146F6D006A6B59 /* Powerbore Drill Bit Zoomed.png in Resources */,
+				4C14C8B32410E25700DE0A4A /* 6.5in 4.png in Resources */,
 				4C90560023146F5F006A6B59 /* Spade BIt with Spurs @2x.png in Resources */,
 				4C9055E623146F41006A6B59 /* Hole Saw Zoomed @3x.png in Resources */,
 				4C4D8A6B23F8EB30007652A3 /* Hole Saw Complication40px.png in Resources */,
@@ -1545,6 +1560,7 @@
 				4C9055CC2310D7C6006A6B59 /* Forstner Bit Zoomed.png in Resources */,
 				4CA7D60623176F9E008D6993 /* Glass and Tile Bit.png in Resources */,
 				4CA8AEAC23EA49E400220BC6 /* Inches.png in Resources */,
+				4C14C8B42410E25700DE0A4A /* 6.5in 5.png in Resources */,
 				4C14C8A12410AC0800DE0A4A /* 6.5in 2.png in Resources */,
 				4CA7D5FA23173469008D6993 /* App Icon 76pt.png in Resources */,
 				4C90557E22FE2D4A006A6B59 /* Brad Point Zoomed.png in Resources */,
