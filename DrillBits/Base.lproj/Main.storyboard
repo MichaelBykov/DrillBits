@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,7 +46,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.14901960784313725" green="0.25490196078431371" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="Bottom Area Color"/>
                                 <constraints>
                                     <constraint firstItem="KCC-81-MZp" firstAttribute="centerX" secondItem="AaU-nP-vgS" secondAttribute="centerX" id="43J-N4-2Vb"/>
                                     <constraint firstItem="KCC-81-MZp" firstAttribute="centerY" secondItem="AaU-nP-vgS" secondAttribute="centerY" constant="10" id="qpo-32-L4K"/>
@@ -70,7 +68,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRr-W9-xzD" customClass="UIDetailView" customModule="DrillBits" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="254" width="398" height="128"/>
+                                                <rect key="frame" x="8" y="253.5" width="398" height="128"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="128" id="2S1-FU-LNC"/>
                                                 </constraints>
@@ -79,16 +77,16 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GjH-3x-gWe" userLabel="Size Picker">
-                                                <rect key="frame" x="8" y="500" width="398" height="82"/>
+                                                <rect key="frame" x="8" y="498.5" width="398" height="84"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drill Bit Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvm-3g-1Ox">
-                                                        <rect key="frame" x="0.0" y="0.0" width="132" height="31.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="142" height="33.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcf-c9-dR8">
-                                                        <rect key="frame" x="0.0" y="39.5" width="398" height="42.5"/>
+                                                        <rect key="frame" x="0.0" y="41.5" width="398" height="42.5"/>
                                                         <subviews>
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="lu4-xg-AEe" customClass="UISnappingSlider" customModule="DrillBits" customModuleProvider="target">
                                                                 <rect key="frame" x="106" y="6.5" width="294" height="31"/>
@@ -119,7 +117,7 @@
                                                                             </label>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSs-dr-Gqo">
                                                                                 <rect key="frame" x="0.0" y="20.5" width="20.5" height="1.5"/>
-                                                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                                <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="1.5" id="CBL-F7-8eo"/>
                                                                                 </constraints>
@@ -148,7 +146,6 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lE4-cq-gKV">
                                                                         <rect key="frame" x="45" y="11" width="13.5" height="21"/>
                                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -175,7 +172,7 @@
                                                         </constraints>
                                                     </view>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7qk-o5-S30">
-                                                        <rect key="frame" x="237" y="0.0" width="161" height="29"/>
+                                                        <rect key="frame" x="223" y="0.0" width="175" height="32"/>
                                                         <segments>
                                                             <segment title="Inches"/>
                                                             <segment title="Millimeters"/>
@@ -232,7 +229,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDW-Wg-GHN" userLabel="Spacer">
-                                                <rect key="frame" x="0.0" y="136" width="414" height="118"/>
+                                                <rect key="frame" x="0.0" y="136" width="414" height="117.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="8" id="NOg-Ue-tB2"/>
@@ -240,11 +237,11 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKT-e4-lLa" userLabel="Spacer">
-                                                <rect key="frame" x="0.0" y="382" width="414" height="118"/>
+                                                <rect key="frame" x="0.0" y="381.5" width="414" height="117"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IBb-iJ-MAu" userLabel="Spacer">
-                                                <rect key="frame" x="0.0" y="582" width="414" height="118"/>
+                                                <rect key="frame" x="0.0" y="582.5" width="414" height="117.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
@@ -291,10 +288,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <blurEffect style="light"/>
+                                <blurEffect style="regular"/>
                             </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="AaU-nP-vgS" secondAttribute="bottom" id="6St-e7-Y1v"/>
                             <constraint firstAttribute="trailing" secondItem="AaU-nP-vgS" secondAttribute="trailing" id="A0D-HQ-bMl"/>
@@ -337,5 +334,8 @@
     <resources>
         <image name="Chevron" width="1000" height="300"/>
         <image name="Divider" width="1000" height="300"/>
+        <namedColor name="Bottom Area Color">
+            <color red="0.14901960784313725" green="0.25490196078431371" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

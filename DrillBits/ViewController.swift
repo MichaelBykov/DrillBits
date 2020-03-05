@@ -70,6 +70,7 @@ class ViewController: UIViewController {
 		MaterialPicker.OnSelectionEnded += { self.SaveMat(); self.SaveSize(); };
 		SizeSlider.OnSelectionEnded = { self.SaveSize(); };
 		
+		
 		// Load user prefrences for units, size, material, bit
 		if (Defaults.Start) {
 			let NewSize = Defaults.Size;
@@ -84,7 +85,7 @@ class ViewController: UIViewController {
 			DrillBitPicker.Select(Index: SelectedBit.rawValue);
 			DrillBitSelectionChanged(SelectedBit.rawValue, Tag: SelectedBit.rawValue);
 			
-			MaterialPicker.Select(Index: MaterialPicker.Data.lastIndex(where: { m in return m.1 == Mat.rawValue; })!);
+			MaterialPicker.Select(Index: MaterialPicker.Data.lastIndex(where: { m in return m.1 == Mat.rawValue; }) ?? 0);
 			
 			SizeSlider.value = NewSize;
 			SizeValueChanged(SizeSlider);

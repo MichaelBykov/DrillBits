@@ -25,6 +25,13 @@ class UISelector: UIView {
 		}
 	}
 	
+	/// The spacing between each item
+	public var Spacing: CGFloat = 10 {
+		didSet {
+			Recalculate(.Size);
+		}
+	}
+	
 	private var data: [(UIImage, Int)] = [ ];
 	/// The data to be used with the selection widgets
 	/// - Item1: The icon
@@ -73,19 +80,49 @@ class UISelector: UIView {
 	}
 	
 	/// The selection gradient
-	private let Gradient: CAGradientLayer = CAGradientLayer();
+	private let Gradient: CALayer = CALayer();
+	private let BackgroundLayer: CALayer = CALayer();
+	private let BackgroundMask: CAShapeLayer = CAShapeLayer();
 	
 	/// Performs common init operations
 	private func Init() {
-		// Generate our gradient
-		Gradient.colors = [
-			UIColor(red: 120.0 / 255.0, green: 163.0 / 255.0, blue: 244.0 / 255.0, alpha: 1).cgColor,
-			UIColor(red: 52.0 / 255.0, green: 120.0 / 255.0, blue: 246.0 / 255.0, alpha: 1).cgColor
-		];
-		Gradient.locations = [0.0, 1.0];
-		Gradient.startPoint = CGPoint(x: 0.0, y: 0.0);
-		Gradient.endPoint = CGPoint(x: 0.0, y: 1.0)
-		Gradient.cornerRadius = 5;
+		self.layer.insertSublayer(BackgroundLayer, at: 0);
+		BackgroundMask.fillColor = UIColor.black.cgColor;
+		BackgroundLayer.mask = BackgroundMask;
+		
+		UpdateLayers();
+	}
+	
+	func UpdateLayers() {
+		BackgroundLayer.backgroundColor = UIColor(named: "Selector Color")?.cgColor;
+		
+		Gradient.backgroundColor = UIColor(named: "Selector Color Selected")?.cgColor;
+		
+		
+		/// The width & height of a button with padding
+		let Padding = Size + Spacing;
+		/// The max number of elements in a row
+		let MaxRow = Int(floor((frame.width + Spacing) / Padding));
+		/// The number of elements in the first row
+		let Row = MaxRow > data.count ? data.count : MaxRow;
+		/// The calculated width of the selection view
+		let Width: CGFloat = (CGFloat(Row) * Padding) - Spacing + 12;
+		
+		BackgroundLayer.frame = CGRect(x: (self.frame.width / 2) - (Width / 2), y: 0, width: Width, height: self.frame.height);
+		
+		BackgroundMask.path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: Width, height: self.frame.height), cornerRadius: 7).cgPath;
+	}
+	
+	override var frame: CGRect {
+		didSet {
+			UpdateLayers();
+		}
+	}
+	
+	override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+		super.traitCollectionDidChange(previousTraitCollection);
+		
+		UpdateLayers();
 	}
 	
 	
@@ -136,6 +173,12 @@ class UISelector: UIView {
 				image.image = d.0;
 				button.addSubview(image);
 				
+				// Add a shadow to our button for selection
+				button.layer.shadowColor = UIColor(white: 0, alpha: 0.05).cgColor;
+				button.layer.shadowRadius = 2.5;
+				button.layer.shadowOffset = CGSize.zero;
+				button.layer.shadowOpacity = 0;
+				
 				// Add to our collection and the screen
 				Buttons.append(button);
 				addSubview(button);
@@ -149,8 +192,8 @@ class UISelector: UIView {
 			Gradient.frame = CGRect(x: -6, y: -6, width: Size + 12, height: Size + 12);
 			
 			let Mask = CAShapeLayer()
-			Mask.lineWidth = 4
-			Mask.path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: Size + 12, height: Size + 12), cornerRadius: 5).cgPath
+			Mask.path = UIBezierPath(roundedRect: CGRect(x: 1, y: 1, width: Size + 10, height: Size + 10), cornerRadius: 5).cgPath
+			Mask.lineWidth = 2;
 			Mask.strokeColor = UIColor.black.cgColor
 			Mask.fillColor = UIColor.clear.cgColor
 			Gradient.mask = Mask
@@ -161,15 +204,15 @@ class UISelector: UIView {
 		}
 		
 		/// The width & height of a button with padding
-		let Padding = Size + 5;
+		let Padding = Size + Spacing;
 		/// The max number of elements in a row
-		let MaxRow = Int(floor((frame.width + 5) / Padding));
+		let MaxRow = Int(floor((frame.width + Spacing) / Padding));
 		/// The number of rows needed
 		let RowNum = Int(ceil(Double(data.count) / Double(MaxRow)));
 		
 		
 		// Get the left-most bound of the buttons
-		var left: CGFloat = GetLeft(Width: (CGFloat(MaxRow) * Padding) - 5);
+		var left: CGFloat = GetLeft(Width: (CGFloat(MaxRow) * Padding) - Spacing);
 		var OnRow: Int = -1;
 		
 		var OffsetX: CGFloat = 0;
@@ -178,18 +221,20 @@ class UISelector: UIView {
 				let _ = OnRow++;
 				OffsetX = 0;
 				if (OnRow == RowNum - 1) {
-					left = GetLeft(Width: (CGFloat(data.count - i) * Padding) - 5);
+					left = GetLeft(Width: (CGFloat(data.count - i) * Padding) - Spacing);
 				}
 			}
 			// Reposition our button
-			Buttons[i].frame = CGRect(x: left + (OffsetX++) * Padding, y: CGFloat(OnRow) * Padding, width: Size, height: Size);
+			Buttons[i].frame = CGRect(x: left + (OffsetX++) * Padding, y: CGFloat(OnRow) * Padding + 6, width: Size, height: Size);
 		}
 		
 		// Change our height
-		let Height = (CGFloat(RowNum) * Padding) - 5;
+		let Height = (CGFloat(RowNum) * Padding) - Spacing + 12;
 		self.GetConstraint(.height)?.constant = Height;
 		layoutIfNeeded();
 		OnHeightChanged <- Height;
+		
+		UpdateLayers();
 	}
 	
 	/// Select the button at the specified index
@@ -206,13 +251,14 @@ class UISelector: UIView {
 		{
 			// De-activate the previously selected button
 			Buttons[SelectedIndex].layer.sublayers?.remove(at: 0);
+			Buttons[SelectedIndex].layer.shadowOpacity = 0;
 			let ImageView = Buttons[SelectedIndex].subviews.first as! UIImageView;
 			ImageView.frame = CGRect(
 				x: ImageView.frame.origin.x + 6,
 				y: ImageView.frame.origin.y + 6,
 				width: ImageView.frame.width - 12,
 				height: ImageView.frame.height - 12
-			)
+			);
 		}
 		
 		let last = SelectedIndex;
@@ -237,13 +283,14 @@ class UISelector: UIView {
 		{
 			// Activate the view
 			Buttons[SelectedIndex].layer.insertSublayer(Gradient, at: 0);
+			Buttons[SelectedIndex].layer.shadowOpacity = 1;
 			let ImageView = Buttons[SelectedIndex].subviews.first as! UIImageView;
 			ImageView.frame = CGRect(
 				x: ImageView.frame.origin.x - 6,
 				y: ImageView.frame.origin.y - 6,
 				width: ImageView.frame.width + 12,
 				height: ImageView.frame.height + 12
-			)
+			);
 		}
 	}
 	
