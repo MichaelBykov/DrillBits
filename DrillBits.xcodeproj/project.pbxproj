@@ -36,6 +36,18 @@
 		4C14C89424109CEF00DE0A4A /* Apple Watch App Icon Short Look 38mm.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C88924109CEF00DE0A4A /* Apple Watch App Icon Short Look 38mm.png */; };
 		4C14C89524109CEF00DE0A4A /* Apple Watch App Icon Short Look 40mm 42mm.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C88A24109CEF00DE0A4A /* Apple Watch App Icon Short Look 40mm 42mm.png */; };
 		4C14C89624109CEF00DE0A4A /* Apple Watch App Icon Short Look 44mm.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C88B24109CEF00DE0A4A /* Apple Watch App Icon Short Look 44mm.png */; };
+		4C14C89D2410AC0800DE0A4A /* 5.5in 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8972410AC0800DE0A4A /* 5.5in 1.png */; };
+		4C14C89E2410AC0800DE0A4A /* 5.5in 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8982410AC0800DE0A4A /* 5.5in 3.png */; };
+		4C14C89F2410AC0800DE0A4A /* 5.5in 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8992410AC0800DE0A4A /* 5.5in 2.png */; };
+		4C14C8A02410AC0800DE0A4A /* 6.5in 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C89A2410AC0800DE0A4A /* 6.5in 1.png */; };
+		4C14C8A12410AC0800DE0A4A /* 6.5in 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C89B2410AC0800DE0A4A /* 6.5in 2.png */; };
+		4C14C8A22410AC0800DE0A4A /* 6.5in 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C89C2410AC0800DE0A4A /* 6.5in 3.png */; };
+		4C14C8A92410B45600DE0A4A /* Apple Watch 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8A32410B45500DE0A4A /* Apple Watch 5.png */; };
+		4C14C8AA2410B45600DE0A4A /* Apple Watch 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8A42410B45500DE0A4A /* Apple Watch 6.png */; };
+		4C14C8AB2410B45600DE0A4A /* Apple Watch 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8A52410B45500DE0A4A /* Apple Watch 4.png */; };
+		4C14C8AC2410B45600DE0A4A /* Apple Watch 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8A62410B45500DE0A4A /* Apple Watch 2.png */; };
+		4C14C8AD2410B45600DE0A4A /* Apple Watch 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8A72410B45500DE0A4A /* Apple Watch 3.png */; };
+		4C14C8AE2410B45600DE0A4A /* Apple Watch 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C14C8A82410B45600DE0A4A /* Apple Watch 1.png */; };
 		4C30FD9623DA6A81007D5E87 /* FractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C30FD9523DA6A81007D5E87 /* FractionView.swift */; };
 		4C46FA1922D6F7D30081A381 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA1822D6F7D30081A381 /* AppDelegate.swift */; };
 		4C46FA1B22D6F7D30081A381 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46FA1A22D6F7D30081A381 /* ViewController.swift */; };
@@ -340,6 +352,18 @@
 		4C14C88924109CEF00DE0A4A /* Apple Watch App Icon Short Look 38mm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch App Icon Short Look 38mm.png"; sourceTree = "<group>"; };
 		4C14C88A24109CEF00DE0A4A /* Apple Watch App Icon Short Look 40mm 42mm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch App Icon Short Look 40mm 42mm.png"; sourceTree = "<group>"; };
 		4C14C88B24109CEF00DE0A4A /* Apple Watch App Icon Short Look 44mm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch App Icon Short Look 44mm.png"; sourceTree = "<group>"; };
+		4C14C8972410AC0800DE0A4A /* 5.5in 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5.5in 1.png"; sourceTree = "<group>"; };
+		4C14C8982410AC0800DE0A4A /* 5.5in 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5.5in 3.png"; sourceTree = "<group>"; };
+		4C14C8992410AC0800DE0A4A /* 5.5in 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5.5in 2.png"; sourceTree = "<group>"; };
+		4C14C89A2410AC0800DE0A4A /* 6.5in 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6.5in 1.png"; sourceTree = "<group>"; };
+		4C14C89B2410AC0800DE0A4A /* 6.5in 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6.5in 2.png"; sourceTree = "<group>"; };
+		4C14C89C2410AC0800DE0A4A /* 6.5in 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6.5in 3.png"; sourceTree = "<group>"; };
+		4C14C8A32410B45500DE0A4A /* Apple Watch 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch 5.png"; sourceTree = "<group>"; };
+		4C14C8A42410B45500DE0A4A /* Apple Watch 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch 6.png"; sourceTree = "<group>"; };
+		4C14C8A52410B45500DE0A4A /* Apple Watch 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch 4.png"; sourceTree = "<group>"; };
+		4C14C8A62410B45500DE0A4A /* Apple Watch 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch 2.png"; sourceTree = "<group>"; };
+		4C14C8A72410B45500DE0A4A /* Apple Watch 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch 3.png"; sourceTree = "<group>"; };
+		4C14C8A82410B45600DE0A4A /* Apple Watch 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Watch 1.png"; sourceTree = "<group>"; };
 		4C30FD9523DA6A81007D5E87 /* FractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractionView.swift; sourceTree = "<group>"; };
 		4C46FA1522D6F7D30081A381 /* DrillBits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrillBits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C46FA1822D6F7D30081A381 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -691,6 +715,18 @@
 		4C4C5B2E231E2204008273D7 /* Screen Shots */ = {
 			isa = PBXGroup;
 			children = (
+				4C14C8972410AC0800DE0A4A /* 5.5in 1.png */,
+				4C14C8992410AC0800DE0A4A /* 5.5in 2.png */,
+				4C14C8982410AC0800DE0A4A /* 5.5in 3.png */,
+				4C14C89A2410AC0800DE0A4A /* 6.5in 1.png */,
+				4C14C89B2410AC0800DE0A4A /* 6.5in 2.png */,
+				4C14C89C2410AC0800DE0A4A /* 6.5in 3.png */,
+				4C14C8A82410B45600DE0A4A /* Apple Watch 1.png */,
+				4C14C8A62410B45500DE0A4A /* Apple Watch 2.png */,
+				4C14C8A72410B45500DE0A4A /* Apple Watch 3.png */,
+				4C14C8A52410B45500DE0A4A /* Apple Watch 4.png */,
+				4C14C8A32410B45500DE0A4A /* Apple Watch 5.png */,
+				4C14C8A42410B45500DE0A4A /* Apple Watch 6.png */,
 			);
 			path = "Screen Shots";
 			sourceTree = "<group>";
@@ -1356,9 +1392,11 @@
 				4C90557322FE22B9006A6B59 /* Bullet Pilot Point Zoomed.png in Resources */,
 				4C9055E423146F41006A6B59 /* Hole Saw @3x.png in Resources */,
 				4C08CD962318A054004D8C9B /* Hole Saw.blend in Resources */,
+				4C14C8A02410AC0800DE0A4A /* 6.5in 1.png in Resources */,
 				4C905599230F6D3B006A6B59 /* Acrylic @2x.png in Resources */,
 				4CA7D5F823173469008D6993 /* App Icon 40pt.png in Resources */,
 				4CA7D5F923173469008D6993 /* App Icon 29pt.png in Resources */,
+				4C14C8AD2410B45600DE0A4A /* Apple Watch 3.png in Resources */,
 				4C08CD8C23189FFC004D8C9B /* Twist Bit.blend in Resources */,
 				4C14C89024109CEF00DE0A4A /* Apple Watch App Icon Companion 2x.png in Resources */,
 				4C9055AD231078A3006A6B59 /* Brass @3x.png in Resources */,
@@ -1367,17 +1405,20 @@
 				4C9055A023107893006A6B59 /* Steel @2x.png in Resources */,
 				4C14C89124109CEF00DE0A4A /* Apple Watch App Icon Notification 38mm.png in Resources */,
 				4C90558322FE2D4A006A6B59 /* Brad Point Zoomed @3x.png in Resources */,
+				4C14C89E2410AC0800DE0A4A /* 5.5in 3.png in Resources */,
 				4C4D8A6F23F8EB30007652A3 /* Spade BIt with Spurs Complication44px.png in Resources */,
 				4C90560B23146F6D006A6B59 /* Powerbore Drill Bit.png in Resources */,
 				4C9055FB23146F5F006A6B59 /* Spade BIt with Spurs Zoomed @2x.png in Resources */,
 				4C90557F22FE2D4A006A6B59 /* Brad Point.png in Resources */,
 				4C08CD982318A064004D8C9B /* Multi Spur Bit.blend in Resources */,
+				4C14C8AC2410B45600DE0A4A /* Apple Watch 2.png in Resources */,
 				4C9055BC2310A680006A6B59 /* Glass and Tile.png in Resources */,
 				4C9055E323146F41006A6B59 /* Hole Saw @2x.png in Resources */,
 				4C4D8A6323F8EB30007652A3 /* Forstner Bit Complication40px.png in Resources */,
 				4C14C88D24109CEF00DE0A4A /* Apple Watch App Icon Notification 40mm 42mm.png in Resources */,
 				4C14C88E24109CEF00DE0A4A /* Apple Watch App Icon Home Screen 40mm 42mm.png in Resources */,
 				4C08CD9C2318A080004D8C9B /* Spade Bit with Spurs.blend in Resources */,
+				4C14C8A92410B45600DE0A4A /* Apple Watch 5.png in Resources */,
 				4C4D8A5B23F8EB30007652A3 /* Glass and Tile Bit Complication44px.png in Resources */,
 				4C905597230F6D3B006A6B59 /* Acrylic @3x.png in Resources */,
 				4C4D8A6223F8EB30007652A3 /* Multi Spur Bit Complication40px.png in Resources */,
@@ -1391,6 +1432,7 @@
 				4C4D8A5A23F8EB30007652A3 /* Brad Point Complication40px.png in Resources */,
 				4C9055F223146F52006A6B59 /* Spade BIt @2x.png in Resources */,
 				4C9055F323146F52006A6B59 /* Spade BIt Zoomed.png in Resources */,
+				4C14C89D2410AC0800DE0A4A /* 5.5in 1.png in Resources */,
 				4C9055CF2310D7C6006A6B59 /* Forstner Bit @3x.png in Resources */,
 				4C90555F22FE001E006A6B59 /* Twist Bit.png in Resources */,
 				4C4D8A6923F8EB30007652A3 /* Powerbore Drill Bit Complication40px.png in Resources */,
@@ -1431,11 +1473,13 @@
 				4C4D8A9324037B29007652A3 /* Divider (Light)@2x.png in Resources */,
 				4C9055E723146F41006A6B59 /* Hole Saw Zoomed.png in Resources */,
 				4CA7D5FD23173469008D6993 /* App Icon 20pt @3x.png in Resources */,
+				4C14C8AB2410B45600DE0A4A /* Apple Watch 4.png in Resources */,
 				4CA7D5F223173469008D6993 /* App Icon 60pt @2x.png in Resources */,
 				4C14C89624109CEF00DE0A4A /* Apple Watch App Icon Short Look 44mm.png in Resources */,
 				4C14C89424109CEF00DE0A4A /* Apple Watch App Icon Short Look 38mm.png in Resources */,
 				4C90560A23146F6D006A6B59 /* Powerbore Drill Bit Zoomed @2x.png in Resources */,
 				4CA8AEAB23EA49E400220BC6 /* Millimeters.png in Resources */,
+				4C14C89F2410AC0800DE0A4A /* 5.5in 2.png in Resources */,
 				4C4D8A8824037B29007652A3 /* Chevron (Light).png in Resources */,
 				4C08CD9E2318A08E004D8C9B /* Powerbore Drill Bit.blend in Resources */,
 				4C4D8A5C23F8EB30007652A3 /* Spade BIt Complication44px.png in Resources */,
@@ -1452,6 +1496,7 @@
 				4C9055F023146F52006A6B59 /* Spade BIt Zoomed @2x.png in Resources */,
 				4C4D8A8924037B29007652A3 /* Chevron (Light)@3x.png in Resources */,
 				4C905593230F6D34006A6B59 /* Hardwood @2x.png in Resources */,
+				4C14C8A22410AC0800DE0A4A /* 6.5in 3.png in Resources */,
 				4C4D8A8E24037B29007652A3 /* Divider (Light)@3x.png in Resources */,
 				4C4D8A9124037B29007652A3 /* Chevron (Dark).png in Resources */,
 				4CA7D616231783C7008D6993 /* Circle Cutter Zoomed @3x.png in Resources */,
@@ -1500,6 +1545,7 @@
 				4C9055CC2310D7C6006A6B59 /* Forstner Bit Zoomed.png in Resources */,
 				4CA7D60623176F9E008D6993 /* Glass and Tile Bit.png in Resources */,
 				4CA8AEAC23EA49E400220BC6 /* Inches.png in Resources */,
+				4C14C8A12410AC0800DE0A4A /* 6.5in 2.png in Resources */,
 				4CA7D5FA23173469008D6993 /* App Icon 76pt.png in Resources */,
 				4C90557E22FE2D4A006A6B59 /* Brad Point Zoomed.png in Resources */,
 				4C9055E523146F41006A6B59 /* Hole Saw Zoomed @2x.png in Resources */,
@@ -1515,6 +1561,8 @@
 				4C08CD8223189F57004D8C9B /* Brass.blend in Resources */,
 				4C9055DB2311FC92006A6B59 /* Multi Spur Bit @2x.png in Resources */,
 				4C9055BA2310A680006A6B59 /* Glass and Tile @3x.png in Resources */,
+				4C14C8AE2410B45600DE0A4A /* Apple Watch 1.png in Resources */,
+				4C14C8AA2410B45600DE0A4A /* Apple Watch 6.png in Resources */,
 				4C905591230F6D34006A6B59 /* Hardwood @3x.png in Resources */,
 				4C9055EF23146F52006A6B59 /* Spade BIt @3x.png in Resources */,
 				4C4D8A6D23F8EB30007652A3 /* Spade BIt Complication40px.png in Resources */,
